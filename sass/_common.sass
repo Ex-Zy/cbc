@@ -47,21 +47,301 @@
 // p
 // 	+jpg(bla)
 
+// variables
+$dark-gray: #292929
+$gray: #7f8285
+$light-gray: #a2a5a8
+$green: #2d802d
+$light-green: #299c00
+$turquoise: #94f691
+
+$bg-input: #4f4f50
+$gray-out: #454343
+$green-menu: #4ca542
+$active-it-menu: #009b35
+
+$color-green: #26a023
+$color-yellow: #ffff00
+
+=grad
+	+g($dark-gray, $light-gray)
+
+// icons
+.ico
+	display: inline-block
+	&.ico_soccer
+		+s(soccer)
+	&.ico_basketball
+		+s(basketball)
+	&.ico_ice-hockey
+		+s(ice-hockey)
+	&.ico_tennis
+		+s(tennis)
+
+*
+	+box
 
 body
+	padding: 8px
 	font-family: Arial, sans-serif 
-	font-size: 12px 
+	font-size: 13px
+	color: #fff
 	line-height: 1.4
+	+grad
 
 
 // common blocks      
 
+// out
+.out
+	padding: 7px 7px 62px
+	margin: 0 auto
+	height: 100%
+	height: auto
+	min-height: 100%
+	width: 1260px
+	+border-radius(8px)
+	+box-shadow(4px 4px 5px #000)
+	background: $gray-out
+
+// cols
+.col-left
+	float: left
+	margin-right: 4px
+	width: 996px
+.col-right
+	float: right
+	width: 246px
+	.btn
+		width: 100%
+
+// header
+.header
+	+font-smoothing(antialiased)
+	.header__row
+		margin: 4px 0
+		+clr
+		.col-left
+			position: relative
+			padding: 2px 10px 8px
+			+border-radius(10px)
+			background: url(../img/top-bg.png) no-repeat 0 0
+			background-size: cover
+
+	.ind
+		padding-left: 28px
+		line-height: 1
+		font-size: 12px
+		text-transform: uppercase
+		vertical-align: top
+		display: inline-block
+	.form__field
+		width: 120px
+	.form__label
+		padding-top: 6px
+	.form
+		.col-left
+			padding: 6px 20px
+			+border-radius(10px)
+			background: $gray
+
+// logo
+.logo
+	vertical-align: top
+	display: inline-block
+	+s(logo)
+
+// live-block
+.live-block
+	position: absolute
+	left: 239px
+	bottom: 0
+	width: 516px
+	height: 36px
+	font-weight: bold
+	text-align: center
+	+border-radius(4px 4px 0 0)
+	background: rgba($light-gray, .5)
+	.live-block__top
+		height: 20px
+		line-height: 20px
+		font-weight: bold
+		font-size: 18px
+		white-space: nowrap
+		overflow: hidden
+	.live-block__bot
+		font-size: 11px
+
+// balance
+.balance
+	padding: 5px
+	background: $gray
+	font-weight: bold
+	+border-radius(8px)
+	+clr
+	.balance__row
+		padding-top: 3px
+	.balance__left
+		float: left
+		padding-left: 2px
+		line-height: 1.1
+		text-transform: uppercase
+		+opacity(0.5)
+	.balance__right
+		float: right
+		color: $turquoise
+
+// form
+.form
+	+clr
+	.form__right
+		float: right
+	.form__label
+		margin-right: 6px
+		vertical-align: top
+		display: inline-block
+	.form__col
+		margin-left: 8px
+	.form__field,
+	.form__col
+		vertical-align: top
+		display: inline-block
+	
+// input
+.input
+	padding: 0 10px
+	height: 26px
+	width: 100%
+	color: #fff
+	border: 1px solid $light-gray
+	background: $bg-input
+	display: inline-block
+	
+// btn
+.btn
+	position: relative
+	padding: 0 18px
+	font-size: 13px
+	color: #fff
+	vertical-align: top
+	+g($dark-gray, $light-gray)
+	+border-radius(4px)
+	display: inline-block
+	&:active
+		top: -1px
+		+background-image(linear-gradient($dark-gray, $light-gray 70%))
+	&.btn_small
+		height: 25px
+		line-height: 25px
+	&.btn_green
+		height: 38px
+		line-height: 38px
+		font-weight: bold
+		+border-radius(8px)
+		+g($light-green, $green)
+		&:active
+			top: 0
+			+background-image(linear-gradient($light-green 100%, $green))
+	&.btn_middle
+		height: 32px
+		line-height: 32px
+	&.btn_foot
+		height: 40px
+		line-height: 40px
+	&:disabled
+		cursor: default
+		+opacity(0.6)
+button.btn
+	line-height: 1
+
+// menu
+.menu
+	padding: 3px 9px
+	font-size: 0
+	+border-radius(8px)
+	+font-smoothing(antialiased)
+	background: $gray
+	.menu__item
+		margin-left: 2px
+		font-size: 15px
+		overflow: hidden
+		vertical-align: top
+		display: inline-block
+		&:first-child
+			margin-left: 0
+			a
+				padding-left: 46px
+	a
+		position: relative
+		margin-right: -1px
+		padding: 0 30px 0 30px
+		height: 40px
+		width: 129px
+		color: #fff
+		text-decoration: none
+		overflow: hidden
+		+border-radius(4px 20px 0 4px)
+		+g($dark-gray, $gray)
+		display: block
+		&:active,
+		&.is-active
+			+background-image(linear-gradient(left, #00a857, #009320))
+			.events__left
+				color: $color-yellow
+		.ico
+			position: absolute
+			top: 50%
+			left: 12px
+			+translate(0,-50%)
+	.status
+		position: absolute
+		top: 13px
+		right: -48px
+		width: 100%
+		+rotate(55)
+
+// status
+.status
+	padding: 2px
+	color: #fff
+	line-height: 1
+	font-size: 10px
+	text-transform: uppercase
+	font-weight: bold
+	text-align: center
+	letter-spacing: 0.9px
+	background: $green-menu
+
+// events
+.events
+	padding-top: 12px
+	font-size: 15px
+	line-height: 1
+	text-align: center
+	.events__left,
+	.events__right
+		vertical-align: top
+		display: inline-block
+	.events__left
+		color: $color-green
+		font-size: 20px
+		line-height: 0.9
+		letter-spacing: -3px
+		font-weight: bold
+	.events__right
+		&:before
+			content: '/'
+
+// row
+.row
+	margin: 4px 0
 
 
-
-
-
-
+// footer
+.footer
+	margin: -62px auto
+	padding: 7px
+	width: 1260px
 
 
 
