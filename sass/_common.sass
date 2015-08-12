@@ -77,28 +77,59 @@ $color-yellow: #ffff00
 		+s(ice-hockey)
 	&.ico_tennis
 		+s(tennis)
+	&.ico_en
+		+s(images-lang_english)
+	&.ico_fr
+		+s(images-lang_fr-fr)
+	&.ico_gr
+		+s(images-lang_greek)
+	&.ico_hr
+		+s(images-lang_hr-hr)
+	&.ico_nl
+		+s(images-lang_nl-be)
+	&.ico_por
+		+s(images-lang_portugal)
+	&.ico_sp
+		+s(images-lang_spain)
+	&.ico_turc
+		+s(images-lang_turkey)
+	&.ico_ger
+		+s(images-lang_german)
+	&.ico_soccer2
+		+s(images-soccer)
+	&.ico_tennis2
+		+s(images-tennis)
+	&.ico_basketball2
+		+s(images-basketball)
 
 *
 	+box
 
 body
-	padding: 8px
 	font-family: Arial, sans-serif 
 	font-size: 13px
 	color: #fff
 	line-height: 1.4
-	+grad
+	&.is-home
+		.l .col-left
+			background: url(../img/images-default-backgroundcenter.jpg) no-repeat 0 0
+			background-size: cover
 
 
 // common blocks      
 
 // out
 .out
-	padding: 7px 7px 62px
-	margin: 0 auto
+	padding: 8px
 	height: 100%
 	height: auto
 	min-height: 100%
+	+grad
+
+// wrap
+.wrap
+	margin: 0 auto
+	padding: 7px 7px 62px
 	width: 1260px
 	+border-radius(8px)
 	+box-shadow(4px 4px 5px #000)
@@ -217,12 +248,56 @@ body
 	background: $bg-input
 	display: inline-block
 	
+// select
+.select
+	position: relative
+	cursor: pointer
+	+user-select(none)
+	&.is-active
+		.select__text
+			+box-shadow(inset 0 1px 0 $dark-gray)
+			+border-radius(0 0 8px 8px)
+			&:before
+				+rotate(180)
+		.select__list
+			display: block
+	.select__text
+		position: relative
+		padding: 11px 65px 0 61px
+		height: 50px
+		+border-radius(8px)
+		background: $gray
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			right: 56px
+			+s(arr-gray-bot)
+	.select__list
+		position: absolute
+		bottom: 100%
+		left: 0
+		right: 0
+		padding: 8px 0
+		+border-radius(8px 8px 0 0)
+		background: $gray
+		display: none
+	li
+		padding: 2px 4px 2px 61px
+		cursor: pointer
+		&:active
+			background: $dark-gray
+
 // btn
 .btn
 	position: relative
 	padding: 0 18px
+	height: 45px
+	line-height: 45px
 	font-size: 13px
 	color: #fff
+	text-align: center
+	text-decoration: none
 	vertical-align: top
 	+g($dark-gray, $light-gray)
 	+border-radius(4px)
@@ -247,12 +322,54 @@ body
 		line-height: 32px
 	&.btn_foot
 		height: 40px
+		width: 138px
 		line-height: 40px
+	&.btn_arr-l,
+	&.btn_arr-r,
+	&.btn_arr-t,
+	&.btn_arr-b
+		width: 64px
+		&:before,
+		&:after
+			position: absolute
+			content: ''
+			top: 50%
+			+opacity(.8)
+			+translate(0,-50%)
+	&.btn_arr-l
+		&:before
+			left: 21px
+			+arr(10,17,#fff,l)
+		&:after
+			left: 31px
+			+arr(10,17,#fff,l)
+	&.btn_arr-r
+		&:before
+			right: 21px
+			+arr(10,17,#fff,r)
+		&:after
+			right: 31px
+			+arr(10,17,#fff,r)
+	&.btn_arr-t
+		&:before
+			left: 50%
+			+translate(-50%,-50%)
+			+arr(17,10,#fff,t)
+	&.btn_arr-b
+		&:before
+			left: 50%
+			+translate(-50%,-50%)
+			+arr(17,10,#fff,b)
 	&:disabled
 		cursor: default
 		+opacity(0.6)
 button.btn
 	line-height: 1
+
+// menu-wrap
+.menu-wrap
+	margin: 4px 0
+	+clr
 
 // menu
 .menu
@@ -300,6 +417,19 @@ button.btn
 		width: 100%
 		+rotate(55)
 
+// l-gray
+.l-gray
+	padding: 2px
+	background: $gray
+	+border-radius(8px)
+	.btn
+		width: 100%
+		height: 42px
+		line-height: 42px
+		+border-radius(8px)
+	button.btn
+		line-height: 1
+
 // status
 .status
 	padding: 2px
@@ -336,12 +466,85 @@ button.btn
 .row
 	margin: 4px 0
 
+// pages
+.pages
+	text-align: center
+	vertical-align: top
+	display: inline-block
+	.pages__text
+		width: 84px
+		height: 40px
+		line-height: 40px
+		font-size: 18px
+		font-weight: bold
+		vertical-align: top
+		display: inline-block
+
+// banner
+.banner
+	overflow: hidden
+	+border-radius(5px)
+	img
+		width: 100%
+		display: block
+
+// games
+.games
+	padding: 4px
+	font-size: 0
+	+font-smoothing(antialiased)
+	.games__item
+		margin: 0 13px 13px 0
+		text-align: center
+		position: relative
+		padding: 20px 20px 30px
+		width: 220px
+		height: 100px
+		line-height: 45px
+		+grad
+		+border-radius(4px)
+		vertical-align: top
+		display: inline-block
+		&:active
+			+background-image(linear-gradient($dark-gray, $light-gray 70%))
+		&.is-live
+			.games__name
+				font-size: 20px
+				color: $color-green
+	.games__name
+		margin-bottom: 5px
+		color: #fff
+		font-size: 15px
+		line-height: 1.4
+		font-weight: bold
+		text-decoration: none
+		vertical-align: bottom
+		display: inline-block
+	.ico
+		position: absolute
+		left: 50%
+		bottom: 10px
+		+translate(-50%,0)
 
 // footer
 .footer
-	margin: -62px auto
+	margin: -70px auto
 	padding: 7px
+	font-size: 0
 	width: 1260px
+	.col-left
+		padding: 5px
+		text-align: center
+		background: $gray
+		+border-radius(8px)
+	.btn,
+	.pages
+		margin-left: 10px
+		&:first-child
+			margin-left: 0
+	.pages
+		.btn
+			margin: 0
 
 
 

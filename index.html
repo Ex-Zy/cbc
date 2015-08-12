@@ -12,119 +12,208 @@
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
-<body>
+<body class="is-home">
 <!-- BEGIN  out-->
 <div class="out">
-	<!-- header -->
-	<header class="header">
-		<!-- form -->
-		<form class="form">
-			<div class="col-left">
-				<div class="form__right">
-					<div class="form__col">
-						<button class="btn btn_small" type="button">Show Keybord</button>
+	<!-- wrap -->
+	<div class="wrap">
+		<!-- header -->
+		<header class="header">
+			<!-- form -->
+			<form class="form">
+				<div class="col-left">
+					<div class="form__right">
+						<div class="form__col">
+							<button class="btn btn_small" type="button">Show Keybord</button>
+						</div>
+						<div class="form__col">
+							<div class="form__label">Card num.</div>
+							<div class="form__field"><input type="text" class="input"></div>
+						</div>
+						<div class="form__col">
+							<div class="form__label">Password</div>
+							<div class="form__field"><input type="text" class="input"></div>
+						</div>
 					</div>
-					<div class="form__col">
-						<div class="form__label">Card num.</div>
-						<div class="form__field"><input type="text" class="input"></div>
+				</div>
+				<div class="col-right">
+					<button class="btn btn_green" type="submit">Login</button>
+				</div>
+			</form>
+			<!-- row -->
+			<div class="header__row">
+				<div class="col-left">
+					<!-- logo -->
+					<a href="#" class="logo"></a>
+					<!-- ind -->
+					<div class="ind">v1.340/wv1.2.0.29</div>
+					<!-- live-block -->
+					<div class="live-block">
+						<div class="live-block__top">sports</div>
+						<div class="live-block__bot">Complate offer</div>
 					</div>
-					<div class="form__col">
-						<div class="form__label">Password</div>
-						<div class="form__field"><input type="text" class="input"></div>
+				</div>
+				<div class="col-right">
+					<!-- balance -->
+					<div class="balance">
+						<button class="btn btn_middle" type="button">Balance: <span class="sum">0.00</span></button>
+						<div class="balance__row">
+							<div class="balance__left">
+								<date class="date">8/6/2015</date>
+								<div class="time">6:19 pm</div>
+							</div>
+							<div class="balance__right">
+								<span class="station">Station 2174</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-right">
-				<button class="btn btn_green" type="submit">Login</button>
-			</div>
-		</form>
-		<!-- row -->
-		<div class="header__row">
+		</header>
+		<!-- menu-wrap -->
+		<div class="menu-wrap">
 			<div class="col-left">
-				<!-- logo -->
-				<a href="#" class="logo"></a>
-				<!-- ind -->
-				<div class="ind">v1.340/wv1.2.0.29</div>
-				<!-- live-block -->
-				<div class="live-block">
-					<div class="live-block__top">sports</div>
-					<div class="live-block__bot">Complate offer</div>
-				</div>
+				<!-- menu -->
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="#">
+							<i class="ico ico_soccer"></i>
+							<!-- events -->
+							<div class="events">
+								<div class="events__left">13</div>
+								<div class="events__right">358</div>
+							</div>
+							<!-- status -->
+							<div class="status">live</div>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">
+							<i class="ico ico_tennis"></i>
+							<!-- events -->
+							<div class="events">
+								<div class="events__left">9</div>
+								<div class="events__right">34</div>
+							</div>
+							<!-- status -->
+							<div class="status">live</div>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">
+							<i class="ico ico_basketball"></i>
+							<!-- events -->
+							<div class="events">
+								<div class="events__left">0</div>
+								<div class="events__right">20</div>
+							</div>
+							<!-- status -->
+							<div class="status">live</div>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">
+							<i class="ico ico_ice-hockey"></i>
+							<!-- events -->
+							<div class="events">
+								<div class="events__left">0</div>
+								<div class="events__right">1</div>
+							</div>
+							<!-- status -->
+							<div class="status">live</div>
+						</a>
+					</li>
+				</ul>
 			</div>
 			<div class="col-right">
-				<!-- balance -->
-				<div class="balance">
-					<button class="btn btn_middle" type="button">Balance: <span class="sum">0.00</span></button>
-					<div class="balance__row">
-						<div class="balance__left">
-							<date class="date">8/6/2015</date>
-							<div class="time">6:19 pm</div>
-						</div>
-						<div class="balance__right">
-							<span class="station">Station 2174</span>
-						</div>
-					</div>
+				<div class="l-gray">
+					<a href="#" class="btn">Tables</a>
 				</div>
 			</div>
 		</div>
-	</header>
-	<!-- l -->
-	<div class="l">
-		<div class="col-left">
-			<!-- menu -->
-			<ul class="menu">
-				<li class="menu__item">
-					<a href="#">
-						<i class="ico ico_soccer"></i>
-						<!-- events -->
-						<div class="events">
-							<div class="events__left">13</div>
-							<div class="events__right">358</div>
-						</div>
-						<!-- status -->
-						<div class="status">live</div>
+		<!-- l -->
+		<div class="l">
+			<div class="col-left">
+				<!-- games -->
+				<div class="games">
+					<a href="#" class="games__item is-live">
+						<div class="games__name">Live-Bets</div>
 					</a>
-				</li>
-				<li class="menu__item">
-					<a href="#">
-						<i class="ico ico_tennis"></i>
-						<!-- events -->
-						<div class="events">
-							<div class="events__left">9</div>
-							<div class="events__right">34</div>
-						</div>
-						<!-- status -->
-						<div class="status">live</div>
+					<a href="#" class="games__item">
+						<div class="games__name">Euro League</div>
+						<i class="ico ico_soccer2"></i>
 					</a>
-				</li>
-				<li class="menu__item">
-					<a href="#">
-						<i class="ico ico_basketball"></i>
-						<!-- events -->
-						<div class="events">
-							<div class="events__left">0</div>
-							<div class="events__right">20</div>
-						</div>
-						<!-- status -->
-						<div class="status">live</div>
+					<a href="#" class="games__item">
+						<div class="games__name">Uefa-Supercup</div>
+						<i class="ico ico_soccer2"></i>
 					</a>
-				</li>
-				<li class="menu__item">
-					<a href="#">
-						<i class="ico ico_ice-hockey"></i>
-						<!-- events -->
-						<div class="events">
-							<div class="events__left">0</div>
-							<div class="events__right">1</div>
-						</div>
-						<!-- status -->
-						<div class="status">live</div>
+					<a href="#" class="games__item">
+						<div class="games__name">Club Friendlies</div>
+						<i class="ico ico_soccer2"></i>
 					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="col-right">
-			
+					<a href="#" class="games__item">
+						<div class="games__name">Football Germany</div>
+						<i class="ico ico_soccer2"></i>
+					</a>
+					<a href="#" class="games__item">
+						<div class="games__name">Football Austria</div>
+						<i class="ico ico_soccer2"></i>
+					</a>
+					<a href="#" class="games__item">
+						<div class="games__name">Football Dritish Isles</div>
+						<i class="ico ico_soccer2"></i>
+					</a>
+					<a href="#" class="games__item">
+						<div class="games__name">Football Germany</div>
+						<i class="ico ico_soccer2"></i>
+					</a>
+					<a href="#" class="games__item">
+						<div class="games__name">Football America North / South</div>
+						<i class="ico ico_soccer2"></i>
+					</a>
+					<a href="#" class="games__item">
+						<div class="games__name">Football Germany</div>
+						<i class="ico ico_soccer2"></i>
+					</a>
+					<a href="#" class="games__item">
+						<div class="games__name">Football Germany</div>
+						<i class="ico ico_soccer2"></i>
+					</a>
+					<a href="#" class="games__item">
+						<div class="games__name">Football Germany</div>
+						<i class="ico ico_soccer2"></i>
+					</a>
+					<a href="#" class="games__item">
+						<div class="games__name">Football Germany</div>
+						<i class="ico ico_soccer2"></i>
+					</a>
+					<a href="#" class="games__item">
+						<div class="games__name">Tennis</div>
+						<i class="ico ico_tennis2"></i>
+					</a>
+					<a href="#" class="games__item">
+						<div class="games__name">Football Germany</div>
+						<i class="ico ico_soccer2"></i>
+					</a>
+					<a href="#" class="games__item">
+						<div class="games__name">Basketball</div>
+						<i class="ico ico_basketball2"></i>
+					</a>
+					<a href="#" class="games__item">
+						<div class="games__name">Football Germany</div>
+						<i class="ico ico_soccer2"></i>
+					</a>
+				</div>
+			</div>
+			<div class="col-right">
+				<a href="#" class="btn">My account</a>
+				<a href="#" class="btn">Cash</a>
+				<a href="#" class="btn">Results</a>
+				<a href="#" class="btn">Terms and Conditions</a>
+				<a href="#" class="btn">Live-Infos</a>
+				<a href="#" class="btn">Authorization</a>
+				<a href="#" class="banner"><img src="img/banner.png" alt="img"></a>
+			</div>
 		</div>
 	</div>
 </div>
@@ -132,17 +221,35 @@
 <!-- footer -->
 <footer class="footer">
 	<div class="col-left">
-		<button class="btn btn_foot" type="button" disabled><ico class="ico ico_arr-left"></ico></button>
-		<button class="btn btn_foot" type="button" disabled><ico class="ico ico_arr-right"></ico></button>
-		<button class="btn btn_foot" type="button">Complete offer</button>
-		<button class="btn btn_foot" type="button" disabled>Back</button>
-		<button class="btn btn_foot" type="button">Cancel</button>
+		<button class="btn btn_foot btn_arr-l" type="button" disabled><ico class="ico ico_arr-left"></ico></button>
+		<button class="btn btn_foot btn_arr-r" type="button" disabled><ico class="ico ico_arr-right"></ico></button>
+		<button class="btn btn_foot " type="button">Complete offer</button>
+		<button class="btn btn_foot " type="button" disabled>Back</button>
+		<button class="btn btn_foot " type="button">Cancel</button>
 		<div class="pages">
-			<button class="btn btn_foot" type="button" disabled><i class="ico ico_arr-top"></i></button>
-			<button class="btn btn_foot" type="button" disabled><i class="ico ico_arr-bot"></i></button>
+			<button class="btn btn_foot btn_arr-t" type="button" disabled><i class="ico ico_arr-top"></i></button>
+			<div class="pages__text"></div>
+			<button class="btn btn_foot btn_arr-b" type="button" disabled><i class="ico ico_arr-bot"></i></button>
 		</div>
 	</div>
-	<div class="col-right"></div>
+	<div class="col-right">
+		<!-- select -->
+		<div class="select">
+			<input type="text" hidden>
+			<div class="select__text"><i class="ico ico_ger"></i></div>
+			<ul class="select__list">
+				<li><a href="#"><i class="ico ico_en"></i></a></li>
+				<li><a href="#"><i class="ico ico_fr"></i></a></li>
+				<li><a href="#"><i class="ico ico_gr"></i></a></li>
+				<li><a href="#"><i class="ico ico_hr"></i></a></li>
+				<li><a href="#"><i class="ico ico_nl"></i></a></li>
+				<li><a href="#"><i class="ico ico_por"></i></a></li>
+				<li><a href="#"><i class="ico ico_sp"></i></a></li>
+				<li><a href="#"><i class="ico ico_turc"></i></a></li>
+				<li><a href="#"><i class="ico ico_ger"></i></a></li>
+			</ul>
+		</div>
+	</div>
 </footer>
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>

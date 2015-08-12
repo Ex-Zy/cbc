@@ -1,7 +1,27 @@
 // default layout
 .l
+	margin-left: 4px
+	width: 1242px
+	min-height: 754px
 	display: table
 	.col-left,
 	.col-right
 		float: none
+		background: $gray
+		vertical-align: top
 		display: table-cell
+	.col-left
+		position: relative
+		right: 4px
+		overflow: hidden
+	.col-right
+		padding: 7px
+		+border-radius(8px)
+		+box
+		.btn
+			margin: 10px 0
+			display: block
+			&:first-child
+				margin-top: 0
+
+	
