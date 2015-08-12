@@ -56,6 +56,7 @@ $light-green: #299c00
 $turquoise: #94f691
 
 $bg-input: #4f4f50
+$bg-topic: #4c5258
 $gray-out: #454343
 $green-menu: #4ca542
 $active-it-menu: #009b35
@@ -114,6 +115,9 @@ body
 		.l .col-left
 			background: url(../img/images-default-backgroundcenter.jpg) no-repeat 0 0
 			background-size: cover
+	&.is-bets
+		.l .col-left
+			+border-radius(8px)
 
 
 // common blocks      
@@ -430,6 +434,12 @@ button.btn
 	button.btn
 		line-height: 1
 
+// wrapper
+.wrapper
+	position: relative
+	height: 749px
+	overflow: hidden
+
 // status
 .status
 	padding: 2px
@@ -465,17 +475,24 @@ button.btn
 // row
 .row
 	margin: 4px 0
+	+clr
+
+// col
+.col
+	vertical-align: top
+	display: inline-block
 
 // pages
 .pages
 	text-align: center
 	vertical-align: top
 	display: inline-block
+	+font-smoothing(antialiased)
 	.pages__text
 		width: 84px
 		height: 40px
 		line-height: 40px
-		font-size: 18px
+		font-size: 24px
 		font-weight: bold
 		vertical-align: top
 		display: inline-block
@@ -526,9 +543,67 @@ button.btn
 		bottom: 10px
 		+translate(-50%,0)
 
+// more
+.more
+	padding: 5px 15px 5px 5px
+	+font-smoothing(antialiased)
+	.more__item
+	.col
+		float: right
+		margin-left: 5px
+		width: 314px
+		&:first-child
+			float: left
+			margin-left: 12px
+	.row
+		padding-right: 12px
+		margin: 5px 0
+		font-size: 0
+	.coef
+		margin-left: 5px
+
+// mark
+.mark
+	padding: 0 10px
+	width: 248px
+	height: 42px
+	font-size: 15px
+	line-height: 38px
+	font-weight: bold
+	vertical-align: top
+	border: 2px solid #fff
+	+border-radius(6px)
+	+g(#2c5c1b, #3d8325)
+	display: inline-block
+
+// coef
+.coef
+	width: 60px
+	height: 42px
+	color: #fff
+	font-size: 15px
+	font-weight: bold
+	vertical-align: top
+	+box-shadow(0 0 5px #000)
+	+border-radius(6px)
+	+background-image(linear-gradient(#1b456a, #163a59, #1b466b))
+	display: inline-block
+
+// topic
+.topic
+	padding: 5px 20px 9px 75px
+	font-weight: bold
+	font-size: 14px
+	background: $bg-topic
+	span
+		margin-right: 2px
+		text-transform: uppercase
+		&:first-child
+			text-transform: initial
+
 // footer
 .footer
-	margin: -70px auto
+	margin: -73px auto
 	padding: 7px
 	font-size: 0
 	width: 1260px
