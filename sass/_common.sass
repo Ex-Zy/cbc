@@ -50,6 +50,8 @@
 // variables
 $dark-gray: #292929
 $gray: #7f8285
+$gray-sel-list: #cbcbcb
+$gray-sel-selected: #bababa
 $light-gray: #a2a5a8
 $green: #2d802d
 $light-green: #299c00
@@ -106,6 +108,8 @@ $color-orange: #de9114
 		+s(images-basketball)
 	&.ico_stat
 		+s(ico-stat)
+	&.ico_upd
+		+s(ico-upd)
 
 *
 	+box
@@ -124,7 +128,6 @@ body
 		.l .col-left
 			+border-radius(8px)
 
-
 // common blocks      
 
 // out
@@ -134,7 +137,10 @@ body
 	height: auto
 	min-height: 100%
 	+grad
-
+	&.is-login
+		+g(#fe1d22, #a2a5a8)
+		.btn.btn_login
+			+g(#fe2e32, #d12e2e)
 // wrap
 .wrap
 	margin: 0 auto
@@ -183,6 +189,8 @@ body
 			padding: 6px 20px
 			+border-radius(10px)
 			background: $gray
+		.col-right
+			position: relative
 
 // logo
 .logo
@@ -222,6 +230,7 @@ body
 	+clr
 	.balance__row
 		padding-top: 3px
+		+clr
 	.balance__left
 		float: left
 		padding-left: 2px
@@ -231,6 +240,29 @@ body
 	.balance__right
 		float: right
 		color: $turquoise
+		line-height: 1.1
+	.balance__top
+		line-height: 32px
+		+clr
+		.btn
+			padding: 0
+			width: 40px
+			height: 32px
+		.balance__left
+			text-transform: initial
+		.balance__right,
+		.balance__left
+			line-height: 32px
+	.balance__sum
+		margin-right: 10px
+		color: #e8dd74
+		text-transform: initial
+		display: inline-block
+	.balance__ind
+		text-align: right
+		color: #e8dd74
+	.station
+		text-align: right
 
 // form
 .form
@@ -264,11 +296,6 @@ body
 	cursor: pointer
 	+user-select(none)
 	&.is-active
-		.select__text
-			+box-shadow(inset 0 1px 0 $dark-gray)
-			+border-radius(0 0 8px 8px)
-			&:before
-				+rotate(180)
 		.select__list
 			display: block
 	.select__text
@@ -286,18 +313,20 @@ body
 	.select__list
 		position: absolute
 		bottom: 100%
-		left: 0
-		right: 0
-		padding: 8px 0
+		margin-bottom: -5px
+		left: 51px
+		width: 146px
+		padding: 2px 0
 		+border-radius(8px 8px 0 0)
-		background: $gray
+		background: $gray-sel-list
 		display: none
 	li
-		padding: 2px 4px 2px 61px
+		padding: 5px 4px
 		cursor: pointer
-		&:active
-			background: $dark-gray
-
+		&:active,
+		&.is-selected
+			+box-shadow(inset 0 -1px 0 #525252, inset 0 1px 0 #f8fafa)
+			background: $gray-sel-selected
 // btn
 .btn
 	position: relative
@@ -515,6 +544,10 @@ button.btn
 .games
 	padding: 4px
 	font-size: 0
+	&.is-mod
+		.games__item
+			padding: 0 20px
+			+vertical
 	.games__item
 		margin: 0 13px 13px 0
 		text-align: center
@@ -542,6 +575,17 @@ button.btn
 		text-decoration: none
 		vertical-align: bottom
 		display: inline-block
+	.games__in
+		line-height: 1
+		vertical-align: middle
+		display: inline-block
+		.games__name
+			margin-bottom: 0
+			line-height: 1.2
+		.games__text
+			color: #fcfc01
+			font-size: 12px
+			line-height: 1.2
 	.ico
 		position: absolute
 		left: 50%
@@ -809,6 +853,150 @@ button.btn
 		text-transform: uppercase
 		&:first-child
 			text-transform: initial
+
+// keyboard
+.keyboard
+	position: absolute
+	top: 0
+	left: 50%
+	+translate(-50%,0)
+	width: 630px
+	padding: 1px
+	+box-shadow(inset 0 0 0 1px #fff, 3px 3px 5px rgba(#000, .3), -3px 0 5px rgba(#000, .3))
+	border: 1px solid #6a7d8d
+	+border-radius(3px)
+	background: #e8eaed
+	.keyboard__top
+		position: relative
+		height: 14px
+		border-bottom: 1px solid #fff
+		+g(#fff, #e4e7ea)
+	.keyboard__close
+		position: absolute
+		top: 50%
+		right: 10px
+		+translate(0,-50%)
+		+s(key-close)
+	.keyboard__in
+		padding: 10px 13px 10px 11px
+		font-size: 0
+	.keyboard__row
+		&:first-child
+			.key
+				font-size: 14px
+				&.key_beta
+					font-size: 23px
+			.key__top,
+			.key__bot
+				font-size: 14px
+				&.key_par
+					font-size: 12px
+	.keyboard__bot
+		margin-top: 5px
+		+clr
+		.key.key_close
+			float: left
+		.sel
+			float: right
+			margin-top: 4px
+
+// key
+.key
+	margin: 0 2px 1px 0
+	width: 40px
+	height: 44px
+	color: #000
+	font-size: 23px
+	text-align: center
+	vertical-align: top
+	+box-shadow(inset 0 0 0 1px #fff, 3px 3px 5px rgba(#000, .7))
+	+border-radius(3px)
+	border: 1px solid #a1adb8
+	+g(#fff, #ccd3d8)
+	display: inline-block
+	&.key_bs
+		width: 54px
+		text-transform: uppercase
+		font-size: 11px
+	&.key_tab
+		width: 54px
+		color: #a52a2a
+		font-size: 12px
+	&.key_caps,
+	&.key_enter
+		width: 68px
+		font-size: 12px
+	&.key_enter
+		color: #a52a2a
+	&.key_shift
+		width: 89px
+		font-size: 12px
+	&.key_bs,
+	&.key_tab,
+	&.key_caps,
+	&.key_enter,
+	&.key_shift
+		+box-shadow(inset 0 0 0 1px #fff, 0 0 0 transparent)
+		+g(#fff, #dededc)
+	&.key_space
+		position: relative
+		left: 50%
+		+translate(-50%,0)
+		margin-top: 2px
+		width: 291px
+		height: 33px
+		color: #a52a2a
+		font-size: 18px
+	&.key_close
+		width: 197px
+		height: 33px
+	.key__top,
+	.key__bot
+		font-size: 12px
+		display: block
+	.key__top
+		height: 17px
+		&.key__par
+			font-size: 12px
+	.key__bot
+		font-weight: bold
+
+// sel
+.sel
+	position: relative
+	width: 180px
+	font-size: 14px
+	color: #000
+	.sel__text
+		padding: 0 18px 0 8px
+		height: 29px
+		line-height: 27px
+		white-space: nowrap
+		text-overflow: ellipsis
+		overflow: hidden
+		cursor: pointer
+		+user-select(none)
+		+border-radius(2px)
+		border: 1px solid #a7a7a7
+		+g(#cbcbcb, #e5e8eb)
+	.sel__ico
+		position: absolute
+		top: 50%
+		right: 6px
+		+translate(0,-50%)
+		+s(sel-arr)
+
+.wind
+	position: absolute
+	left: 15px
+	top: 100%
+	padding: 2px 5px
+	color: #000
+	font-size: 13px
+	z-index: 10
+	+border-radius(2px)
+	border: 1px solid #bababa
+	+g(#9e9e9e, #636363)
 
 // footer
 .footer
