@@ -1090,36 +1090,47 @@ button.btn
 .content
 	position: relative
 	margin: 5px 19px 5px 5px
-	padding-right: 55px
 	color: #000
 	max-height: 744px
 	overflow: auto
 	&::-webkit-scrollbar
 		display: none
 	.content__in
-		padding: 8px 5px
+		padding: 8px 10px 8px 5px
+		margin-right: 28px
 		border: 1px solid #969fa7
 		background: #b9babb
-	.scroll
-		position: absolute
-		top: -1px
-		right: 19px
-		bottom: -1px
-		padding: 18px 3px
-		width: 30px
-		border: 1px solid #a7a7a7
+	.jspVerticalBar
+		top: 1px
+		right: 1px
+		bottom: 1px
+		height: auto
+		padding: 0 4px
+		width: 32px
+		+box-shadow(1px 0 0 rgba(#fff, .1), 0 1px 0 rgba(#fff, .1), 0 -1px 0 rgba(#fff, .1))
 		+g(#a0a0a0, #535353)
-		border-left: none
-	.scroll__track
+		+box
+	.jspTrack
+		background: transparent
+	.jspArrow
 		position: relative
-	.scroll__thumb
-		position: absolute
-		width: 22px
-		left: 0
+		background: transparent
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			+translate(-50%,-50%)
+		&.jspArrowUp
+			&:before
+				+s(sel-arr-top)
+		&.jspArrowDown
+			&:before
+				+s(sel-arr)
+	.jspDrag
+		border-radius: 5px
 		+gh(#cacaca, #8d8d8d)
 		+box-shadow(0 0 0 1px rgba(#fff, .3))
-	.scroll__button-bot
-	.scroll__button-top
 
 .title
 	text-transform: uppercase
@@ -1129,6 +1140,119 @@ button.btn
 .title-2
 	font-size: 14px
 	font-weight: normal
+
+// spinner
+$sp-ico-color: #63707d !default
+$sp-ico-size: 69px !default
+
+.sp-ico
+	margin: 10px 0
+	font-size: $sp-ico-size
+	position: relative
+	display: inline-block
+	width: 69px
+	height: 69px
+	.sp-ico__blade
+		position: absolute
+		left: .4629em
+		bottom: 0
+		width: 5px
+		height: .2777em
+		border-radius: .5em
+		background-color: transparent
+		transform-origin: center -.2222em
+		animation: sp-ico-fade 1s infinite linear
+
+		$animation-delay: 0s
+		$blade-rotation: 0deg
+
+		@for $i from 1 through 9
+			&:nth-child(#{$i})
+				animation-delay: $animation-delay
+				transform: rotate($blade-rotation)
+				$blade-rotation: $blade-rotation + 40
+				$animation-delay: $animation-delay + .11s
+
+@keyframes sp-ico-fade
+	0%
+		background-color: $sp-ico-color
+	100%
+		background-color: transparent
+
+$spinner-size: 50px !default
+
+.spinner
+	margin: 10px 0
+	font-size: $spinner-size
+	position: relative
+	display: inline-block
+	width: 69px
+	height: 69px
+	.spinner__blade
+		position: absolute
+		left: .6429em
+		bottom: 0
+		width: 5px
+		height: .2777em
+		border-radius: 2.5px/7px
+		background-color: transparent
+		transform-origin: center -.4222em
+		animation: spinner-fade 1s infinite linear
+		+g(#d9d41e, #de9129)
+
+		$animation-delay: 0s
+		$blade-rotation: 0deg
+
+		@for $i from 1 through 12
+			&:nth-child(#{$i})
+				animation-delay: $animation-delay
+				transform: rotate($blade-rotation)
+				$blade-rotation: $blade-rotation + 30
+				$animation-delay: $animation-delay + .083
+
+@keyframes spinner-fade
+	0%
+		opacity: 1
+	100%
+		opacity: 0
+
+.popup
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 100
+	background: rgba(#fff, .7)
+	+vertical
+	&.is-dark
+		background: rgba($gray, .8)
+	.popup__in
+		vertical-align: middle
+		display: inline-block
+		font-size: 14px
+		font-weight: bold
+
+// preloader
+.preloader
+	padding: 9px
+	width: 318px
+	border: 1px solid #9aa4ad
+	+border-radius(2px)
+	+box-shadow(0 0 4px 1px rgba(#000, .7))
+	background: rgba(#fff, .5)
+	.preloader__wrap
+		padding: 15px 10px 45px
+		text-align: center
+		background: rgba(#000, .5)
+	.preloader__text
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+		color: #fff
+	.sp-ico
+		margin: 0 auto 14px
+		display: block
 
 // footer
 .footer
