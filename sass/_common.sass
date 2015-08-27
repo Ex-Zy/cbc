@@ -110,6 +110,8 @@ $color-orange: #de9114
 		+s(ico-stat)
 	&.ico_upd
 		+s(ico-upd)
+	&.ico_error
+		+s(images-error)
 
 *
 	+box
@@ -1253,6 +1255,58 @@ $spinner-size: 50px !default
 	.sp-ico
 		margin: 0 auto 14px
 		display: block
+// error-p
+.error-p
+	position: relative
+	padding: 25px 6px 6px
+	font-weight: bold
+	min-width: 520px
+	font-size: 14px
+	+box-shadow(0 0 5px 2px #000)
+	+border-radius(3px)
+	+g(#4f4f4f, #b9b9b9)
+	.error-p-top
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		padding: 0 6px
+		height: 17px
+		line-height: 17px
+		font-size: 12px
+		text-align: left
+		+box-shadow(inset 0 0 0 1px rgba(#fff, .5))
+		+border-radius(3px)
+		+g(#fff, #df0909)
+	.error-p__wrap
+		position: relative
+		padding: 18px 0 2px
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			+opacity(.5)
+			background: url(../img/top-bg.png) no-repeat 50% 50%
+			background-size: 100% 100%
+	.error-p__text
+		position: relative
+		padding: 10px 10px 10px 60px
+		min-height: 117px
+		+text-shadow(1px 1px 4px #000)
+	.ico
+		position: absolute
+		top: 14px
+		left: 0
+		z-index: 1
+	.btn
+		height: 27px
+		width: 78px
+		text-transform: uppercase
+		font-weight: normal
+		font-size: 12px
 
 // footer
 .footer
