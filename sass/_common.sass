@@ -112,6 +112,10 @@ $color-orange: #de9114
 		+s(ico-upd)
 	&.ico_error
 		+s(images-error)
+	&.ico_calc-t
+		+s(images-default-arrow_left)
+	&.ico_calc-b
+		+s(images-default-arrow_right)
 
 *
 	+box
@@ -631,6 +635,8 @@ button.btn
 	position: relative
 	width: 60px
 	height: 42px
+	&:disabled
+		+opacity(.5)
 	&.is-blocked
 		font-size: 0
 		&:before
@@ -641,6 +647,8 @@ button.btn
 			+translate(-50%, -50%)
 			+opacity(0.5)
 			+s(images-lock2)
+	&.is-active
+		+g(#de8f15, #f66f25)
 
 .coef,
 .btn-more,
@@ -665,12 +673,24 @@ button.btn
 		+opacity(0.6)
 	&:active
 		+background-image(linear-gradient(#163a59, #1b456a, #163a59))
+	&.is-small
+		height: 42px
 
 // btn-more
 .btn-more
 	span
 		position: relative
 		top: -1px
+
+.btn-close-ye
+	width: 40px
+	height: 35px
+	color: #000
+	font-size: 18px
+	font-weight: bold
+	+border-radius(4px)
+	+box-shadow(1px 1px 5px #000)
+	+g(#de8e15, #f77026)
 
 // ground
 .ground
@@ -759,6 +779,16 @@ button.btn
 		font-size: 0
 		vertical-align: top
 		display: inline-block
+	.bet__wr
+		position: relative
+		.time
+			position: absolute
+			top: 2px
+			left: 0
+		.score-w
+			padding-top: 4px
+			text-align: center
+			font-size: 12px
 	.leg-up
 		margin-left: 4px
 	.coef
@@ -1308,6 +1338,185 @@ $spinner-size: 50px !default
 		font-weight: normal
 		font-size: 12px
 
+// coupon
+.coupon
+	.coupon__in
+		margin: 0 -3px
+		padding-bottom: 248px
+	.coupon__top
+		position: relative
+		margin: -7px -4px 4px -4px
+		padding: 7px 52px
+		text-align: center
+		font-size: 18px
+		letter-spacing: .8px
+		font-weight: bold
+		border-radius: 8px 8px 0 0
+		background: #de9114
+		.btn-close-ye
+			position: absolute
+			top: 2px
+			right: 10px
+	.coupon__bonus
+		padding: 13px 5px
+		text-align: center
+		font-weight: bold
+		background: #cb8e2a
+		border: 1px solid #a0a1a2
+	.coupon__row
+		position: relative
+		padding: 9px 62px 4px 4px
+		font-size: 11px
+		font-weight: bold
+		line-height: 1.2
+		border: 1px solid #a0a1a2
+		+g(#294761, #2f5374)
+		&.is-green
+			+g(#385d2b, #447d31)
+		.btn-close-ye
+			position: absolute
+			top: 50%
+			right: 5px
+			+translate(0,-50%)
+	.teams
+		text-transform: uppercase
+	.calc
+		position: absolute
+		right: 3px
+		left: 3px
+		bottom: 2px
+	.coefs
+		+clr
+	.coef-w
+		float: right
+		font-size: 12px
+
+// calc
+.calc
+	font-weight: bold
+	.calc__but
+		margin-bottom: 2px
+		font-size: 0
+		.btn
+			margin: 0 !important
+			width: auto
+			vertical-align: top
+			display: inline-block !important
+			&:first-child
+				width: 142px
+		.calc__btn
+			margin-left: 2px !important
+			padding: 0 5px
+			.ico
+				vertical-align: middle
+	.calc__wrap
+		margin: 0 -2px
+		border: 2px solid #4c5258
+		+border-radius(8px)
+		background: #7f8285
+	.calc__top
+		padding: 5px
+		height: 38px
+		text-align: center
+		border-bottom: 1px solid #4c5258
+	.calc__row
+		padding: 3px 8px 3px
+		border-top: 1px solid #4c5258
+	.calc__field
+		margin-top: 3px
+		+clr
+		&:first-child
+			margin-top: 0
+	.calc__left
+		float: left
+	.calc__right
+		float: right
+	.calc__sum
+		color: #d18f21
+		font-size: 14px
+	.calc__inf
+		padding: 0 4px
+		font-size: 12px
+		letter-spacing: -.2px
+		+border-radius(4px)
+		background: #de9114
+		&.is-red
+			background: #ff0000
+	.checkbox
+		margin: 5px 0 2px 15px 
+		font-size: 18px
+		line-height: 23px
+
+
+// spiner
+.spiner
+	position: relative
+	padding: 0 44px
+	.spiner__minus,
+	.spiner__input,
+	.spiner__plus
+		height: 40px
+		color: #fff
+		text-align: center
+		font-size: 28px
+		font-weight: bold
+		vertical-align: top
+		+border-radius(4px)
+		+g(#2d2c2c, #a0a0a0)
+		display: block
+	.spiner__minus,
+	.spiner__plus
+		position: absolute
+		top: 0
+		width: 40px
+		line-height: 1
+		span
+			position: relative
+			top: -2px
+	.spiner__minus
+		left: 0
+	.spiner__plus
+		right: 0
+	.spiner__input
+		width: 100%
+
+// checkbox
+.checkbox
+	position: relative
+	cursor: pointer
+	font-weight: normal
+	+user-select(none)
+	display: block
+	input
+		opacity: 0
+		z-index: 1
+		&:checked
+			& + span:after
+				display: block
+	input,
+	span:before
+		position: absolute
+		top: 0
+		left: 0
+		width: 23px
+		height: 23px
+	span
+		position: relative
+		padding-left: 30px
+		color: #fff
+		display: block
+		&:before
+			content: ''
+			border: 2px solid #a7a7a7
+			background: #c7c7c7
+			+box-shadow(0 1px 2px rgba(#000, .5))
+		&:after
+			position: absolute
+			content: ''
+			top: 3px
+			left: 4px
+			+s(checkbox-arr)
+			display: none
 // footer
 .footer
 	margin: -73px auto
