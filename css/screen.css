@@ -440,6 +440,9 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .l { margin-left: 4px; width: 1242px; height: 754px; display: table; }
 .l .col-left, .l .col-right { float: none; background: #7f8285; vertical-align: top; display: table-cell; }
 .l .col-left { position: relative; right: 4px; }
+.l .col-left.is-live { background: #bfc1c2; text-align: center; font-size: 0; }
+.l .col-left.is-live:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.l .col-left.is-live .info-text { font-size: 20px; color: #595b5c; vertical-align: middle; display: inline-block; }
 .l .col-right { position: relative; padding: 7px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .l .col-right .btn, .l .col-right .t-keybord .t-key, .t-keybord .l .col-right .t-key { margin: 10px 0; display: block; }
 .l .col-right .btn:first-child, .l .col-right .t-keybord .t-key:first-child, .t-keybord .l .col-right .t-key:first-child { margin-top: 0; }
