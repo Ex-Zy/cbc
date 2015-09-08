@@ -118,7 +118,9 @@ body.is-bets .l .col-left { -moz-border-radius: 8px; -webkit-border-radius: 8px;
 .btn.btn_small, .t-keybord .btn_small.t-key { height: 25px; line-height: 25px; }
 .btn.btn_green, .t-keybord .btn_green.t-key { height: 38px; line-height: 38px; font-weight: bold; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; background-image: -moz-linear-gradient(#299c00, #2d802d); background-image: -webkit-linear-gradient(#299c00, #2d802d); background-image: linear-gradient(#299c00, #2d802d); }
 .btn.btn_green:active, .t-keybord .btn_green.t-key:active { top: 0; background-image: -moz-linear-gradient(#299c00 100%, #2d802d); background-image: -webkit-linear-gradient(#299c00 100%, #2d802d); background-image: linear-gradient(#299c00 100%, #2d802d); }
+.btn.btn_yellow, .t-keybord .btn_yellow.t-key { background-image: -moz-linear-gradient(right, #dd9014, #f77026); background-image: -webkit-linear-gradient(right, #dd9014, #f77026); background-image: linear-gradient(to left, #dd9014, #f77026); }
 .btn.btn_middle, .t-keybord .btn_middle.t-key { height: 32px; line-height: 32px; }
+.btn.btn_big, .t-keybord .btn_big.t-key { height: 50px; line-height: 50px; font-size: 15px; }
 .btn.btn_foot, .t-keybord .btn_foot.t-key { height: 40px; width: 138px; line-height: 40px; }
 .btn.btn_arr-l, .t-keybord .btn_arr-l.t-key, .btn.btn_arr-r, .t-keybord .btn_arr-r.t-key, .btn.btn_arr-t, .t-keybord .btn_arr-t.t-key, .btn.btn_arr-b, .t-keybord .btn_arr-b.t-key { width: 64px; }
 .btn.btn_arr-l:before, .t-keybord .btn_arr-l.t-key:before, .btn.btn_arr-l:after, .t-keybord .btn_arr-l.t-key:after, .btn.btn_arr-r:before, .t-keybord .btn_arr-r.t-key:before, .btn.btn_arr-r:after, .t-keybord .btn_arr-r.t-key:after, .btn.btn_arr-t:before, .t-keybord .btn_arr-t.t-key:before, .btn.btn_arr-t:after, .t-keybord .btn_arr-t.t-key:after, .btn.btn_arr-b:before, .t-keybord .btn_arr-b.t-key:before, .btn.btn_arr-b:after, .t-keybord .btn_arr-b.t-key:after { position: absolute; content: ""; top: 50%; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
@@ -142,6 +144,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .menu a { position: relative; margin-right: -1px; padding: 0 30px 0 30px; height: 40px; width: 129px; color: white; text-decoration: none; overflow: hidden; -moz-border-radius: 4px 20px 0 4px; -webkit-border-radius: 4px; border-radius: 4px 20px 0 4px; background-image: -moz-linear-gradient(#292929, #7f8285); background-image: -webkit-linear-gradient(#292929, #7f8285); background-image: linear-gradient(#292929, #7f8285); display: block; }
 .menu a:active, .menu a.is-active { background-image: -moz-linear-gradient(left, #00a857, #009320); background-image: -webkit-linear-gradient(left, #00a857, #009320); background-image: linear-gradient(to right, #00a857, #009320); }
 .menu a:active .events__left, .menu a.is-active .events__left { color: yellow; }
+.menu a.is-disabled { opacity: 0.5; cursor: default; }
 .menu a .ico { position: absolute; top: 50%; left: 12px; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 .menu .status { position: absolute; top: 13px; right: -48px; width: 100%; -ms-transform: rotate(55deg); -webkit-transform: rotate(55deg); transform: rotate(55deg); }
 
@@ -206,6 +209,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .btn-more span { position: relative; top: -1px; }
 
 .btn-close-ye { width: 40px; height: 35px; color: black; font-size: 18px; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-box-shadow: 1px 1px 5px black; -webkit-box-shadow: 1px 1px 5px black; box-shadow: 1px 1px 5px black; background-image: -moz-linear-gradient(#de8e15, #f77026); background-image: -webkit-linear-gradient(#de8e15, #f77026); background-image: linear-gradient(#de8e15, #f77026); }
+.btn-close-ye:disabled { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
 
 .ground { font-size: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
 .ground .ground__item { line-height: 27px; font-size: 15px; letter-spacing: 0.4px; vertical-align: top; display: inline-block; }
@@ -244,12 +248,14 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .bet .score { position: absolute; top: 0; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 .bet .time { text-transform: uppercase; }
 
-.points, .total, .leg-up { width: 136px; font-size: 0; vertical-align: top; display: inline-block; }
-.points .row, .total .row, .leg-up .row { margin: 0; }
-.points .row + .row, .total .row + .row, .leg-up .row + .row { margin-top: 8px; }
+.points, .total, .leg-up, .allowance { width: 136px; font-size: 0; vertical-align: top; display: inline-block; }
+.points .row, .total .row, .leg-up .row, .allowance .row { margin: 0; }
+.points .row + .row, .total .row + .row, .leg-up .row + .row, .allowance .row + .row { margin-top: 8px; }
 
 .total { margin-right: 4px; width: 134px; }
 .total .total__ind { font-size: 15px; width: 37px; height: 42px; line-height: 42px; text-align: center; vertical-align: top; display: inline-block; }
+
+.allowance { margin-left: 5px; width: 90px; }
 
 .score { width: 106px; height: 22px; line-height: 22px; color: darkgreen; text-align: center; font-size: 16px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; -moz-box-shadow: 2px 2px 6px black; -webkit-box-shadow: 2px 2px 6px black; box-shadow: 2px 2px 6px black; background: #de9114; }
 
@@ -389,7 +395,13 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .coupon .coupon__bonus { padding: 13px 5px; text-align: center; font-weight: bold; background: #cb8e2a; border: 1px solid #a0a1a2; }
 .coupon .coupon__row { position: relative; padding: 9px 62px 4px 4px; font-size: 11px; font-weight: bold; line-height: 1.2; border: 1px solid #a0a1a2; background-image: -moz-linear-gradient(#294761, #2f5374); background-image: -webkit-linear-gradient(#294761, #2f5374); background-image: linear-gradient(#294761, #2f5374); }
 .coupon .coupon__row.is-green { background-image: -moz-linear-gradient(#385d2b, #447d31); background-image: -webkit-linear-gradient(#385d2b, #447d31); background-image: linear-gradient(#385d2b, #447d31); }
-.coupon .coupon__row .btn-close-ye { position: absolute; top: 50%; right: 5px; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
+.coupon .coupon__row.is-gray { background-image: -moz-linear-gradient(#3b3b3c, #969798); background-image: -webkit-linear-gradient(#3b3b3c, #969798); background-image: linear-gradient(#3b3b3c, #969798); }
+.coupon .coupon__row.is-disabled { font-size: 12px; background: #494a4c; }
+.coupon .coupon__row .btn-close-ye { position: absolute; top: 5px; right: 5px; }
+.coupon .coupon__text { margin-right: -15px; text-align: center; line-height: 35px; }
+.coupon .coupon__field { margin-top: 5px; line-height: 23px; *zoom: 1; }
+.coupon .coupon__field:after { content: " "; display: table; clear: both; }
+.coupon .coupon__field .checkbox { float: right; margin-right: -4px; width: 23px; }
 .coupon .teams { text-transform: uppercase; }
 .coupon .calc { position: absolute; right: 3px; left: 3px; bottom: 2px; }
 .coupon .coefs { *zoom: 1; }
@@ -422,8 +434,9 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .spiner .spiner__minus { left: 0; }
 .spiner .spiner__plus { right: 0; }
 .spiner .spiner__input { width: 100%; }
+.spiner .spiner__text { padding-top: 5px; font-size: 12px; text-align: center; }
 
-.checkbox { position: relative; cursor: pointer; font-weight: normal; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; display: block; }
+.checkbox { position: relative; min-height: 23px; cursor: pointer; font-weight: normal; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; display: block; }
 .checkbox input { opacity: 0; z-index: 1; }
 .checkbox input:checked + span:after { display: block; }
 .checkbox input, .checkbox span:before { position: absolute; top: 0; left: 0; width: 23px; height: 23px; }
@@ -436,6 +449,27 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .footer .btn, .footer .t-keybord .t-key, .t-keybord .footer .t-key, .footer .pages { margin-left: 10px; }
 .footer .btn:first-child, .footer .t-keybord .t-key:first-child, .t-keybord .footer .t-key:first-child, .footer .pages:first-child { margin-left: 0; }
 .footer .pages .btn, .footer .pages .t-keybord .t-key, .t-keybord .footer .pages .t-key { margin: 0; }
+
+.slide.is-tennis { position: absolute; top: 0; left: 0; right: 0; bottom: 0; padding: 5px 20px 5px 5px; }
+.slide.is-tennis .bets { padding-left: 5px; height: 100%; background: #3c3e3f; }
+.slide.is-tennis .bet { padding: 0; background: none; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+.slide.is-tennis .bet__left { padding: 6px; width: 630px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; background-image: -moz-linear-gradient(#163957, #163957); background-image: -webkit-linear-gradient(#163957, #163957); background-image: linear-gradient(#163957, #163957); }
+.slide.is-tennis .bet__right { width: 330px; }
+.slide.is-tennis .bet__time { float: left; width: 115px; font-size: 11px; }
+.slide.is-tennis .team { width: auto; height: auto; line-height: 30px; padding-left: 2px; display: inline-block; }
+.slide.is-tennis .team:first-child { padding-right: 2px; }
+.slide.is-tennis .score { position: relative; left: auto; width: 6px; height: auto; line-height: 28px; color: white; -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -webkit-transform: translate(0, 0); transform: translate(0, 0); -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; background: none; display: inline-block; }
+.slide.is-tennis .bet__more { margin-left: 3px; }
+.slide.is-tennis .ground { margin-left: -5px; padding-left: 5px; background: #4c5258; }
+.slide.is-tennis .ground__item { line-height: 18px; }
+.slide.is-tennis .ground__item:first-child { padding-left: 0; width: 120px; }
+.slide.is-tennis .ground__item:nth-child(2) { padding-left: 0; width: 515px; }
+.slide.is-tennis .ground__item:nth-child(4) { width: 100px; }
+.slide.is-tennis .ground__item:nth-child(4) .ground__ind:first-child { color: #de9114; }
+.slide.is-tennis .ground__item .ground__ind { line-height: 18px; }
+.slide.is-tennis .points, .slide.is-tennis .allowance { *zoom: 1; }
+.slide.is-tennis .points:after, .slide.is-tennis .allowance:after { content: " "; display: table; clear: both; }
+.slide.is-tennis .points .coef:last-child, .slide.is-tennis .allowance .coef:last-child { float: right; }
 
 .l { margin-left: 4px; width: 1242px; height: 754px; display: table; }
 .l .col-left, .l .col-right { float: none; background: #7f8285; vertical-align: top; display: table-cell; }

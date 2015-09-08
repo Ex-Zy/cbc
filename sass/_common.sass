@@ -363,9 +363,15 @@ body
 		&:active
 			top: 0
 			+background-image(linear-gradient($light-green 100%, $green))
+	&.btn_yellow
+		+background-image(linear-gradient(to left, #dd9014, #f77026))
 	&.btn_middle
 		height: 32px
 		line-height: 32px
+	&.btn_big
+		height: 50px
+		line-height: 50px
+		font-size: 15px
 	&.btn_foot
 		height: 40px
 		width: 138px
@@ -451,6 +457,9 @@ button.btn
 			+background-image(linear-gradient(left, #00a857, #009320))
 			.events__left
 				color: $color-yellow
+		&.is-disabled
+			opacity: .5
+			cursor: default
 		.ico
 			position: absolute
 			top: 50%
@@ -691,6 +700,8 @@ button.btn
 	+border-radius(4px)
 	+box-shadow(1px 1px 5px #000)
 	+g(#de8e15, #f77026)
+	&:disabled
+		+opacity(.5)
 
 // ground
 .ground
@@ -827,7 +838,8 @@ button.btn
 // .points total leg-up
 .points,
 .total,
-.leg-up
+.leg-up,
+.allowance
 	width: 136px
 	font-size: 0
 	vertical-align: top
@@ -848,6 +860,10 @@ button.btn
 		text-align: center
 		vertical-align: top
 		display: inline-block
+
+.allowance
+	margin-left: 5px
+	width: 90px
 
 // score
 .score
@@ -1373,11 +1389,27 @@ $spinner-size: 50px !default
 		+g(#294761, #2f5374)
 		&.is-green
 			+g(#385d2b, #447d31)
+		&.is-gray
+			+g(#3b3b3c, #969798)
+		&.is-disabled
+			font-size: 12px
+			background: #494a4c
 		.btn-close-ye
 			position: absolute
-			top: 50%
+			top: 5px
 			right: 5px
-			+translate(0,-50%)
+	.coupon__text
+		margin-right: -15px
+		text-align: center
+		line-height: 35px
+	.coupon__field
+		margin-top: 5px
+		line-height: 23px
+		+clr
+		.checkbox
+			float: right
+			margin-right: -4px
+			width: 23px
 	.teams
 		text-transform: uppercase
 	.calc
@@ -1479,10 +1511,15 @@ $spinner-size: 50px !default
 		right: 0
 	.spiner__input
 		width: 100%
+	.spiner__text
+		padding-top: 5px
+		font-size: 12px
+		text-align: center
 
 // checkbox
 .checkbox
 	position: relative
+	min-height: 23px
 	cursor: pointer
 	font-weight: normal
 	+user-select(none)
@@ -1517,6 +1554,8 @@ $spinner-size: 50px !default
 			left: 4px
 			+s(checkbox-arr)
 			display: none
+
+
 // footer
 .footer
 	margin: -73px auto
@@ -1537,7 +1576,79 @@ $spinner-size: 50px !default
 		.btn
 			margin: 0
 
-
+// slide
+.slide
+	&.is-tennis
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		padding: 5px 20px 5px 5px
+		.bets
+			padding-left: 5px
+			height: 100%
+			background: #3c3e3f
+		.bet
+			padding: 0
+			background: none
+			+box-shadow(none)
+		.bet__left
+			padding: 6px
+			width: 630px
+			+border-radius(8px)
+			+g(#163957, #163957)
+		.bet__right
+			width: 330px
+		.bet__time
+			float: left
+			width: 115px
+			font-size: 11px
+		.team
+			width: auto
+			height: auto
+			line-height: 30px
+			padding-left: 2px
+			display: inline-block
+			&:first-child
+				padding-right: 2px
+		.score
+			position: relative
+			left: auto
+			width: 6px
+			height: auto
+			line-height: 28px
+			color: #fff
+			+translate(0,0)
+			+box-shadow(none)
+			background: none
+			display: inline-block
+		.bet__more
+			margin-left: 3px
+		.ground
+			margin-left: -5px
+			padding-left: 5px
+			background: #4c5258
+		.ground__item
+			line-height: 18px
+			&:first-child
+				padding-left: 0
+				width: 120px
+			&:nth-child(2)
+				padding-left: 0
+				width: 515px
+			&:nth-child(4)
+				width: 100px
+				.ground__ind:first-child
+					color: #de9114
+			.ground__ind
+				line-height: 18px
+		.points,
+		.allowance
+			+clr
+			.coef
+				&:last-child
+					float: right
 
 
 
