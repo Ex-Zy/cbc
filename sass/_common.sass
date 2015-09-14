@@ -697,6 +697,21 @@ button.btn
 			+s(images-lock2)
 	&.is-active
 		+g(#de8f15, #f66f25)
+	&.is-up,
+	&.is-down
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			+opacity(0.3)
+			+translate(-50%,-50%)
+	&.is-up
+		&:before
+			+arr(35,22,#fff,t)
+	&.is-down
+		&:before
+			+arr(35,22,#fff,b)
 
 .coef,
 .btn-more,
@@ -1455,10 +1470,13 @@ $spinner-size: 50px !default
 .coupon
 	.coupon__in
 		margin: 0 -3px
-		padding-bottom: 248px
+		max-height: 438px
+		overflow-y: auto
+		&::-webkit-scrollbar
+			display: none
 	.coupon__top
 		position: relative
-		margin: -7px -4px 4px -4px
+		margin: -7px -7px 4px -7px
 		padding: 7px 52px
 		text-align: center
 		font-size: 18px
@@ -1524,7 +1542,7 @@ $spinner-size: 50px !default
 .calc
 	font-weight: bold
 	.calc__but
-		margin-bottom: 2px
+		margin: 0 -2px 2px 0
 		font-size: 0
 		.btn
 			margin: 0 !important
