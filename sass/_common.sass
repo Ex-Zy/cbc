@@ -120,6 +120,8 @@ $color-orange: #de9114
 		+s(ico-football)
 	&.ico_ball-tennis
 		+s(ball-tennis)
+	&.ico_datepicker
+		+s(ico-datepicker)
 
 *
 	+box
@@ -323,6 +325,13 @@ body
 	border: 1px solid $light-gray
 	background: $bg-input
 	display: inline-block
+
+// input-white
+.input-white
+	padding: 0 10px
+	height: 25px
+	color: #000
+	background: #d9dadb
 	
 // select
 .select
@@ -530,6 +539,8 @@ button.btn
 	text-align: center
 	letter-spacing: 0.9px
 	background: $green-menu
+	&.is-red
+		background: #f45151
 
 // events
 .events
@@ -1200,6 +1211,7 @@ button.btn
 	margin: 5px 19px 5px 5px
 	color: #000
 	max-height: 744px
+	max-width: 980px
 	overflow: auto
 	&::-webkit-scrollbar
 		display: none
@@ -1208,37 +1220,62 @@ button.btn
 		margin-right: 28px
 		border: 1px solid #969fa7
 		background: #b9babb
-	.jspVerticalBar
-		top: 1px
-		right: 1px
-		bottom: 1px
-		height: auto
-		padding: 0 4px
-		width: 32px
-		+box-shadow(1px 0 0 rgba(#fff, .1), 0 1px 0 rgba(#fff, .1), 0 -1px 0 rgba(#fff, .1))
-		+g(#a0a0a0, #535353)
-		+box
-	.jspTrack
-		background: transparent
-	.jspArrow
-		position: relative
-		background: transparent
-		&:before
-			position: absolute
-			content: ''
-			top: 50%
-			left: 50%
-			+translate(-50%,-50%)
-		&.jspArrowUp
-			&:before
-				+s(sel-arr-top)
-		&.jspArrowDown
-			&:before
-				+s(sel-arr)
+
+.jspHorizontalBar
+	left: 0
+	right: 0
+	width: auto
+	padding: 1px 0 2px
+	height: 32px
+	border: 1px solid #a7a7a7
+	+border-radius(2px)
+	background: transparent
+	+box
+	.jspDrag
+		border-radius: 5px
+		+g(#cacaca, #8d8d8d)
+		+box-shadow(0 0 0 1px rgba(#fff, .3))
+	.jspArrowRight
+		margin-left: -2px
+.jspVerticalBar
+	top: 1px
+	right: 1px
+	bottom: 1px
+	height: auto
+	padding: 0 4px
+	width: 32px
+	+box-shadow(1px 0 0 rgba(#fff, .1), 0 1px 0 rgba(#fff, .1), 0 -1px 0 rgba(#fff, .1))
+	+g(#a0a0a0, #535353)
+	+box
 	.jspDrag
 		border-radius: 5px
 		+gh(#cacaca, #8d8d8d)
 		+box-shadow(0 0 0 1px rgba(#fff, .3))
+.jspTrack
+	background: transparent
+.jspArrow
+	position: relative
+	background: transparent
+	&:before
+		position: absolute
+		content: ''
+		top: 50%
+		left: 50%
+		+translate(-50%,-50%)
+	&.jspArrowUp
+		&:before
+			+s(sel-arr-top)
+	&.jspArrowDown
+		&:before
+			+s(sel-arr)
+	&.jspArrowLeft
+		&:before
+			+s(sel-arr-left)
+	&.jspArrowRight
+		&:before
+			+s(sel-arr-right)
+	&.jspDisabled
+		background: transparent
 
 .title
 	text-transform: uppercase
@@ -2029,7 +2066,6 @@ $spinner-size: 50px !default
 		&:before
 			+arr(35,22,#fff,b)
 
-
 // card
 .card
 	position: relative
@@ -2053,11 +2089,228 @@ $spinner-size: 50px !default
 		position: relative
 		z-index: 1
 
+// transactio
+.transaction
+	padding: 30px 65px 30px 50px
 
+// line-wr
+.line-wr
+	position: relative
+	padding: 14px 5px 5px
+	color: #000
+	border: 1px solid #a9a9a9
+	+border-radius(3px)
+	.line-wr__title
+		position: absolute
+		top: -9px
+		left: 4px
+		padding: 0 4px
+		line-height: 1
+		color: #000
+		background: #7f8285
+		display: inline-block
+	.line-wr__text
+		margin-bottom: 10px
+		padding-left: 10px
+		color: #fff
+	.table
+		td
+			&:before
+				position: absolute
+				content: ''
+				top: 5px
+				right: -1px
+				bottom: 5px
+				width: 1px
+				background: rgba(#fff, .5)
+			&:first-child
+				&:before
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					width: auto
+			&:last-child
+				&:before
+					right: 0
 
+// table
+.table
+	color: #000
+	border: 1px solid #bababa
+	&.table_wr
+		td
+			&:nth-child(2)
+				padding: 0
+				width: 41px
+			&:before
+				position: absolute
+				content: ''
+				top: 5px
+				right: -1px
+				bottom: 5px
+				width: 1px
+				background: rgba(#fff, .5)
+			&:first-child
+				&:before
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					width: auto
+			&:last-child
+				&:before
+					right: 0
+			&.is-active
+				position: relative
+				&:after
+					position: absolute
+					content: ''
+					top: 50%
+					left: 7px
+					+translate(0,-50%)
+					+arr(6,10,#717171,r)
+	tr
+		&:nth-child(even)
+			background: #ccc
+	th
+		padding: 20px 8px 10px
+		text-align: left
+		border-bottom: 1px solid #bababa
+		border-left: 1px solid #bababa
+		+g(#c8c8c8, #838689)
+		&:first-child
+			border-left: none
+	td
+		position: relative
+		padding: 0 5px
+		height: 35px
+		line-height: 35px
+		span
+			line-height: 1.4
+			vertical-align: middle
+			display: inline-block
+	
+// tickets
+.tickets
+	padding-right: 18px
+	.tickets__in
+		height: 775px
+		max-width: 980px
+		overflow-x: auto
+	.tickets__wrap
+		width: 602px
+		margin: 0 auto
+		td
+			&:last-child
+				&:before
+					display: none
+	.tickets__top
+		margin-top: 5px
+	.tickets__all
+		margin-bottom: 10px
+	.tickets__top,
+	.tickets__all
+		.btn
+			float: right
+			margin-left: 5px
+			width: 180px
+	.tickets__row
+		margin: 10px 0
+		line-height: 25px
+		+clr
+		&:first-child
+			margin-top: 0
+	.tickets__col
+		float: left
+		text-align: right
+		width: 50%
+	.tickets__table	
+		margin: 8px 0
+		width: 100%
+		min-width: 1060px
+		td
+			padding-left: 15px
+			height: 30px
+			line-height: 30px
+			&:last-child
+				width: 105px
+			&:nth-child(odd)
+				font-weight: bold
+	.tickets__status
+		font-weight: bold
+		&.is-red
+			color: #ff0000
+		&.is-yellow
+			color: #ffff00
+	.tickets__all
+		+clr
+		.tickets__text
+			float: left
+			width: 410px
+			font-weight: bold
+			font-size: 14px
+			line-height: 25px
+	.datepicker,
+	.input-white
+		float: right
+		margin-left: 5px
+		width: 180px
+	.table
+		margin-left: 5px
+		&.is-mod
+			min-width: 1060px
+			tr
+				background: #fff
+				&:nth-child(even)
+					background: #ccc
+		td
+			&:first-child
+				padding: 0
+		.btn
+			padding: 0
+			font-size: 12px
+			vertical-align: middle
+	.status
+		width: 100%
+		text-transform: initial
+		border: 1px solid #bebebe
+	.checkbox
+		display: inline-block
+		span
+			padding: 0 25px 0 0
+			&:after
+				top: 9px
+				right: 4px
+				left: auto
+				+sr(checkbox-arr)
+		span:before,
+		input
+			position: absolute
+			content: ''
+			top: 50%
+			+translate(0,-50%)
+			left: auto
+			right: 0
+			width: 16px
+			height: 16px
 
-
-
+.datepicker
+	position: relative
+	padding-right: 23px
+	.ico
+		position: absolute
+		right: 1px
+		top: 50%
+		cursor: pointer
+		+translate(0,-50%)
+	input
+		padding: 0 5px
+		border: 1px solid #a7a7a7
+		height: 25px
+		width: 100%
+		color: #000
+		display: block
 
 
 
