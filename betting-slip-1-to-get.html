@@ -719,7 +719,7 @@
 					<!-- calc -->
 					<div class="calc">
 						<div class="calc__but">
-							<button class="btn btn_middle" type="button">Systemwette</button>
+							<button class="btn btn_middle btn_system" type="button">System</button>
 							<button class="btn btn_middle calc__btn" disabled>
 								<i class="ico ico_calc-t"></i>
 							</button>
@@ -727,12 +727,20 @@
 								<i class="ico ico_calc-b"></i>
 							</button>
 						</div>
+						<div class="calc__system">
+                          <div class="calc__item"><input type="checkbox" id="checkbox-id1" /> <label class="calc__label" for="checkbox-id1">1 aus 6</label></div>
+                          <div class="calc__item"><input type="checkbox" id="checkbox-id2" /> <label class="calc__label" for="checkbox-id2">2 aus 6</label></div>
+                          <div class="calc__item"><input type="checkbox" id="checkbox-id3" /> <label class="calc__label" for="checkbox-id3">3 aus 6</label></div>
+                          <div class="calc__item"><input type="checkbox" id="checkbox-id4" /> <label class="calc__label" for="checkbox-id4">4 aus 6</label></div>
+                          <div class="calc__item"><input type="checkbox" id="checkbox-id5" /> <label class="calc__label" for="checkbox-id5">5 aus 6</label></div>
+					    </div>
 						<div class="calc__wrap">
 							<div class="calc__top">Kombiwette</div>
 							<div class="calc__row">
+							    
 								<div class="calc__field">
 									<div class="calc__left">Tipps: 3</div>
-									<div class="calc__right">Wetten: 1</div>
+									<div class="calc__right">Bets: 1</div>
 								</div>
 								<div class="calc__field">
 									<div class="calc__left">Gesamtquote</div>
@@ -773,7 +781,8 @@
 	<div class="col-left">
 		<button class="btn btn_foot btn_arr-l" type="button" disabled><ico class="ico ico_arr-left"></ico></button>
 		<button class="btn btn_foot btn_arr-r" type="button" disabled><ico class="ico ico_arr-right"></ico></button>
-		<button class="btn btn_foot " type="button">Complete offer</button>
+		<button class="btn btn_foot autowidth disabled ml" type="button">Daily Offer</button>
+		<button class="btn btn_foot autowidth active" type="button">Complete Offer</button>
 		<button class="btn btn_foot " type="button" disabled>Back</button>
 		<button class="btn btn_foot " type="button">Cancel</button>
 		<div class="pages">

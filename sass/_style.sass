@@ -1,0 +1,291 @@
+.games__flag 
+    position: absolute
+    bottom: 0px
+    left: 0px
+
+.button 
+    &.btn 
+        &.btn_foot 
+            &.autowidth 
+                width: auto
+                min-width: 138px
+            
+button 
+    &.active 
+        &.btn 
+            &.btn_foot 
+                &.autowidth 
+                    border: 2px solid #555657
+                    border-radius: 7px
+                    line-height: 30px
+                    &.ml 
+                        margin-right: -18px
+                        z-index: 100
+    &.disabled 
+        &.btn 
+            &.btn_foot 
+                &.autowidth 
+                    background: #555657
+                    color: #c7c8c8
+                    &.ml 
+                        margin-right: -25px
+                    
+.blue 
+    background-image: linear-gradient(#14334E, #285276)
+
+.btn_system 
+    background: #DE9114
+
+.calc__system 
+    padding: 10px
+    border: 2px solid #4C5258
+    border-radius: 5px
+    margin-bottom: 5px
+    background-color: #7f8285
+    .calc__item 
+        display: inline-block
+        margin-right: 20px
+        height: 30px
+        .calc__label 
+            font-size: 20px
+            color: #CDD1DA
+
+
+.footer 
+    b 
+        font-size: 13px
+    
+
+.odds__tabs
+    overflow: hidden
+    width: auto
+    margin: 0
+    padding: 0
+    list-style: none
+    li 
+        float: left
+        margin: 0 .5em 0 0
+        width: auto
+        font-weight: bold
+    a 
+        position: relative
+        margin-right: -6px
+        padding: .7em 3.5em
+        float: left
+        text-decoration: none
+        height: 35px
+        width: auto
+        color: #FFF
+        text-decoration: none
+        overflow: hidden
+        border-radius: 4px 20px 0px 0px
+        background-image: linear-gradient(#292929, #7F8285)
+        &:focus 
+            s
+                outline: 0
+    ul 
+        position: absolute
+        left: 10px
+        line-height: 20px
+        font-weight: bold
+        font-size: 13px
+    
+    b 
+        left: 110px
+        line-height: 20px
+        font-weight: bold
+        font-size: 15px
+    
+    span 
+        position: absolute
+        left: 310px
+        line-height: 20px
+        font-weight: bold
+        font-size: 13px
+    p, b
+        color: #26A023
+        line-height: 20px
+        font-weight: bold
+        font-size: 15px
+        display: inline-block
+        width: auto
+        margin-left: 10px
+    .active
+        p, p::after
+            color: #FFFF00
+        p, p::after
+            color: #FFFF00
+        a, a::after
+            background: #4C5258
+            z-index: 3
+            width: auto
+
+.odds__content
+    background: #4C5258
+    width: auto
+    padding: 1px
+    height: auto
+    position: relative
+    z-index: 2
+    border-radius: 0 5px 5px 5px
+    box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5)
+    .center 
+        width: 100%
+    .conteiner 
+        display: block !important
+        width: 100%
+        background-color: #fff
+        height: auto
+    .conteiner-row 
+        display: inline-block !important
+        width: 100%
+        background-color: #4C5258
+        height: auto
+        .col1 
+            display: inline-block !important
+            width: 40%
+            height: 50px
+            padding: 17px
+            font-weight: bold
+            vertical-align: top
+        .col2 
+            display: inline-block !important
+            width: auto
+            height: auto
+            vertical-align: top
+            margin: 5px
+        &.rowgrey 
+            background-color: #7F8285
+        .origin 
+            display: inline-block !important
+            width: 55%
+            height: auto
+            .mdark 
+                padding-left: 15px
+                margin-right: 5px
+                width: 100px
+                height: 42px
+                font-size: 15px
+                line-height: 43px
+                font-weight: bold
+                vertical-align: top
+                border-radius: 6px
+                background-image: linear-gradient(#2C5C1B, #3D8325)
+                display: inline-block !important
+        
+.ticker 
+    float: left
+    max-width: 1300px
+    border-radius: 0px
+    width: 80%
+        
+table 
+    width: 100%
+    border-collapse: collapse
+    &.is-yellow 
+        border-bottom: 0px solid #fff !important
+    
+
+td 
+    padding: 5px
+    padding-right: 10px
+    line-height: 20px
+    font-weight: bold
+    font-size: 13px
+    position: relative
+    &.yellcol 
+        margin-left: 7px
+        span 
+            font-size: 12px
+            margin-left: 180px
+            text-transform: none
+        
+    
+    &.frans 
+        span 
+            font-size: 12px
+            text-align: left
+            margin-right: 150px
+            text-transform: none
+        
+    
+
+    
+
+td.yellcol, td.yellcol a 
+    color: #FDFF00 !important
+    text-align: left
+    margin-left: 2px
+
+tr 
+    &.yellow 
+        background-image: linear-gradient(#87782F, #A2955A)!important
+        height: 25px
+    
+    &.green 
+        background-image: linear-gradient(#285516, #34761B)!important
+    
+
+.facehold 
+    width: 90px
+    margin: auto
+    padding-left: 3px
+
+.period 
+    width: 40px
+    margin-left: 20px
+
+
+b 
+    &.buttonr 
+        color: #FFFFD8
+        position: absolute
+        width: 250px
+        left: 78px
+        top: 10px
+    
+    &.buttonl 
+        color: #FFFFD8
+        position: absolute
+        width: 250px
+        left: -65px
+        top: 10px
+    
+
+input[type=checkbox]:checked 
+    & ~ b 
+        &.buttonl 
+            color: red
+        
+    
+
+.page 
+    width: 10%
+    min-width: 60px
+    float: left
+    vertical-align: top
+    height: auto
+    padding: 10px
+    font-weight: bold
+
+.clearfix 
+    &:after 
+        content: ''
+        display: table
+        clear: both
+    
+
+.clock 
+    width: 10%
+    min-width: 20px
+    float: right
+    height: 40px
+    padding: 10px
+    font-weight: bold
+
+header 
+    height: auto
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+

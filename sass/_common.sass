@@ -256,6 +256,7 @@ body
 		position: relative
 	.live-block__bot
 		font-size: 11px
+		line-height: 20px
 
 // balance
 .balance
@@ -578,7 +579,6 @@ button.btn
 	vertical-align: top
 	display: inline-block
 	.pages__text
-		width: 84px
 		height: 40px
 		line-height: 40px
 		font-size: 24px
@@ -629,6 +629,7 @@ button.btn
 		text-decoration: none
 		vertical-align: bottom
 		display: inline-block
+		position: relative
 	.games__in
 		line-height: 1
 		vertical-align: middle
@@ -895,7 +896,6 @@ button.btn
 		overflow: hidden
 		white-space: nowrap
 		text-overflow: ellipsis
-		text-transform: uppercase
 		vertical-align: top
 		display: inline-block
 		&:first-child
@@ -1690,9 +1690,18 @@ $spinner-size: 50px !default
 	.pages
 		.btn
 			margin: 0
+		.pages__text
+			width: 84px
+
 
 // slide
 .slide
+	.score
+		.ico
+			position: absolute
+			top: 50%
+			left: 4px
+			+translate(0,-50%)
 	&.is-tennis
 		position: absolute
 		top: 0
@@ -1777,6 +1786,7 @@ $spinner-size: 50px !default
 		.points
 			+clr
 			.coef
+				float: left
 				&:last-child
 					float: right
 		.score
@@ -2046,7 +2056,6 @@ $spinner-size: 50px !default
 			max-width: 100px
 		.team__overf
 			margin-right: 6px
-			max-width: 100px
 			overflow: hidden
 			white-space: nowrap
 			text-overflow: ellipsis
