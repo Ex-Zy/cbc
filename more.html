@@ -3,6 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<title>Template</title>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script>$(document).ready(function() {
+	$("#content div").hide(); // Скрываем содержание
+	$("#tabs li:first").attr("id","current"); // Активируем первую закладку
+	$("#content div:first").fadeIn(); // Выводим содержание
+
+    $('#tabs a').click(function(e) {
+        e.preventDefault();
+        $("#content div").hide(); //Скрыть все сожержание
+        $("#tabs li").attr("id",""); //Сброс ID
+        $(this).parent().attr("id","current"); // Активируем закладку
+        $('#' + $(this).attr('title')).fadeIn(); // Выводим содержание текущей закладки
+    });
+})();
+</script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<!-- theme color for android 5.0 -->
@@ -138,287 +154,89 @@
 				<div class="wrapper">
 					<!-- slide -->
 					<div class="slide">
-						<!-- more -->
-						<div class="more">
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Tipp</div>
-										<button class="coef" type="button">5.50</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Tipp</div>
-										<button class="coef" type="button">5.50</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Tipp</div>
-										<button class="coef" type="button">5.50</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Tipp</div>
-										<button class="coef" type="button">5.50</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Tipp</div>
-										<button class="coef" type="button">5.50</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Tipp</div>
-										<button class="coef" type="button">5.50</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Tipp</div>
-										<button class="coef" type="button">5.50</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Tipp</div>
-										<button class="coef" type="button">5.50</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Tipp</div>
-										<button class="coef" type="button">5.50</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-							<div class="more__item">
-								<div class="topic">
-									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit </span>
-									<span>(rt)</span>
-									<span>(0:1)</span>
-								</div>
-								<div class="row">
-									<div class="col">
-										<div class="mark">Winiget</div>
-										<button class="coef" type="button">2,10</button>
-									</div>
-									<div class="col">
-										<div class="mark">Tipp</div>
-										<button class="coef" type="button">5.50</button>
-									</div>
-									<div class="col">
-										<div class="mark">Mehr</div>
-										<button class="coef" type="button">2.10</button>
-									</div>
-								</div>
-							</div>
-						</div>
+					<ul class="odds__tabs">
+					    <li class="active"><a href="#" title="tab1">TONOLAS<p>3</p></a></li>
+					    <li><a href="#" title="tab2">TONOLAS<p>4</p></a></li>
+					    <li><a href="#" title="tab3">TONOLAS<p>2</p></a></li>
+					    <li><a href="#" title="tab4">TONOLAS<p>1</p></a></li>
+					    <li><a href="#" title="tab5">SPECIAL BETS <p>3</p></a></li>
+					</ul>
+
+					<div class="odds__content">
+					    <div>
+					    	<div class="conteiner">
+					    		<div class="conteiner-row">
+					    			<div class="col1">3way (excl. OT)</div>
+					    			<div class="origin">
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>					    			
+					    			</div>			    			
+					    			
+					    		</div>
+					    		<div class="conteiner-row rowgrey">
+					    			<div class="col1">Двойной шанс</div>
+					    			<div class="origin">
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>					    			
+					    			</div>			    			
+					    			
+					    		</div>
+					    		<div class="conteiner-row">
+					    			<div class="col1">3way (excl. OT)</div>
+					    			<div class="origin">
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+
+					    			</div>			    			
+					    			
+					    		</div>
+					    		<div class="conteiner-row rowgrey">
+					    			<div class="col1">Двойной шанс</div>
+					    			<div class="origin">
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+
+					    			</div>			    			
+					    			
+					    		</div>
+					    		<div class="conteiner-row">
+					    			<div class="col1">Двойной шанс</div>
+					    			<div class="origin">
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>					    			
+					    			</div>			    			
+					    			
+					    		</div>
+					    		<div class="conteiner-row rowgrey">
+					    			<div class="col1">Двойной шанс</div>
+					    			<div class="origin">
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>					    			
+					    			</div>			    			
+					    			
+					    		</div>
+					    	</div>
+					    	<div class="conteiner-row">
+					    			<div class="col1">3way (excl. OT)</div>
+					    			<div class="origin">
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+					    			<div class="col2"><div class="mdark" >1X</div><button type="button" class="coef">1,30</button></div>
+
+					    			</div>			    			
+					    			
+					    		</div>
+					    		</div>
+					    </div>				
 					</div>
 				</div>
 			</div>
@@ -440,7 +258,8 @@
 	<div class="col-left">
 		<button class="btn btn_foot btn_arr-l" type="button"><ico class="ico ico_arr-left"></ico></button>
 		<button class="btn btn_foot btn_arr-r" type="button"><ico class="ico ico_arr-right"></ico></button>
-		<button class="btn btn_foot " type="button">Complete offer</button>
+		<button class="btn btn_foot autowidth disabled ml" type="button">Daily Offer</button>
+		<button class="btn btn_foot autowidth active" type="button">Complete Offer</button>
 		<button class="btn btn_foot " type="button" disabled>Back</button>
 		<button class="btn btn_foot " type="button">Cancel</button>
 		<div class="pages">

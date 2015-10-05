@@ -5,11 +5,14 @@
 	<title>Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
+	<script src="js/jquery-2.1.4.min.js"></script>
+
 	<!-- theme color for android 5.0 -->
 	<meta name="theme-color" content="#fff"> 
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
 	<link rel="stylesheet" media="all" href="css/screen.css" >
+	
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
 <body class="is-bets">
@@ -628,10 +631,11 @@
 	<div class="col-left">
 		<button class="btn btn_foot btn_arr-l" type="button" disabled><ico class="ico ico_arr-left"></ico></button>
 		<button class="btn btn_foot btn_arr-r" type="button" disabled><ico class="ico ico_arr-right"></ico></button>
-		<button class="btn btn_foot " type="button">Complete offer</button>
-		<button class="btn btn_foot " type="button" disabled>Back</button>
-		<button class="btn btn_foot " type="button">Cancel</button>
-		<div class="pages">
+		<button class="btn btn_foot autowidth active ml" type="button">Daily Offer</button>
+		<button class="btn btn_foot autowidth disabled" type="button">Complete Offer</button>
+		<button class="btn btn_foot" type="button" disabled>Back</button>
+		<button class="btn btn_foot autowidth" type="button">Cancel</button>
+			<div class="pages">
 			<button class="btn btn_foot btn_arr-t" type="button" disabled><i class="ico ico_arr-top"></i></button>
 			<div class="pages__text">1/5</div>
 			<button class="btn btn_foot btn_arr-b" type="button"><i class="ico ico_arr-bot"></i></button>
