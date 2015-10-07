@@ -144,10 +144,9 @@ body
 
 // out
 .out
-	padding: 8px
 	height: 100%
-	height: auto
-	min-height: 100%
+	width: 100%
+	display: inline-table
 	+grad
 	&.is-login
 		+g(#fe1d22, #a2a5a8)
@@ -175,19 +174,21 @@ body
 // wrap
 .wrap
 	margin: 0 auto
-	padding: 7px 7px 62px
-	width: 1260px
+	padding: 7px 7px 0
+	min-width: 1260px
+	max-width: 1680px
+	height: 100%
+	min-height: 100%
 	+border-radius(8px)
 	+box-shadow(4px 4px 5px #000)
 	background: $gray-out
 
 // cols
 .col-left
-	float: left
-	margin-right: 4px
-	width: 996px
+	overflow: hidden
 .col-right
 	float: right
+	margin-left: 4px
 	width: 246px
 	.btn
 		width: 100%
@@ -201,7 +202,7 @@ body
 			position: relative
 			padding: 2px 10px 8px
 			+border-radius(10px)
-			background: url(../img/top-bg.png) no-repeat 0 0
+			background: url(../img/top-bg.png) no-repeat 50% 0
 			background-size: cover
 
 	.ind
@@ -239,7 +240,7 @@ body
 	position: absolute
 	left: 239px
 	bottom: 0
-	width: 516px
+	width: 52%
 	height: 36px
 	font-weight: bold
 	text-align: center
@@ -598,22 +599,27 @@ button.btn
 .games
 	padding: 4px
 	font-size: 0
+	overflow: hidden
 	&.is-mod
 		.games__item
 			padding: 0 20px
 			+vertical
+	.games__row
+		margin-bottom: 1.25%
 	.games__item
-		margin: 0 13px 13px 0
+		margin: 0 0 0 1.3%
 		text-align: center
 		position: relative
 		padding: 20px 20px 30px
-		width: 220px
+		width: 24%
 		height: 100px
 		line-height: 45px
 		+grad
 		+border-radius(4px)
 		vertical-align: top
 		display: inline-block
+		&:first-child
+			margin-left: 0
 		&:active
 			+background-image(linear-gradient($dark-gray, $light-gray 70%))
 		&.is-live
@@ -1670,14 +1676,15 @@ $spinner-size: 50px !default
 			+s(checkbox-arr)
 			display: none
 
-
 // footer
 .footer
-	margin: -73px auto
+	margin: -70px auto
 	padding: 7px
 	font-size: 0
-	width: 1260px
+	min-width: 1260px
+	max-width: 1680px
 	.col-left
+		position: relative
 		padding: 5px
 		text-align: center
 		background: $gray
