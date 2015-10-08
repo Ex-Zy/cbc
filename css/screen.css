@@ -71,7 +71,7 @@ body.is-bets .l .col-left { -moz-border-radius: 8px; -webkit-border-radius: 8px;
 
 .col-left { overflow: hidden; }
 
-.col-right { float: right; margin-left: 4px; width: 246px; }
+.col-right { float: right; margin-left: 4px; width: 246px; min-width: 246px; }
 .col-right .btn, .col-right .t-keybord .t-key, .t-keybord .col-right .t-key { width: 100%; }
 
 .header .header__row { margin: 4px 0; *zoom: 1; }
@@ -201,10 +201,13 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .games .ico { position: absolute; left: 50%; bottom: 10px; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 
 .more { padding: 5px 15px 5px 5px; }
-.more .col { float: right; margin-left: 5px; width: 314px; }
-.more .col:first-child { float: left; margin-left: 12px; }
+.more .more__item { *zoom: 1; }
+.more .more__item:after { content: " "; display: table; clear: both; }
+.more .col { float: right; margin-left: 1%; width: 32.33%; }
+.more .col:first-child { float: left; }
 .more .row { padding-right: 12px; margin: 5px 0; font-size: 0; }
-.more .coef { margin-left: 5px; }
+.more .coef { float: right; margin-left: 5px; }
+.more .mark { width: auto; overflow: hidden; display: block; }
 
 .mark { padding: 0 10px; width: 248px; height: 42px; font-size: 15px; line-height: 38px; font-weight: bold; vertical-align: top; border: 2px solid white; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; background-image: -moz-linear-gradient(#2c5c1b, #3d8325); background-image: -webkit-linear-gradient(#2c5c1b, #3d8325); background-image: linear-gradient(#2c5c1b, #3d8325); display: inline-block; }
 
@@ -252,8 +255,8 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .bet.is-pause { background-image: -moz-linear-gradient(#86772e, #aea369); background-image: -webkit-linear-gradient(#86772e, #aea369); background-image: linear-gradient(#86772e, #aea369); }
 .bet .bet__in { position: relative; z-index: 2; *zoom: 1; }
 .bet .bet__in:after { content: " "; display: table; clear: both; }
-.bet .bet__left { float: left; width: 446px; }
-.bet .bet__right { position: relative; float: right; width: 525px; }
+.bet .bet__left { overflow: hidden; }
+.bet .bet__right { position: relative; float: right; margin-left: 10px; width: 525px; }
 .bet .bet__right .intent { position: absolute; top: 0; left: 5px; z-index: 2; }
 .bet .bet__more { margin-left: 7px; font-size: 0; vertical-align: top; display: inline-block; }
 .bet .bet__wr { position: relative; }
@@ -353,7 +356,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 
 .arr-left { display: inline-block; width: 0px; height: 0px; border-style: solid; border-width: 8px 9px 8px 0; border-color: transparent white transparent transparent; }
 
-.content { position: relative; margin: 5px 19px 5px 5px; color: black; max-height: 744px; max-width: 980px; overflow: auto; }
+.content { position: relative; margin: 5px 19px 5px 5px; color: black; max-height: 744px; width: calc(100% - 25px) !important; overflow: auto; }
 .content::-webkit-scrollbar { display: none; }
 .content .content__in { padding: 8px 10px 8px 5px; margin-right: 28px; border: 1px solid #969fa7; background: #b9babb; }
 
@@ -409,7 +412,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 
 @keyframes spinner-fade { 0% { opacity: 1; }
   100% { opacity: 0; } }
-.popup { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 100; background: rgba(255, 255, 255, 0.7); text-align: center; font-size: 0; }
+.popup { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 100; background: rgba(255, 255, 255, 0.7); text-align: center; font-size: 0; }
 .popup:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .popup.is-dark { background: rgba(127, 130, 133, 0.8); }
 .popup .popup__in { vertical-align: middle; display: inline-block; font-size: 14px; font-weight: bold; }
@@ -483,18 +486,20 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .checkbox span:before { content: ""; border: 2px solid #a7a7a7; background: #c7c7c7; -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
 .checkbox span:after { position: absolute; content: ""; top: 3px; left: 4px; background: url('../img/icons-s3c2ef707b4.png') 0 -106px no-repeat; width: 15px; height: 16px; display: none; }
 
-.footer { margin: -70px auto; padding: 7px; font-size: 0; min-width: 1260px; max-width: 1680px; }
+.footer { margin: -68px auto; padding: 7px; font-size: 0; min-width: 1260px; max-width: 1680px; }
+@media only screen and (max-height: 890px) { .footer { margin-top: -63px; } }
 .footer .col-left { position: relative; padding: 5px; text-align: center; background: #7f8285; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
 .footer .btn, .footer .t-keybord .t-key, .t-keybord .footer .t-key, .footer .pages { margin-left: 10px; }
 .footer .btn:first-child, .footer .t-keybord .t-key:first-child, .t-keybord .footer .t-key:first-child, .footer .pages:first-child { margin-left: 0; }
 .footer .pages .btn, .footer .pages .t-keybord .t-key, .t-keybord .footer .pages .t-key { margin: 0; }
 .footer .pages .pages__text { width: 84px; }
 
+.slide { overflow: hidden; }
 .slide .score .ico { position: absolute; top: 50%; left: 4px; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 .slide.is-tennis { position: absolute; top: 0; left: 0; right: 0; bottom: 0; padding: 5px 20px 5px 5px; }
 .slide.is-tennis .bets { padding-left: 5px; height: 100%; background: #3c3e3f; }
 .slide.is-tennis .bet { padding: 0; background: none; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
-.slide.is-tennis .bet__left { padding: 6px; width: 630px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; background-image: -moz-linear-gradient(#163957, #163957); background-image: -webkit-linear-gradient(#163957, #163957); background-image: linear-gradient(#163957, #163957); }
+.slide.is-tennis .bet__left { padding: 6px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; background-image: -moz-linear-gradient(#163957, #163957); background-image: -webkit-linear-gradient(#163957, #163957); background-image: linear-gradient(#163957, #163957); }
 .slide.is-tennis .bet__right { width: 330px; }
 .slide.is-tennis .bet__time { float: left; width: 115px; font-size: 11px; }
 .slide.is-tennis .team { width: auto; height: auto; line-height: 30px; padding-left: 2px; display: inline-block; }
@@ -511,7 +516,6 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .slide.is-tennis .points, .slide.is-tennis .allowance { *zoom: 1; }
 .slide.is-tennis .points:after, .slide.is-tennis .allowance:after { content: " "; display: table; clear: both; }
 .slide.is-tennis .points .coef:last-child, .slide.is-tennis .allowance .coef:last-child { float: right; }
-.slide.is-mod .bet__left { width: 595px; }
 .slide.is-mod .bet__right { width: 377px; }
 .slide.is-mod .ground .ground__item:nth-child(2) { padding-left: 205px; width: 534px; }
 .slide.is-mod .points { *zoom: 1; }
@@ -626,7 +630,8 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .table td span { line-height: 1.4; vertical-align: middle; display: inline-block; }
 
 .tickets { padding-right: 18px; }
-.tickets .tickets__in { height: 775px; max-width: 980px; overflow-x: auto; }
+.tickets .tickets__in { height: 775px; width: 100%; overflow-x: auto; }
+@media only screen and (max-width: 1400px) { .tickets .tickets__in { width: 99%; } }
 .tickets .tickets__wrap { width: 602px; margin: 0 auto; }
 .tickets .tickets__wrap td:last-child:before { display: none; }
 .tickets .tickets__top { margin-top: 5px; }
@@ -696,12 +701,13 @@ button.disabled.btn.btn_foot.autowidth.ml, .t-keybord button.disabled.btn_foot.a
 
 .odds__content { background: #4c5258; width: auto; padding: 1px; height: auto; position: relative; z-index: 2; border-radius: 0 5px 5px 5px; box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.5); }
 .odds__content .center { width: 100%; }
-.odds__content .conteiner { display: block !important; width: 100%; background-color: white; height: auto; }
-.odds__content .conteiner-row { display: inline-block !important; width: 100%; background-color: #4c5258; height: auto; }
-.odds__content .conteiner-row .col1 { display: inline-block !important; width: 40%; height: 50px; padding: 17px; font-weight: bold; vertical-align: top; }
-.odds__content .conteiner-row .col2 { display: inline-block !important; width: auto; height: auto; vertical-align: top; margin: 5px; }
+.odds__content .conteiner { background-color: white; }
+.odds__content .conteiner-row { background-color: #4c5258; font-size: 0; *zoom: 1; }
+.odds__content .conteiner-row:after { content: " "; display: table; clear: both; }
+.odds__content .conteiner-row .col1 { overflow: hidden; height: 50px; padding: 17px; font-size: 13px; font-weight: bold; vertical-align: top; }
+.odds__content .conteiner-row .col2 { display: inline-block !important; width: auto; height: auto; vertical-align: top; margin: 5px; font-size: 13px; }
 .odds__content .conteiner-row.rowgrey { background-color: #7f8285; }
-.odds__content .conteiner-row .origin { display: inline-block !important; width: 55%; height: auto; }
+.odds__content .conteiner-row .origin { float: right; width: 546px; height: auto; }
 .odds__content .conteiner-row .origin .mdark { padding-left: 15px; margin-right: 5px; width: 100px; height: 42px; font-size: 15px; line-height: 43px; font-weight: bold; vertical-align: top; border-radius: 6px; background-image: linear-gradient(#2c5c1b, #3d8325); display: inline-block !important; }
 
 .ticker { float: left; max-width: 1300px; border-radius: 0px; width: 80%; }
@@ -736,7 +742,8 @@ input[type=checkbox]:checked ~ b.buttonl { color: red; }
 
 header { height: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-.l { padding: 0 0 60px 4px; width: 1242px; min-height: 717px; height: calc(100% - 173px); display: inline-table; width: 100%; }
+.l { padding: 0 0 68px 4px; width: 1242px; min-height: 717px; height: calc(100% - 164px); display: inline-table; width: 100%; }
+@media only screen and (max-height: 890px) { .l { padding-bottom: 63px; } }
 .l .col-left, .l .col-right { float: none; background: #7f8285; vertical-align: top; display: table-cell; }
 .l .col-left { position: relative; right: 4px; }
 .l .col-left.is-live { background: #bfc1c2; text-align: center; font-size: 0; }

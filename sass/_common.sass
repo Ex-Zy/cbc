@@ -190,6 +190,7 @@ body
 	float: right
 	margin-left: 4px
 	width: 246px
+	min-width: 246px
 	.btn
 		width: 100%
 
@@ -657,19 +658,24 @@ button.btn
 .more
 	padding: 5px 15px 5px 5px
 	.more__item
+		+clr
 	.col
 		float: right
-		margin-left: 5px
-		width: 314px
+		margin-left: 1%
+		width: 32.33%
 		&:first-child
 			float: left
-			margin-left: 12px
 	.row
 		padding-right: 12px
 		margin: 5px 0
 		font-size: 0
 	.coef
+		float: right
 		margin-left: 5px
+	.mark
+		width: auto
+		overflow: hidden
+		display: block
 
 // mark
 .mark
@@ -843,11 +849,11 @@ button.btn
 		z-index: 2
 		+clr
 	.bet__left
-		float: left
-		width: 446px
+		overflow: hidden
 	.bet__right
 		position: relative
 		float: right
+		margin-left: 10px
 		width: 525px
 		.intent
 			position: absolute
@@ -1232,7 +1238,7 @@ button.btn
 	margin: 5px 19px 5px 5px
 	color: #000
 	max-height: 744px
-	max-width: 980px
+	width: calc(100% - 25px) !important
 	overflow: auto
 	&::-webkit-scrollbar
 		display: none
@@ -1383,7 +1389,7 @@ $spinner-size: 50px !default
 		opacity: 0
 
 .popup
-	position: absolute
+	position: fixed
 	top: 0
 	left: 0
 	right: 0
@@ -1678,11 +1684,13 @@ $spinner-size: 50px !default
 
 // footer
 .footer
-	margin: -70px auto
+	margin: -68px auto
 	padding: 7px
 	font-size: 0
 	min-width: 1260px
 	max-width: 1680px
+	+rh(890)
+		margin-top: -63px
 	.col-left
 		position: relative
 		padding: 5px
@@ -1703,6 +1711,7 @@ $spinner-size: 50px !default
 
 // slide
 .slide
+	overflow: hidden
 	.score
 		.ico
 			position: absolute
@@ -1726,7 +1735,6 @@ $spinner-size: 50px !default
 			+box-shadow(none)
 		.bet__left
 			padding: 6px
-			width: 630px
 			+border-radius(8px)
 			+g(#163957, #163957)
 		.bet__right
@@ -1781,8 +1789,6 @@ $spinner-size: 50px !default
 				&:last-child
 					float: right
 	&.is-mod
-		.bet__left
-			width: 595px
 		.bet__right
 			width: 377px
 		.ground 
@@ -2230,8 +2236,10 @@ $spinner-size: 50px !default
 	padding-right: 18px
 	.tickets__in
 		height: 775px
-		max-width: 980px
+		width: 100%
 		overflow-x: auto
+		+r(1400)
+			width: 99%
 	.tickets__wrap
 		width: 602px
 		margin: 0 auto
