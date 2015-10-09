@@ -163,6 +163,8 @@ body
 	width: 1276px
 	overflow: hidden
 	background: #3c3e3f
+	&.center_mod
+		background: #282828
 	.c-arr
 		position: absolute
 		right: 2px
@@ -1817,11 +1819,25 @@ $spinner-size: 50px !default
 .header-m
 	position: relative
 	padding-left: 100px
+	+clr
 	.logo-small
 		position: absolute
 		top: 50%
 		left: 0
 		+translate(0,-50%)
+
+.inf
+	float: left
+	padding: 13px 13px 0 25px
+	font-weight: bold
+	font-size: 14px
+	text-transform: uppercase
+	.pag,
+	.time
+		vertical-align: top
+		display: inline-block
+	.pag
+		margin-right: 22px
 
 // ticker
 .ticker
@@ -1949,14 +1965,24 @@ $spinner-size: 50px !default
 .rate
 	font-size: 14px
 	& + .rate
-		border-top: 1px solid #000
+		border-top: 1px solid #fff
 	table
 		+g(#285516, #34761b)
 		&.is-yellow	
 			+g(#87782f, #a2955a)
+			tr
+				+ tr
+					+g(#87782f, #a2955a)
 		&.is-blue
 			+g(#14334e, #285276)
+			tr
+				+ tr
+					+g(#14334e, #285276)
+		& + table
+			border-top: 1px solid #fff
 	tr
+		+ tr
+			+g(#285516, #34761b)
 		&:first-child
 			text-transform: uppercase
 		td
@@ -2061,6 +2087,7 @@ $spinner-size: 50px !default
 		height: 23px
 		line-height: 23px
 		font-size: 15px
+		background: #f59200
 	.team
 		vertical-align: top
 		display: inline-block
@@ -2354,6 +2381,10 @@ $spinner-size: 50px !default
 		color: #000
 		display: block
 
+// sets
+.sets
+	margin: 0 -30px
+	text-align: center
 
 
 

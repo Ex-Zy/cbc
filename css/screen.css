@@ -65,6 +65,7 @@ body.is-bets .l .col-left { -moz-border-radius: 8px; -webkit-border-radius: 8px;
 .out.is-main { padding: 3px 2px 1px; background: black; }
 
 .center { position: relative; margin: 0 auto; height: 1020px; width: 1276px; overflow: hidden; background: #3c3e3f; }
+.center.center_mod { background: #282828; }
 .center .c-arr { position: absolute; right: 2px; bottom: 2px; cursor: pointer; z-index: 20; background: url('../img/icons-s3c2ef707b4.png') 0 -84px no-repeat; width: 12px; height: 12px; }
 
 .wrap { margin: 0 auto; padding: 7px 7px 0; min-width: 1260px; max-width: 1680px; height: 100%; min-height: 100%; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; -moz-box-shadow: 4px 4px 5px black; -webkit-box-shadow: 4px 4px 5px black; box-shadow: 4px 4px 5px black; background: #454343; }
@@ -525,8 +526,13 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .slide.is-mod .score.is-right .ico { left: auto; right: 4px; }
 .slide.is-mod .score .ico { position: absolute; top: 50%; left: 4px; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 
-.header-m { position: relative; padding-left: 100px; }
+.header-m { position: relative; padding-left: 100px; *zoom: 1; }
+.header-m:after { content: " "; display: table; clear: both; }
 .header-m .logo-small { position: absolute; top: 50%; left: 0; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
+
+.inf { float: left; padding: 13px 13px 0 25px; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+.inf .pag, .inf .time { vertical-align: top; display: inline-block; }
+.inf .pag { margin-right: 22px; }
 
 .ticker { padding: 0 16px; height: 40px; text-align: center; line-height: 40px; font-weight: bold; font-size: 30px; overflow: hidden; background: #707070; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .ticker .ticker__text { white-space: nowrap; }
@@ -561,10 +567,14 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .indicators tr:first-child { color: white; }
 
 .rate { font-size: 14px; }
-.rate + .rate { border-top: 1px solid black; }
+.rate + .rate { border-top: 1px solid white; }
 .rate table { background-image: -moz-linear-gradient(#285516, #34761b); background-image: -webkit-linear-gradient(#285516, #34761b); background-image: linear-gradient(#285516, #34761b); }
 .rate table.is-yellow { background-image: -moz-linear-gradient(#87782f, #a2955a); background-image: -webkit-linear-gradient(#87782f, #a2955a); background-image: linear-gradient(#87782f, #a2955a); }
+.rate table.is-yellow tr + tr { background-image: -moz-linear-gradient(#87782f, #a2955a); background-image: -webkit-linear-gradient(#87782f, #a2955a); background-image: linear-gradient(#87782f, #a2955a); }
 .rate table.is-blue { background-image: -moz-linear-gradient(#14334e, #285276); background-image: -webkit-linear-gradient(#14334e, #285276); background-image: linear-gradient(#14334e, #285276); }
+.rate table.is-blue tr + tr { background-image: -moz-linear-gradient(#14334e, #285276); background-image: -webkit-linear-gradient(#14334e, #285276); background-image: linear-gradient(#14334e, #285276); }
+.rate table + table { border-top: 1px solid white; }
+.rate tr + tr { background-image: -moz-linear-gradient(#285516, #34761b); background-image: -webkit-linear-gradient(#285516, #34761b); background-image: linear-gradient(#285516, #34761b); }
 .rate tr:first-child { text-transform: uppercase; }
 .rate tr td { padding: 1px 0; line-height: 23px; vertical-align: top; }
 .rate tr td:first-child { padding-left: 5px; width: 39px; }
@@ -587,7 +597,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .rate .team, .rate .score { position: relative; z-index: 1; }
 .rate .time-m { vertical-align: top; display: inline-block; }
 .rate .time-m:after { content: "'"; margin-left: 1px; }
-.rate .score { height: 23px; line-height: 23px; font-size: 15px; }
+.rate .score { height: 23px; line-height: 23px; font-size: 15px; background: #f59200; }
 .rate .team { vertical-align: top; display: inline-block; *zoom: 1; }
 .rate .team:after { content: " "; display: table; clear: both; }
 .rate .team.is-maxw { max-width: 100px; }
@@ -667,6 +677,8 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .datepicker { position: relative; padding-right: 23px; }
 .datepicker .ico { position: absolute; right: 1px; top: 50%; cursor: pointer; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 .datepicker input { padding: 0 5px; border: 1px solid #a7a7a7; height: 25px; width: 100%; color: black; display: block; }
+
+.sets { margin: 0 -30px; text-align: center; }
 
 .games__flag { position: absolute; bottom: 0px; left: 0px; }
 
