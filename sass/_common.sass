@@ -605,6 +605,24 @@ button.btn
 	padding: 4px
 	font-size: 0
 	overflow: hidden
+	&.is-pad
+		padding: 10%
+		.games__item
+			margin: 0 0 0 5%
+			padding: 0
+			width: 30%
+		.games__row	
+			margin-bottom: 5%
+		a
+			position: relative
+			padding: 20px
+			height: 100%
+			width: 100%
+			display: inline-table
+			+vertical
+			.games__name
+				margin: 0
+				vertical-align: middle
 	&.is-mod
 		.games__item
 			padding: 0 20px
@@ -631,6 +649,8 @@ button.btn
 			.games__name
 				font-size: 20px
 				color: $color-green
+		a
+			display: block
 	.games__name
 		margin-bottom: 5px
 		color: #fff

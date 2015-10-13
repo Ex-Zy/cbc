@@ -189,6 +189,12 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .banner img { width: 100%; display: block; }
 
 .games { padding: 4px; font-size: 0; overflow: hidden; }
+.games.is-pad { padding: 10%; }
+.games.is-pad .games__item { margin: 0 0 0 5%; padding: 0; width: 30%; }
+.games.is-pad .games__row { margin-bottom: 5%; }
+.games.is-pad a { position: relative; padding: 20px; height: 100%; width: 100%; display: inline-table; text-align: center; font-size: 0; }
+.games.is-pad a:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.games.is-pad a .games__name { margin: 0; vertical-align: middle; }
 .games.is-mod .games__item { padding: 0 20px; text-align: center; font-size: 0; }
 .games.is-mod .games__item:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .games .games__row { margin-bottom: 1.25%; }
@@ -196,6 +202,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .games .games__item:first-child { margin-left: 0; }
 .games .games__item:active { background-image: -moz-linear-gradient(#292929, #a2a5a8 70%); background-image: -webkit-linear-gradient(#292929, #a2a5a8 70%); background-image: linear-gradient(#292929, #a2a5a8 70%); }
 .games .games__item.is-live .games__name { font-size: 20px; color: #26a023; }
+.games .games__item a { display: block; }
 .games .games__name { margin-bottom: 5px; color: white; font-size: 15px; line-height: 1.4; font-weight: bold; text-decoration: none; vertical-align: bottom; display: inline-block; position: relative; }
 .games .games__in { line-height: 1; vertical-align: middle; display: inline-block; }
 .games .games__in .games__name { margin-bottom: 0; line-height: 1.2; }
