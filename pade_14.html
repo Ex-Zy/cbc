@@ -5,26 +5,26 @@
 	<title>Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
 	<!-- theme color for android 5.0 -->
 	<meta name="theme-color" content="#fff"> 
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
-	<link rel="stylesheet" media="all" href="css/jquery.jscrollpane.css" >
 	<link rel="stylesheet" media="all" href="css/screen.css" >
+
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
-<body class="is-bets">
-<!-- BEGIN out-->
-<div class="out is-login">
+<body>
+<!-- BEGIN  out-->
+<div class="out">
 	<!-- wrap -->
 	<div class="wrap">
-		
 		<!-- header -->
 		<header class="header">
 			<!-- form -->
 			<form class="form">
 				<div class="col-right">
-					<button class="btn btn_green btn_login" type="submit">Login</button>
+					<button class="btn btn_green" type="submit">Login</button>
 				</div>
 				<div class="col-left">
 					<div class="form__right">
@@ -47,21 +47,14 @@
 				<div class="col-right">
 					<!-- balance -->
 					<div class="balance">
-						<div class="balance__top">
-							<div class="balance__left">Balance</div>
-							<div class="balance__right">
-								<div class="balance__sum">996,00</div>
-								<button class="btn btn_green" type="button"><i class="ico ico_upd"></i></button>
-							</div>
-						</div>
+						<button class="btn btn_middle" type="button">Balance: <span class="sum">0.00</span></button>
 						<div class="balance__row">
 							<div class="balance__left">
 								<date class="date">8/6/2015</date>
 								<div class="time">6:19 pm</div>
 							</div>
 							<div class="balance__right">
-								<div class="station">Station 2174</div>
-								<div class="balance__ind">991000</div>
+								<span class="station">Station 2174</span>
 							</div>
 						</div>
 					</div>
@@ -143,125 +136,75 @@
 		<!-- l -->
 		<div class="l">
 			<div class="col-left">
-				<div class="tickets">
-					<div class="tickets__wrap">
-						<div class="tickets__top">
-							<div class="tickets__row">
-								<div class="tickets__col">
-									Datum von
-									<div class="datepicker">
-										<input type="text" value="30.07.2015">
-										<i class="ico ico_datepicker"></i>
-									</div>
-								</div>
-								<div class="tickets__col">
-									Datum von
-									<div class="datepicker">
-										<input type="text" value="30.07.2015">
-										<i class="ico ico_datepicker"></i>
-									</div>
-								</div>
-							</div>
-							<div class="tickets__row">
-								<div class="tickets__col">
-									Ticketnummer
-									<input type="text" class="input-white">
-								</div>
-								<div class="tickets__col">
-									<label class="checkbox">
-										<input type="checkbox">
-										<span>gewonnene</span>
-									</label>
-									<button class="btn btn_small">Anzeigen</button>
-								</div>
-							</div>
+				<!-- games -->
+				<div class="games is-pad">
+					<div class="games__row">
+						<div class="games__item">
+							<a href="#">
+								<span class="games__name">Lorem ipsum dolor.</span>
+							</a>
 						</div>
-						<div class="tickets__all">
-							<div class="tickets__text">Tickets:7 Gesamteinsatz:15,00 Gesamtgewinn:0,00</div>
-							<button class="btn btn_small">Tastatur anzeigen</button>
+						<div class="games__item">
+							<a href="#" >
+								<span class="games__name">Lorem ipsum dolor.</span>
+							</a>
 						</div>
-						<table class="table table_wr">
-							<tr>
-								<th></th>
-								<th></th>
-								<th>Ticketnummer</th>
-								<th>Spieldatum</th>
-								<th>Einsatz</th>
-								<th>Gewinn</th>
-								<th>Status</th>
-								<th></th>
-							</tr>
-							<tr>
-								<td class="is-active"></td>
-								<td><button class="btn btn_small">Details</button></td>
-								<td>2174150800007</td>
-								<td>13.08.2015 16:50:51</td>
-								<td>3,00</td>
-								<td>0,00</td>
-								<td>offen</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td><button class="btn btn_small">Details</button></td>
-								<td>2174150800007</td>
-								<td>13.08.2015 16:50:51</td>
-								<td>3,00</td>
-								<td>0,00</td>
-								<td>offen</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td><button class="btn btn_small">Details</button></td>
-								<td>2174150800007</td>
-								<td>13.08.2015 16:50:51</td>
-								<td>3,00</td>
-								<td>0,00</td>
-								<td>offen</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td><button class="btn btn_small">Details</button></td>
-								<td>2174150800007</td>
-								<td>13.08.2015 16:50:51</td>
-								<td>3,00</td>
-								<td>0,00</td>
-								<td>offen</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td><button class="btn btn_small">Details</button></td>
-								<td>2174150800007</td>
-								<td>13.08.2015 16:50:51</td>
-								<td>3,00</td>
-								<td>0,00</td>
-								<td>offen</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td><button class="btn btn_small">Details</button></td>
-								<td>2174150800007</td>
-								<td>13.08.2015 16:50:51</td>
-								<td>3,00</td>
-								<td>0,00</td>
-								<td>offen</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td><button class="btn btn_small">Details</button></td>
-								<td>2174150800007</td>
-								<td>13.08.2015 16:50:51</td>
-								<td>3,00</td>
-								<td>0,00</td>
-								<td>offen</td>
-								<td></td>
-							</tr>
-						</table>
+						<div class="games__item">
+							<a href="#" >
+								<span class="games__name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nesciunt.</span>
+							</a>
+						</div>
+					</div>
+					<div class="games__row">
+						<div class="games__item">
+							<a href="#" >
+								<span class="games__name">Lorem ipsum dolor.</span>
+							</a>
+						</div>
+						<div class="games__item">
+							<a href="#" >
+								<span class="games__name">Lorem ipsum dolor.</span>
+							</a>
+						</div>
+						<div class="games__item">
+							<a href="#" >
+								<span class="games__name">Lorem ipsum dolor.</span>
+							</a>
+						</div>
+					</div>
+					<div class="games__row">
+						<div class="games__item">
+							<a href="#" >
+								<span class="games__name">Lorem ipsum dolor.</span>
+							</a>
+						</div>
+						<div class="games__item">
+							<a href="#" >
+								<span class="games__name">Lorem ipsum dolor.</span>
+							</a>
+						</div>
+						<div class="games__item">
+							<a href="#" >
+								<span class="games__name">Lorem ipsum dolor.</span>
+							</a>
+						</div>
+					</div>
+					<div class="games__row">
+						<div class="games__item">
+							<a href="#" >
+								<span class="games__name">Lorem ipsum dolor.</span>
+							</a>
+						</div>
+						<div class="games__item">
+							<a href="#" >
+								<span class="games__name">Lorem ipsum dolor.</span>
+							</a>
+						</div>
+						<div class="games__item">
+							<a href="#" >
+								<span class="games__name">Lorem ipsum dolor.</span>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -301,7 +244,8 @@
 	<div class="col-left">
 		<button class="btn btn_foot btn_arr-l" type="button" disabled><ico class="ico ico_arr-left"></ico></button>
 		<button class="btn btn_foot btn_arr-r" type="button" disabled><ico class="ico ico_arr-right"></ico></button>
-		<button class="btn btn_foot " type="button">Complete offer</button>
+		<button class="btn btn_foot autowidth disabled ml" type="button">Daily Offer</button>
+		<button class="btn btn_foot autowidth active" type="button">Complete Offer</button>
 		<button class="btn btn_foot " type="button" disabled>Back</button>
 		<button class="btn btn_foot " type="button">Cancel</button>
 		<div class="pages">

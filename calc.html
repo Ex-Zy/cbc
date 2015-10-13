@@ -5,14 +5,17 @@
 	<title>Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
+	<script src="js/jquery-2.1.4.min.js"></script>
+
 	<!-- theme color for android 5.0 -->
 	<meta name="theme-color" content="#fff"> 
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
 	<link rel="stylesheet" media="all" href="css/screen.css" >
+	
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
-<body class="is-bets">
+<body class="is-bets is-hidden">
 <!-- BEGIN  out-->
 <div class="out">
 	<!-- wrap -->
@@ -70,6 +73,7 @@
 				</div>
 			</div>
 		</header>
+		
 		<!-- menu-wrap -->
 		<div class="menu-wrap">
 			<div class="col-right">
@@ -179,218 +183,38 @@
 								<div class="bet__right">
 									<div class="points">
 										<div class="row">
-											<button class="coef is-blocked" type="button">2,10</button>
-											<button class="coef is-blocked" type="button">2,90</button>
-											<button class="coef is-blocked" type="button">3,20</button>
-										</div>
-									</div>
-									<div class="total">
-										<div class="row">
-											<div class="total__ind">1.5</div>
-											<button class="coef is-blocked" type="button">2,30</button>
-											<button class="coef is-blocked" type="button">1,45</button>
-										</div>
-									</div>
-									<div class="leg-up">
-										<div class="row">
-											<button class="coef is-blocked" type="button">1,80</button>
-											<button class="coef is-blocked" type="button">6,75</button>
-											<button class="coef is-blocked" type="button">2,35</button>
-										</div>
-									</div>
-									<div class="bet__more">
-										<button class="btn-more is-small"><span>+</span>0</button>
-										<button class="btn-stat is-small" disabled><i class="ico ico_stat"></i></button>
-									</div>
-								</div>
-								<div class="bet__left">
-									<!-- teams -->
-									<div class="teams">
-										<div class="team">army xi army xiarmy xiarmy xiarmy xiarmy xi</div>
-										<div class="team">railways railwayss<div class="card is-red"><span>1</span></div></div>
-										<div class="score">0:0</div>
-									</div>
-									<div class="bet__wr">
-										<!-- time -->
-										<div class="time">23' 1. HZ</div>
-										<div class="score-w">1:0</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- bet -->
-						<div class="bet is-green">
-							<div class="bet__in">
-								<div class="bet__right">
-									<div class="points">
-										<div class="row">
 											<button class="coef" type="button">2,10</button>
 											<button class="coef" type="button">2,90</button>
-											<button class="coef is-active" type="button">3,20</button>
+											<button class="coef" type="button">3,20</button>
+										</div>
+										<div class="row">
+											<button class="coef" type="button">3,45</button>
+											<button class="coef" type="button">1,60</button>
+											<button class="coef" type="button">4,75</button>
 										</div>
 									</div>
 									<div class="total">
 										<div class="row">
 											<div class="total__ind">1.5</div>
-											<button class="coef" type="button" disabled>2,30</button>
-											<button class="coef" type="button" disabled>1,45</button>
+											<button class="coef" type="button">2,30</button>
+											<button class="coef" type="button">1,45</button>
 										</div>
-									</div>
-									<div class="leg-up">
 										<div class="row">
-											<button class="coef" type="button" disabled>1,80</button>
-											<button class="coef" type="button" disabled>6,75</button>
-											<button class="coef" type="button" disabled>2,35</button>
-										</div>
-									</div>
-									<div class="bet__more">
-										<button class="btn-more is-small"><span>+</span>0</button>
-										<button class="btn-stat is-small" disabled><i class="ico ico_stat"></i></button>
-									</div>
-								</div>
-								<div class="bet__left">
-									<!-- teams -->
-									<div class="teams">
-										<div class="team">army xi</div>
-										<div class="team">railways<div class="card is-red"><span>1</span></div></div>
-										<div class="score">0:0</div>
-									</div>
-									<div class="bet__wr">
-										<!-- time -->
-										<div class="time">23' 1. HZ</div>
-										<div class="score-w">1:0</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- bet -->
-						<div class="bet is-green">
-							<div class="bet__in">
-								<div class="bet__right">
-									<div class="points">
-										<div class="row">
-											<button class="coef" type="button" disabled>2,10</button>
-											<button class="coef" type="button" disabled>2,90</button>
-											<button class="coef" type="button" disabled>3,20</button>
-										</div>
-									</div>
-									<div class="total">
-										<div class="row">
-											<div class="total__ind">1.5</div>
-											<button class="coef" type="button" disabled>2,30</button>
-											<button class="coef" type="button" disabled>1,45</button>
+											<div class="total__ind">0.5</div>
+											<button class="coef" type="button">1,70</button>
+											<button class="coef" type="button">1,80</button>
 										</div>
 									</div>
 									<div class="leg-up">
 										<div class="row">
 											<button class="coef" type="button">1,80</button>
 											<button class="coef" type="button">6,75</button>
-											<button class="coef is-active" type="button">2,35</button>
-										</div>
-									</div>
-									<div class="bet__more">
-										<button class="btn-more is-small"><span>+</span>0</button>
-										<button class="btn-stat is-small" disabled><i class="ico ico_stat"></i></button>
-									</div>
-								</div>
-								<div class="bet__left">
-									<!-- teams -->
-									<div class="teams">
-										<div class="team">army xi</div>
-										<div class="team">railways</div>
-										<div class="score">0:0</div>
-									</div>
-									<div class="bet__wr">
-										<!-- time -->
-										<div class="time">23' 1. HZ</div>
-										<div class="score-w">1:0</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- bet -->
-						<div class="bet is-green">
-							<div class="bet__in">
-								<div class="bet__right">
-									<div class="points">
-										<div class="row">
-											<button class="coef is-blocked" type="button">2,10</button>
-											<button class="coef is-blocked" type="button">2,90</button>
-											<button class="coef is-blocked" type="button">3,20</button>
-										</div>
-									</div>
-									<div class="total">
-										<div class="row">
-											<div class="total__ind">1.5</div>
-											<button class="coef is-blocked" type="button">2,30</button>
-											<button class="coef is-blocked" type="button">1,45</button>
-										</div>
-									</div>
-									<div class="leg-up">
-										<div class="row">
-											<button class="coef is-blocked" type="button">1,80</button>
-											<button class="coef is-blocked" type="button">6,75</button>
-											<button class="coef is-blocked" type="button">2,35</button>
-										</div>
-									</div>
-									<div class="bet__more">
-										<button class="btn-more is-small"><span>+</span>0</button>
-										<button class="btn-stat is-small" disabled><i class="ico ico_stat"></i></button>
-									</div>
-								</div>
-								<div class="bet__left">
-									<!-- teams -->
-									<div class="teams">
-										<div class="team">army xi</div>
-										<div class="team">railways</div>
-										<div class="score">0:0</div>
-									</div>
-									<div class="bet__wr">
-										<!-- time -->
-										<div class="time">23' 1. HZ</div>
-										<div class="score-w">1:0</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- bet -->
-						<div class="bet is-green">
-							<div class="bet__in">
-								<div class="bet__right">
-									<div class="points">
-										<div class="row">
-											<button class="coef" type="button">2,10</button>
-											<button class="coef" type="button">2,90</button>
-											<button class="coef" type="button">3,20</button>
+											<button class="coef" type="button">2,35</button>
 										</div>
 										<div class="row">
-											<button class="coef" type="button">3,45</button>
-											<button class="coef" type="button">1,60</button>
-											<button class="coef" type="button">4,75</button>
-										</div>
-									</div>
-									<div class="total">
-										<div class="row">
-											<div class="total__ind">1.5</div>
-											<button class="coef" type="button">2,30</button>
-											<button class="coef" type="button">1,45</button>
-										</div>
-										<div class="row">
-											<div class="total__ind">0.5</div>
-											<button class="coef" type="button">1,70</button>
-											<button class="coef" type="button">1,80</button>
-										</div>
-									</div>
-									<div class="leg-up">
-										<div class="row">
-											<button class="coef is-blocked" type="button" disabled>1,80</button>
-											<button class="coef is-blocked" type="button" disabled>6,75</button>
-											<button class="coef is-blocked" type="button" disabled>2,35</button>
-										</div>
-										<div class="row">
-											<button class="coef is-blocked" type="button" disabled>3,15</button>
-											<button class="coef is-blocked" type="button" disabled>1,75</button>
-											<button class="coef is-blocked" type="button" disabled>4,10</button>
+											<button class="coef" type="button">3,15</button>
+											<button class="coef" type="button">1,75</button>
+											<button class="coef" type="button">4,10</button>
 										</div>
 									</div>
 									<div class="bet__more">
@@ -403,114 +227,7 @@
 									<div class="teams">
 										<div class="team">army xi</div>
 										<div class="team">railways</div>
-										<div class="score">- : -</div>
-									</div>
-									<!-- time -->
-									<div class="time">23' 1. HZ</div>
-									<!-- liga -->
-									<div class="liga">
-										<div class="liga__col">Calcutta Premier Division</div>
-										<div class="liga__col">Erste Halbzeit</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- bet -->
-						<div class="bet is-green">
-							<div class="bet__in">
-								<div class="bet__right">
-									<div class="points">
-										<div class="row">
-											<button class="coef is-blocked" type="button">2,10</button>
-											<button class="coef is-blocked" type="button">2,90</button>
-											<button class="coef is-blocked" type="button">3,20</button>
-										</div>
-									</div>
-									<div class="total">
-										<div class="row">
-											<div class="total__ind">1.5</div>
-											<button class="coef is-blocked" type="button">2,30</button>
-											<button class="coef is-blocked" type="button">1,45</button>
-										</div>
-									</div>
-									<div class="leg-up">
-										<div class="row">
-											<button class="coef is-blocked" type="button">1,80</button>
-											<button class="coef is-blocked" type="button">6,75</button>
-											<button class="coef is-blocked" type="button">2,35</button>
-										</div>
-									</div>
-									<div class="bet__more">
-										<button class="btn-more is-small"><span>+</span>0</button>
-										<button class="btn-stat is-small" disabled><i class="ico ico_stat"></i></button>
-									</div>
-								</div>
-								<div class="bet__left">
-									<!-- teams -->
-									<div class="teams">
-										<div class="team">army xi</div>
-										<div class="team">railways</div>
 										<div class="score">0:0</div>
-									</div>
-									<div class="bet__wr">
-										<!-- time -->
-										<div class="time">23' 1. HZ</div>
-										<div class="score-w">1:0</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- bet -->
-						<div class="bet is-green">
-							<div class="bet__in">
-								<div class="bet__right">
-									<div class="points">
-										<div class="row">
-											<button class="coef" type="button">2,10</button>
-											<button class="coef" type="button">2,90</button>
-											<button class="coef" type="button">3,20</button>
-										</div>
-										<div class="row">
-											<button class="coef" type="button">3,45</button>
-											<button class="coef" type="button">1,60</button>
-											<button class="coef" type="button">4,75</button>
-										</div>
-									</div>
-									<div class="total">
-										<div class="row">
-											<div class="total__ind">1.5</div>
-											<button class="coef" type="button">2,30</button>
-											<button class="coef" type="button">1,45</button>
-										</div>
-										<div class="row">
-											<div class="total__ind">0.5</div>
-											<button class="coef" type="button">1,70</button>
-											<button class="coef" type="button">1,80</button>
-										</div>
-									</div>
-									<div class="leg-up">
-										<div class="row">
-											<button class="coef is-blocked" type="button" disabled>1,80</button>
-											<button class="coef is-blocked" type="button" disabled>6,75</button>
-											<button class="coef is-blocked" type="button" disabled>2,35</button>
-										</div>
-										<div class="row">
-											<button class="coef is-blocked" type="button" disabled>3,15</button>
-											<button class="coef is-blocked" type="button" disabled>1,75</button>
-											<button class="coef is-blocked" type="button" disabled>4,10</button>
-										</div>
-									</div>
-									<div class="bet__more">
-										<button class="btn-more"><span>+</span>9</button>
-										<button class="btn-stat" disabled><i class="ico ico_stat"></i></button>
-									</div>
-								</div>
-								<div class="bet__left">
-									<!-- teams -->
-									<div class="teams">
-										<div class="team">army xi</div>
-										<div class="team">railways</div>
-										<div class="score">- : -</div>
 									</div>
 									<!-- time -->
 									<div class="time">23' 1. HZ</div>
@@ -552,14 +269,14 @@
 									</div>
 									<div class="leg-up">
 										<div class="row">
-											<button class="coef is-blocked" type="button" disabled>1,80</button>
-											<button class="coef is-blocked" type="button" disabled>6,75</button>
-											<button class="coef is-blocked" type="button" disabled>2,35</button>
+											<button class="coef" type="button">1,80</button>
+											<button class="coef" type="button">6,75</button>
+											<button class="coef" type="button">2,35</button>
 										</div>
 										<div class="row">
-											<button class="coef is-blocked" type="button" disabled>3,15</button>
-											<button class="coef is-blocked" type="button" disabled>1,75</button>
-											<button class="coef is-blocked" type="button" disabled>4,10</button>
+											<button class="coef" type="button">3,15</button>
+											<button class="coef" type="button">1,75</button>
+											<button class="coef" type="button">4,10</button>
 										</div>
 									</div>
 									<div class="bet__more">
@@ -572,7 +289,7 @@
 									<div class="teams">
 										<div class="team">army xi</div>
 										<div class="team">railways</div>
-										<div class="score">- : -</div>
+										<div class="score">0:0</div>
 									</div>
 									<!-- time -->
 									<div class="time">23' 1. HZ</div>
@@ -614,6 +331,130 @@
 									</div>
 									<div class="leg-up">
 										<div class="row">
+											<button class="coef" type="button">1,80</button>
+											<button class="coef" type="button">6,75</button>
+											<button class="coef" type="button">2,35</button>
+										</div>
+										<div class="row">
+											<button class="coef" type="button">3,15</button>
+											<button class="coef" type="button">1,75</button>
+											<button class="coef" type="button">4,10</button>
+										</div>
+									</div>
+									<div class="bet__more">
+										<button class="btn-more"><span>+</span>9</button>
+										<button class="btn-stat" disabled><i class="ico ico_stat"></i></button>
+									</div>
+								</div>
+								<div class="bet__left">
+									<!-- teams -->
+									<div class="teams">
+										<div class="team">army xi</div>
+										<div class="team">railways</div>
+										<div class="score">0:0</div>
+									</div>
+									<!-- time -->
+									<div class="time">23' 1. HZ</div>
+									<!-- liga -->
+									<div class="liga">
+										<div class="liga__col">Calcutta Premier Division</div>
+										<div class="liga__col">Erste Halbzeit</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- bet -->
+						<div class="bet">
+							<div class="bet__in">
+								<div class="bet__right">
+									<div class="points">
+										<div class="row">
+											<button class="coef" type="button">2,10</button>
+											<button class="coef" type="button">2,90</button>
+											<button class="coef" type="button">3,20</button>
+										</div>
+										<div class="row">
+											<button class="coef" type="button">3,45</button>
+											<button class="coef" type="button">1,60</button>
+											<button class="coef" type="button">4,75</button>
+										</div>
+									</div>
+									<div class="total">
+										<div class="row">
+											<div class="total__ind">1.5</div>
+											<button class="coef" type="button">2,30</button>
+											<button class="coef" type="button">1,45</button>
+										</div>
+										<div class="row">
+											<div class="total__ind">0.5</div>
+											<button class="coef" type="button">1,70</button>
+											<button class="coef" type="button">1,80</button>
+										</div>
+									</div>
+									<div class="leg-up">
+										<div class="row">
+											<button class="coef" type="button">1,80</button>
+											<button class="coef" type="button">6,75</button>
+											<button class="coef" type="button">2,35</button>
+										</div>
+										<div class="row">
+											<button class="coef" type="button">3,15</button>
+											<button class="coef" type="button">1,75</button>
+											<button class="coef" type="button">4,10</button>
+										</div>
+									</div>
+									<div class="bet__more">
+										<button class="btn-more"><span>+</span>9</button>
+										<button class="btn-stat"><i class="ico ico_stat"></i></button>
+									</div>
+								</div>
+								<div class="bet__left">
+									<!-- teams -->
+									<div class="teams">
+										<div class="team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, vel.</div>
+										<div class="team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, est!</div>
+										<div class="score">- : -</div>
+									</div>
+									<!-- time -->
+									<div class="time">23' 1. HZ</div>
+									<!-- liga -->
+									<div class="liga">
+										<div class="liga__col">Calcutta Premier Division</div>
+										<div class="liga__col">Erste Halbzeit</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- bet -->
+						<div class="bet">
+							<div class="bet__in">
+								<div class="bet__right">
+									<div class="points">
+										<div class="row">
+											<button class="coef" type="button">2,10</button>
+											<button class="coef" type="button">2,90</button>
+											<button class="coef" type="button">3,20</button>
+										</div>
+										<div class="row">
+											<button class="coef" type="button">3,45</button>
+											<button class="coef" type="button">1,60</button>
+											<button class="coef" type="button">4,75</button>
+										</div>
+									</div>
+									<div class="total">
+										<div class="row">
+											<div class="total__ind">1.5</div>
+											<button class="coef is-up" type="button">2,30</button>
+											<button class="coef is-down" type="button">1,45</button>
+										</div>
+										<div class="row">
+											<div class="total__ind">0.5</div>
+											<button class="coef" type="button">1,70</button>
+											<button class="coef" type="button">1,80</button>
+										</div>
+									</div>
+									<div class="leg-up">
+										<div class="row">
 											<button class="coef is-blocked" type="button" disabled>1,80</button>
 											<button class="coef is-blocked" type="button" disabled>6,75</button>
 											<button class="coef is-blocked" type="button" disabled>2,35</button>
@@ -626,7 +467,193 @@
 									</div>
 									<div class="bet__more">
 										<button class="btn-more"><span>+</span>9</button>
-										<button class="btn-stat" disabled><i class="ico ico_stat"></i></button>
+										<button class="btn-stat"><i class="ico ico_stat"></i></button>
+									</div>
+								</div>
+								<div class="bet__left">
+									<!-- teams -->
+									<div class="teams">
+										<div class="team">army xi</div>
+										<div class="team">railways</div>
+										<div class="score">- : -</div>
+									</div>
+									<!-- time -->
+									<div class="time">23' 1. HZ</div>
+									<!-- liga -->
+									<div class="liga">
+										<div class="liga__col">Calcutta Premier Division</div>
+										<div class="liga__col">Erste Halbzeit</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- bet -->
+						<div class="bet">
+							<div class="bet__in">
+								<div class="bet__right">
+									<div class="points">
+										<div class="row">
+											<button class="coef" type="button">2,10</button>
+											<button class="coef" type="button">2,90</button>
+											<button class="coef" type="button">3,20</button>
+										</div>
+										<div class="row">
+											<button class="coef" type="button">3,45</button>
+											<button class="coef" type="button">1,60</button>
+											<button class="coef" type="button">4,75</button>
+										</div>
+									</div>
+									<div class="total">
+										<div class="row">
+											<div class="total__ind">1.5</div>
+											<button class="coef" type="button">2,30</button>
+											<button class="coef" type="button">1,45</button>
+										</div>
+										<div class="row">
+											<div class="total__ind">0.5</div>
+											<button class="coef" type="button">1,70</button>
+											<button class="coef" type="button">1,80</button>
+										</div>
+									</div>
+									<div class="leg-up">
+										<div class="row">
+											<button class="coef is-blocked" type="button" disabled>1,80</button>
+											<button class="coef is-blocked" type="button" disabled>6,75</button>
+											<button class="coef is-blocked" type="button" disabled>2,35</button>
+										</div>
+										<div class="row">
+											<button class="coef is-blocked" type="button" disabled>3,15</button>
+											<button class="coef is-blocked" type="button" disabled>1,75</button>
+											<button class="coef is-blocked" type="button" disabled>4,10</button>
+										</div>
+									</div>
+									<div class="bet__more">
+										<button class="btn-more"><span>+</span>9</button>
+										<button class="btn-stat"><i class="ico ico_stat"></i></button>
+									</div>
+								</div>
+								<div class="bet__left">
+									<!-- teams -->
+									<div class="teams">
+										<div class="team">army xi</div>
+										<div class="team">railways</div>
+										<div class="score">- : -</div>
+									</div>
+									<!-- time -->
+									<div class="time">23' 1. HZ</div>
+									<!-- liga -->
+									<div class="liga">
+										<div class="liga__col">Calcutta Premier Division</div>
+										<div class="liga__col">Erste Halbzeit</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- bet -->
+						<div class="bet">
+							<div class="bet__in">
+								<div class="bet__right">
+									<div class="points">
+										<div class="row">
+											<button class="coef" type="button">2,10</button>
+											<button class="coef" type="button">2,90</button>
+											<button class="coef" type="button">3,20</button>
+										</div>
+										<div class="row">
+											<button class="coef" type="button">3,45</button>
+											<button class="coef" type="button">1,60</button>
+											<button class="coef" type="button">4,75</button>
+										</div>
+									</div>
+									<div class="total">
+										<div class="row">
+											<div class="total__ind">1.5</div>
+											<button class="coef" type="button">2,30</button>
+											<button class="coef" type="button">1,45</button>
+										</div>
+										<div class="row">
+											<div class="total__ind">0.5</div>
+											<button class="coef" type="button">1,70</button>
+											<button class="coef" type="button">1,80</button>
+										</div>
+									</div>
+									<div class="leg-up">
+										<div class="row">
+											<button class="coef is-blocked" type="button" disabled>1,80</button>
+											<button class="coef is-blocked" type="button" disabled>6,75</button>
+											<button class="coef is-blocked" type="button" disabled>2,35</button>
+										</div>
+										<div class="row">
+											<button class="coef is-blocked" type="button" disabled>3,15</button>
+											<button class="coef is-blocked" type="button" disabled>1,75</button>
+											<button class="coef is-blocked" type="button" disabled>4,10</button>
+										</div>
+									</div>
+									<div class="bet__more">
+										<button class="btn-more"><span>+</span>9</button>
+										<button class="btn-stat"><i class="ico ico_stat"></i></button>
+									</div>
+								</div>
+								<div class="bet__left">
+									<!-- teams -->
+									<div class="teams">
+										<div class="team">army xi</div>
+										<div class="team">railways</div>
+										<div class="score">- : -</div>
+									</div>
+									<!-- time -->
+									<div class="time">23' 1. HZ</div>
+									<!-- liga -->
+									<div class="liga">
+										<div class="liga__col">Calcutta Premier Division</div>
+										<div class="liga__col">Erste Halbzeit</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- bet -->
+						<div class="bet">
+							<div class="bet__in">
+								<div class="bet__right">
+									<div class="points">
+										<div class="row">
+											<button class="coef" type="button">2,10</button>
+											<button class="coef" type="button">2,90</button>
+											<button class="coef" type="button">3,20</button>
+										</div>
+										<div class="row">
+											<button class="coef" type="button">3,45</button>
+											<button class="coef" type="button">1,60</button>
+											<button class="coef" type="button">4,75</button>
+										</div>
+									</div>
+									<div class="total">
+										<div class="row">
+											<div class="total__ind">1.5</div>
+											<button class="coef" type="button">2,30</button>
+											<button class="coef" type="button">1,45</button>
+										</div>
+										<div class="row">
+											<div class="total__ind">0.5</div>
+											<button class="coef" type="button">1,70</button>
+											<button class="coef" type="button">1,80</button>
+										</div>
+									</div>
+									<div class="leg-up">
+										<div class="row">
+											<button class="coef is-blocked" type="button" disabled>1,80</button>
+											<button class="coef is-blocked" type="button" disabled>6,75</button>
+											<button class="coef is-blocked" type="button" disabled>2,35</button>
+										</div>
+										<div class="row">
+											<button class="coef is-blocked" type="button" disabled>3,15</button>
+											<button class="coef is-blocked" type="button" disabled>1,75</button>
+											<button class="coef is-blocked" type="button" disabled>4,10</button>
+										</div>
+									</div>
+									<div class="bet__more">
+										<button class="btn-more"><span>+</span>9</button>
+										<button class="btn-stat"><i class="ico ico_stat"></i></button>
 									</div>
 								</div>
 								<div class="bet__left">
@@ -685,16 +712,66 @@
 	<div class="col-left">
 		<button class="btn btn_foot btn_arr-l" type="button" disabled><ico class="ico ico_arr-left"></ico></button>
 		<button class="btn btn_foot btn_arr-r" type="button" disabled><ico class="ico ico_arr-right"></ico></button>
-		<button class="btn btn_foot " type="button">Complete offer</button>
-		<button class="btn btn_foot " type="button" disabled>Back</button>
-		<button class="btn btn_foot " type="button">Cancel</button>
-		<div class="pages">
+		<button class="btn btn_foot autowidth active ml" type="button">Daily Offer</button>
+		<button class="btn btn_foot autowidth disabled" type="button">Complete Offer</button>
+		<button class="btn btn_foot" type="button" disabled>Back</button>
+		<button class="btn btn_foot autowidth" type="button">Cancel</button>
+			<div class="pages">
 			<button class="btn btn_foot btn_arr-t" type="button" disabled><i class="ico ico_arr-top"></i></button>
 			<div class="pages__text">1/5</div>
 			<button class="btn btn_foot btn_arr-b" type="button"><i class="ico ico_arr-bot"></i></button>
 		</div>
 	</div>
 </footer>
+<div class="popup is-dark">
+	<div class="popup__in">
+		<!-- calculator -->
+		<div class="calculator">
+			<div class="calculator__in">
+				<div class="calculator__top">
+					<div class="calculator__inf">Text</div>
+					<button class="calculator__close" type="button"><span>x</span></button>
+				</div>
+				<form class="checker">
+					<div class="checker__input">
+						<input type="text" value="0">
+					</div>
+					<div class="checker__in">
+						<!-- t-keybord -->
+						<div class="t-keybord">
+							<div class="t-keybord__row">
+								<button class="t-key" type="button">1</button>
+								<button class="t-key" type="button">2</button>
+								<button class="t-key" type="button">3</button>
+							</div>
+							<div class="t-keybord__row">
+								<button class="t-key" type="button">4</button>
+								<button class="t-key" type="button">5</button>
+								<button class="t-key" type="button">6</button>
+							</div>
+							<div class="t-keybord__row">
+								<button class="t-key" type="button">7</button>
+								<button class="t-key" type="button">8</button>
+								<button class="t-key" type="button">9</button>
+							</div>
+							<div class="t-keybord__row">
+								<button class="t-key t-key_green" type="button">del</button>
+								<button class="t-key" type="button">0</button>
+								<button class="t-key t-key_green" type="button">,</button>
+							</div>
+						</div>
+					</div>
+					<div class="checker__text">Min. Einsatz: 1,00</div>
+					<div class="checker__text">Max. Einsatz: 82.90</div>
+					<div class="checker__buttons">
+						<button class="btn">Maximum</button>
+						<button class="btn">Ubernehmen</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

@@ -132,20 +132,16 @@ button
     .center 
         width: 100%
     .types
-        display: block !important
-        width: 100%
         background-color: #fff
-        height: auto
     .type-row
-        display: inline-block !important
-        width: 100%
         background-color: #4C5258
-        height: auto
+        font-size: 0
+        +clr
         .col1 
-            display: inline-block !important
-            width: 40%
+            overflow: hidden
             height: 50px
             padding: 17px
+            font-size: 13px
             font-weight: bold
             vertical-align: top
         .col2 
@@ -154,11 +150,12 @@ button
             height: auto
             vertical-align: top
             margin: 5px
+            font-size: 13px
         &.rowgrey 
             background-color: #7F8285
         .origin 
-            display: inline-block !important
-            width: 55%
+            float: right
+            width: 546px
             height: auto
             .mdark 
                 padding-left: 15px
