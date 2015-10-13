@@ -694,13 +694,13 @@ button.disabled.btn.btn_foot.autowidth.ml, .t-keybord button.disabled.btn_foot.a
 
 .odds__content { background: #4C5258; width: auto; padding: 1px; height: auto; position: relative; z-index: 2; border-radius: 0 5px 5px 5px; box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.5); }
 .odds__content .center { width: 100%; }
-.odds__content .conteiner { display: block !important; width: 100%; background-color: #fff; height: auto; }
-.odds__content .conteiner-row { display: inline-block !important; width: 100%; background-color: #4C5258; height: auto; }
-.odds__content .conteiner-row .col1 { display: inline-block !important; width: 40%; height: 50px; padding: 17px; font-weight: bold; vertical-align: top; }
-.odds__content .conteiner-row .col2 { display: inline-block !important; width: auto; height: auto; vertical-align: top; margin: 5px; }
-.odds__content .conteiner-row.rowgrey { background-color: #7F8285; }
-.odds__content .conteiner-row .origin { display: inline-block !important; width: 55%; height: auto; }
-.odds__content .conteiner-row .origin .mdark { padding-left: 15px; margin-right: 5px; width: 100px; height: 42px; font-size: 15px; line-height: 43px; font-weight: bold; vertical-align: top; border-radius: 6px; background-image: linear-gradient(#2c5c1b, #3d8325); display: inline-block !important; }
+.odds__content .types { display: block !important; width: 100%; background-color: #fff; height: auto; }
+.odds__content .type-row { display: inline-block !important; width: 100%; background-color: #4C5258; height: auto; }
+.odds__content .type-row .col1 { display: inline-block !important; width: 40%; height: 50px; padding: 17px; font-weight: bold; vertical-align: top; }
+.odds__content .type-row .col2 { display: inline-block !important; width: auto; height: auto; vertical-align: top; margin: 5px; }
+.odds__content .type-row.rowgrey { background-color: #7F8285; }
+.odds__content .type-row .origin { display: inline-block !important; width: 55%; height: auto; }
+.odds__content .type-row .origin .mdark { padding-left: 15px; margin-right: 5px; width: 100px; height: 42px; font-size: 15px; line-height: 43px; font-weight: bold; vertical-align: top; border-radius: 6px; background-image: linear-gradient(#2c5c1b, #3d8325); display: inline-block !important; }
 
 .ticker { float: left; max-width: 1300px; border-radius: 0px; width: 80%; }
 
