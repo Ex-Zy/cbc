@@ -347,6 +347,7 @@ body
 	+user-select(none)
 	&.is-active
 		.select__list
+			z-index: 1
 			display: block
 	.select__text
 		position: relative
@@ -1283,6 +1284,10 @@ button.btn
 	overflow: auto
 	&::-webkit-scrollbar
 		display: none
+	&.content_mod
+		.content__in
+			border: none
+			background: none
 	.content__in
 		padding: 8px 10px 8px 5px
 		margin-right: 28px
@@ -2484,82 +2489,110 @@ $spinner-size: 50px !default
 	margin: 0 -30px
 	text-align: center
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// filter
+.filter
+	padding: 8px 10px 10px 2px
+	font-weight: normal
+	background: #444341
+	+clr
+	.filter__name
+		margin-top: -4px
+	.filter__in
+		float: right
+	.filter__col
+		margin-right: 2vw
+		+border-radius(4px)
+	.filter__text
+		margin-right: 5px
+		min-height: 42px
+		line-height: 42px
+		span
+			line-height: 1.2
+			vertical-align: middle
+			display: inline-block
+	.select
+		width: 6.8vw
+		color: #000
+		&.select_w242
+			width: 19.17vw
+	.select__list
+		margin: 5px 0 0
+		left: 0
+		right: 0
+		bottom: auto
+		width: auto
+		+border-radius(0)
+		a
+			color: #000
+			text-decoration: none
+			display: block
+	.select__text
+		padding: 14px 8px 10px
+		height: 42px
+		+border-radius(0)
+		+box-shadow(0 0 0 1px rgba(#fff, .2))
+		+g(#c1c1c1, #434240)
+		&:before
+			right: 5px
+			margin-top: -2px
+	.filter__name,
+	.select,
+	.filter__col,
+	.filter__text
+		vertical-align: top
+		display: inline-block
+	.btn
+		min-width: 9vw
+		height: 42px
+		line-height: 42px
+
+// 
+.res
+	color: #fff
+	font-weight: bold
+	.res__in
+	.res__row
+		font-size: 0
+		margin-bottom: .5%
+	.res__col
+		position: relative
+		padding: 2px 10px
+		margin-left: 0.5%
+		font-size: 14px
+		border: 1px solid #fff
+		+border-radius(4px)
+		background: #444341
+		&:first-child
+			margin-left: 0
+			width: 15%
+			text-align: center
+		&:nth-child(2)
+			padding-left: 42px
+			width: 61%
+		&:last-child
+			width: 23%
+	.date,
+	.time,
+	.res__col,
+	.team
+		vertical-align: top
+		display: inline-block
+	.ico
+		position: absolute
+		left: 12px
+		top: 50%
+		+translate(0,-50%)
+	.teams
+		text-transform: uppercase
+	.team
+		&:first-child
+			margin-right: 3px
+
+// res-all
+.res-all
+	color: #70f077
+	&.is-yellow
+		color: #fffb07
 
 
 
