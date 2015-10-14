@@ -2546,7 +2546,7 @@ $spinner-size: 50px !default
 		height: 42px
 		line-height: 42px
 
-// 
+// res
 .res
 	color: #fff
 	font-weight: bold
@@ -2594,7 +2594,64 @@ $spinner-size: 50px !default
 	&.is-yellow
 		color: #fffb07
 
-
+// invoice
+.invoice
+	padding: 12px
+	color: #000
+	font-size: 16px
+	.invoice__l
+		padding: 20px
+		+border-radius(8px)
+		background: #c8cac9
+	.invoice__top
+		margin-bottom: 20px
+	.invoice__in
+		padding: 20px 10px
+		background: #d8dad9
+	.invoice__wrap
+		+clr
+	.invoice__left
+		float: left
+		margin-right: 15px
+		padding-top: 60px
+		width: 258px
+		.btn
+			width: 100%
+			height: 34px
+			line-height: 34px
+			font-size: 16px
+			font-weight: normal
+	.invoice__table
+		overflow: hidden
+	.invoice__row
+		padding: 0 14px
+		border-top: 2px solid #000
+	.invoice__field
+		padding: 17px 0
+		+clr
+		&.is-bold
+			font-weight: bold
+		&.is-green
+			font-weight: bold
+			color: $green
+	.invoice__col
+		float: left
+		width: calc(100% - 52px)
+		&:last-child
+			float: right
+			width: 52px
+	.invoice__bot
+		margin-top: 25px
+		font-size: 0
+		.btn
+			margin-left: 3%
+			width: 17.6%
+			height: 75px
+			line-height: 75px
+			font-weight: normal
+			font-size: 16px
+			&:first-child
+				margin-left: 0
 
 
 

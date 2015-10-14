@@ -739,6 +739,26 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .res-all { color: #70f077; }
 .res-all.is-yellow { color: #fffb07; }
 
+.invoice { padding: 12px; color: black; font-size: 16px; }
+.invoice .invoice__l { padding: 20px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; background: #c8cac9; }
+.invoice .invoice__top { margin-bottom: 20px; }
+.invoice .invoice__in { padding: 20px 10px; background: #d8dad9; }
+.invoice .invoice__wrap { *zoom: 1; }
+.invoice .invoice__wrap:after { content: " "; display: table; clear: both; }
+.invoice .invoice__left { float: left; margin-right: 15px; padding-top: 60px; width: 258px; }
+.invoice .invoice__left .btn, .invoice .invoice__left .t-keybord .t-key, .t-keybord .invoice .invoice__left .t-key { width: 100%; height: 34px; line-height: 34px; font-size: 16px; font-weight: normal; }
+.invoice .invoice__table { overflow: hidden; }
+.invoice .invoice__row { padding: 0 14px; border-top: 2px solid black; }
+.invoice .invoice__field { padding: 17px 0; *zoom: 1; }
+.invoice .invoice__field:after { content: " "; display: table; clear: both; }
+.invoice .invoice__field.is-bold { font-weight: bold; }
+.invoice .invoice__field.is-green { font-weight: bold; color: #2d802d; }
+.invoice .invoice__col { float: left; width: calc(100% - 52px); }
+.invoice .invoice__col:last-child { float: right; width: 52px; }
+.invoice .invoice__bot { margin-top: 25px; font-size: 0; }
+.invoice .invoice__bot .btn, .invoice .invoice__bot .t-keybord .t-key, .t-keybord .invoice .invoice__bot .t-key { margin-left: 3%; width: 17.6%; height: 75px; line-height: 75px; font-weight: normal; font-size: 16px; }
+.invoice .invoice__bot .btn:first-child, .invoice .invoice__bot .t-keybord .t-key:first-child, .t-keybord .invoice .invoice__bot .t-key:first-child { margin-left: 0; }
+
 .games__flag { position: absolute; bottom: 0px; left: 0px; }
 
 .button.btn.btn_foot.autowidth, .t-keybord .button.btn_foot.autowidth.t-key { width: auto; min-width: 138px; }
