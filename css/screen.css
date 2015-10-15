@@ -298,6 +298,8 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 
 .score { width: 106px; height: 22px; line-height: 22px; color: #006400; text-align: center; font-size: 16px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; -moz-box-shadow: 2px 2px 6px #000; -webkit-box-shadow: 2px 2px 6px #000; box-shadow: 2px 2px 6px #000; background: #de9114; }
 .score.is-small { width: 68px; }
+.score.is-boll.is-right .ico { left: auto; right: 4px; }
+.score.is-boll .ico { position: absolute; left: 4px; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 
 .liga { margin-top: 20px; font-size: 0; }
 .liga .liga__col { text-align: right; font-size: 15px; width: 50%; vertical-align: top; display: inline-block; }
@@ -611,7 +613,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .rate tr td:nth-child(3) { padding-right: 5px; width: 355px; text-align: right; }
 .rate tr td:nth-child(4) { width: 68px; }
 .rate tr td:nth-child(5) { padding-left: 5px; width: 344px; }
-.rate tr td:last-child, .rate tr td:nth-last-child(2), .rate tr td:nth-last-child(3), .rate tr td:nth-last-child(4), .rate tr td:nth-last-child(5), .rate tr td:nth-last-child(6), .rate tr td:nth-child(6), .rate tr td:nth-child(7), .rate tr td:nth-child(8) { width: 45px; text-align: center; }
+.rate tr td:last-child, .rate tr td:nth-last-child(2), .rate tr td:nth-last-child(3), .rate tr td:nth-last-child(4), .rate tr td:nth-last-child(5), .rate tr td:nth-last-child(6), .rate tr td:nth-child(6), .rate tr td:nth-child(7), .rate tr td:nth-child(8) { min-width: 45px; text-align: center; }
 .rate tr td:last-child, .rate tr td:nth-last-child(2), .rate tr td:nth-last-child(3), .rate tr td:nth-child(6), .rate tr td:nth-child(7), .rate tr td:nth-child(8) { position: relative; }
 .rate tr td:last-child:before, .rate tr td:nth-last-child(2):before, .rate tr td:nth-last-child(3):before, .rate tr td:nth-child(6):before, .rate tr td:nth-child(7):before, .rate tr td:nth-child(8):before { position: absolute; content: ""; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.3); }
 .rate tr td.is-goal { position: relative; }
@@ -758,6 +760,13 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .invoice .invoice__bot { margin-top: 25px; font-size: 0; }
 .invoice .invoice__bot .btn, .invoice .invoice__bot .t-keybord .t-key, .t-keybord .invoice .invoice__bot .t-key { margin-left: 3%; width: 17.6%; height: 75px; line-height: 75px; font-weight: normal; font-size: 16px; }
 .invoice .invoice__bot .btn:first-child, .invoice .invoice__bot .t-keybord .t-key:first-child, .t-keybord .invoice .invoice__bot .t-key:first-child { margin-left: 0; }
+
+.buttons { padding: 17px; }
+.buttons .buttons__row { margin-top: 20px; }
+.buttons .buttons__row:first-child { margin-top: 0; }
+.buttons .btn, .buttons .t-keybord .t-key, .t-keybord .buttons .t-key { width: 100%; height: 40px; line-height: 40px; font-size: 16px; }
+
+.h100 { height: 100%; }
 
 .games__flag { position: absolute; bottom: 0px; left: 0px; }
 

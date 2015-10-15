@@ -999,6 +999,16 @@ button.btn
 	background: $color-orange
 	&.is-small
 		width: 68px
+	&.is-boll
+		&.is-right
+			.ico
+				left: auto
+				right: 4px
+		.ico
+			position: absolute
+			left: 4px
+			top: 50%
+			+translate(0,-50%)
 
 // liga
 .liga
@@ -2115,7 +2125,7 @@ $spinner-size: 50px !default
 			&:nth-child(6),
 			&:nth-child(7),
 			&:nth-child(8)
-				width: 45px
+				min-width: 45px
 				text-align: center
 			&:last-child,
 			&:nth-last-child(2),
@@ -2653,8 +2663,21 @@ $spinner-size: 50px !default
 			&:first-child
 				margin-left: 0
 
+// buttons
+.buttons
+	padding: 17px
+	.buttons__row
+		margin-top: 20px
+		&:first-child
+			margin-top: 0
+	.btn
+		width: 100%
+		height: 40px
+		line-height: 40px
+		font-size: 16px
 
-
+.h100
+	height: 100%
 
 
 
