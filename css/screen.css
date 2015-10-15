@@ -263,7 +263,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .ground .ground__right .ground__item { margin-right: 2px; padding-left: 0; }
 .ground .ground__right .ground__item:nth-child(1), .ground .ground__right .ground__item:nth-child(3) { width: 136px; }
 .ground .ground__right .ground__item:nth-child(2) { margin-right: 12px; width: 134px; }
-.ground .ground__right .ground__item:nth-child(2) .ground__ind:first-child { width: 39px; color: white; }
+.ground .ground__right .ground__item:nth-child(2) .ground__ind:first-child { width: 39px; color: #fff; }
 
 .bets { font-weight: bold; }
 
