@@ -93,6 +93,10 @@ body.is-hidden { overflow: hidden; }
 .live-block .live-block__top { height: 20px; line-height: 20px; font-weight: bold; font-size: 18px; white-space: nowrap; overflow: hidden; }
 .live-block span { position: relative; }
 .live-block .live-block__bot { font-size: 11px; line-height: 20px; }
+.live-block .live-block__but { position: absolute; top: 0; left: 0; right: 0; bottom: 0; *zoom: 1; }
+.live-block .live-block__but:after { content: " "; display: table; clear: both; }
+.live-block .live-block__but .btn, .live-block .live-block__but .t-keybord .t-key, .t-keybord .live-block .live-block__but .t-key { float: right; height: 36px; line-height: 36px; }
+.live-block .live-block__but .btn:first-child, .live-block .live-block__but .t-keybord .t-key:first-child, .t-keybord .live-block .live-block__but .t-key:first-child { float: left; }
 
 .balance { padding: 5px; background: #7f8285; font-weight: bold; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; *zoom: 1; }
 .balance:after { content: " "; display: table; clear: both; }
@@ -242,7 +246,8 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .btn-close-ye { width: 40px; height: 35px; color: black; font-size: 18px; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -moz-box-shadow: 1px 1px 5px black; -webkit-box-shadow: 1px 1px 5px black; box-shadow: 1px 1px 5px black; background-image: -moz-linear-gradient(#de8e15, #f77026); background-image: -webkit-linear-gradient(#de8e15, #f77026); background-image: linear-gradient(#de8e15, #f77026); }
 .btn-close-ye:disabled { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
 
-.ground { font-size: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
+.ground { font-size: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; *zoom: 1; }
+.ground:after { content: " "; display: table; clear: both; }
 .ground .ground__item { line-height: 27px; font-size: 15px; letter-spacing: 0.4px; vertical-align: top; display: inline-block; }
 .ground .ground__item:first-child { padding-left: 15px; width: 80px; }
 .ground .ground__item:nth-child(2) { padding-left: 130px; width: 391px; }
@@ -254,6 +259,11 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .ground .ground__row { font-size: 0; }
 .ground .ground__ind { margin-left: 5px; width: 42px; color: #de9114; font-size: 14px; line-height: 15px; height: 15px; text-transform: uppercase; vertical-align: top; display: inline-block; }
 .ground .ground__ind:first-child { margin-left: 0; }
+.ground .ground__right { float: right; padding-right: 108px; }
+.ground .ground__right .ground__item { margin-right: 2px; padding-left: 0; }
+.ground .ground__right .ground__item:nth-child(1), .ground .ground__right .ground__item:nth-child(3) { width: 136px; }
+.ground .ground__right .ground__item:nth-child(2) { margin-right: 12px; width: 134px; }
+.ground .ground__right .ground__item:nth-child(2) .ground__ind:first-child { width: 39px; color: white; }
 
 .bets { font-weight: bold; }
 
