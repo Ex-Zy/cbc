@@ -243,8 +243,10 @@ body
 // live-block
 .live-block
 	position: absolute
-	left: 239px
+	left: 50%
 	bottom: 0
+	+translate(-50%,0)
+	margin-left: 110px
 	width: 52%
 	height: 36px
 	font-weight: bold
@@ -263,6 +265,19 @@ body
 	.live-block__bot
 		font-size: 11px
 		line-height: 20px
+	.live-block__but
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		+clr
+		.btn
+			float: right
+			height: 36px
+			line-height: 36px
+			&:first-child
+				float: left
 
 // balance
 .balance
@@ -799,6 +814,7 @@ button.btn
 .ground
 	font-size: 0
 	+opacity(.8)
+	+clr
 	.ground__item
 		line-height: 27px
 		font-size: 15px
@@ -841,6 +857,22 @@ button.btn
 		display: inline-block
 		&:first-child
 			margin-left: 0
+	.ground__right
+		float: right 
+		padding-right: 108px
+		.ground__item
+			margin-right: 2px
+			padding-left: 0
+			&:nth-child(1),
+			&:nth-child(3)
+				width: 136px
+			&:nth-child(2)
+				margin-right: 12px
+				width: 134px
+				.ground__ind
+					&:first-child
+						width: 39px
+						color: #fff
 
 // bets
 .bets
