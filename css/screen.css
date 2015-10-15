@@ -852,7 +852,7 @@ input[type=checkbox]:checked ~ b.buttonl { color: red; }
 
 header { height: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-.l { padding: 0 0 68px 4px; width: 1242px; min-height: 717px; height: calc(100% - 164px); display: inline-table; width: 100%; }
+.l { padding: 0 0 68px 4px; width: 1242px; min-height: 717px; height: calc(100% - 124px); display: inline-table; width: 100%; }
 @media only screen and (max-height: 890px) { .l { padding-bottom: 63px; } }
 .l .col-left, .l .col-right { float: none; background: #7f8285; vertical-align: top; display: table-cell; }
 .l .col-left { position: relative; right: 4px; }
