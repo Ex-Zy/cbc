@@ -89,7 +89,7 @@ body.is-hidden { overflow: hidden; }
 
 .logo-small { vertical-align: top; display: inline-block; background: url('../img/icons-sad8d8a0de1.png') 0 -1153px no-repeat; width: 100px; height: 24px; }
 
-.live-block { position: absolute; left: 239px; bottom: 0; width: 52%; height: 36px; font-weight: bold; text-align: center; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px; border-radius: 4px 4px 0 0; background: rgba(162, 165, 168, 0.5); }
+.live-block { position: absolute; left: 50%; bottom: 0; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); margin-left: 110px; width: 52%; height: 36px; font-weight: bold; text-align: center; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px; border-radius: 4px 4px 0 0; background: rgba(162, 165, 168, 0.5); }
 .live-block .live-block__top { height: 20px; line-height: 20px; font-weight: bold; font-size: 18px; white-space: nowrap; overflow: hidden; }
 .live-block span { position: relative; }
 .live-block .live-block__bot { font-size: 11px; line-height: 20px; }
