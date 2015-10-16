@@ -34,13 +34,13 @@ body { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-selec
 .ico.ico_tennis { background: url('../img/icons-sad8d8a0de1.png') 0 -1368px no-repeat; width: 30px; height: 30px; }
 .ico.ico_en { background: url('../img/icons-sad8d8a0de1.png') 0 -524px no-repeat; width: 81px; height: 29px; }
 .ico.ico_fr { background: url('../img/icons-sad8d8a0de1.png') 0 -563px no-repeat; width: 81px; height: 31px; }
-.ico.ico_gr { background: url('../img/icons-sad8d8a0de1.png') 0 -643px no-repeat; width: 81px; height: 31px; }
+.ico.ico_el { background: url('../img/icons-sad8d8a0de1.png') 0 -643px no-repeat; width: 81px; height: 31px; }
 .ico.ico_hr { background: url('../img/icons-sad8d8a0de1.png') 0 -684px no-repeat; width: 81px; height: 31px; }
 .ico.ico_nl { background: url('../img/icons-sad8d8a0de1.png') 0 -725px no-repeat; width: 81px; height: 31px; }
-.ico.ico_por { background: url('../img/icons-sad8d8a0de1.png') 0 -766px no-repeat; width: 81px; height: 29px; }
-.ico.ico_sp { background: url('../img/icons-sad8d8a0de1.png') 0 -805px no-repeat; width: 81px; height: 31px; }
-.ico.ico_turc { background: url('../img/icons-sad8d8a0de1.png') 0 -846px no-repeat; width: 81px; height: 29px; }
-.ico.ico_ger { background: url('../img/icons-sad8d8a0de1.png') 0 -604px no-repeat; width: 81px; height: 29px; }
+.ico.ico_pt { background: url('../img/icons-sad8d8a0de1.png') 0 -766px no-repeat; width: 81px; height: 29px; }
+.ico.ico_es { background: url('../img/icons-sad8d8a0de1.png') 0 -805px no-repeat; width: 81px; height: 31px; }
+.ico.ico_tr { background: url('../img/icons-sad8d8a0de1.png') 0 -846px no-repeat; width: 81px; height: 29px; }
+.ico.ico_de { background: url('../img/icons-sad8d8a0de1.png') 0 -604px no-repeat; width: 81px; height: 29px; }
 .ico.ico_soccer2 { background: url('../img/icons-sad8d8a0de1.png') 0 -961px no-repeat; width: 22px; height: 22px; }
 .ico.ico_tennis2 { background: url('../img/icons-sad8d8a0de1.png') 0 -1103px no-repeat; width: 22px; height: 22px; }
 .ico.ico_basketball2 { background: url('../img/icons-sad8d8a0de1.png') 0 -342px no-repeat; width: 22px; height: 22px; }
@@ -312,7 +312,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .score.is-boll .ico { position: absolute; left: 4px; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 
 .liga { margin-top: 20px; font-size: 0; }
-.liga .liga__col { text-align: right; font-size: 15px; width: 50%; vertical-align: top; display: inline-block; }
+.liga .liga__col { text-align: right; font-size: 15px; width: 50%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; vertical-align: top; display: inline-block; }
 .liga .liga__col:first-child { text-align: left; }
 
 .topic { padding: 5px 20px 9px 75px; font-weight: bold; font-size: 14px; background: #4c5258; }
@@ -457,7 +457,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .error-p .ico { position: absolute; top: 14px; left: 0; z-index: 1; }
 .error-p .btn, .error-p .t-keybord .t-key, .t-keybord .error-p .t-key { height: 27px; width: 78px; text-transform: uppercase; font-weight: normal; font-size: 12px; }
 
-.coupon .coupon__in { margin: 0 -3px; max-height: 438px; overflow-y: auto; }
+.coupon .coupon__in { margin: 0 -3px; overflow-y: auto; }
 .coupon .coupon__in::-webkit-scrollbar { display: none; }
 .coupon .coupon__top { position: relative; margin: -7px -7px 4px -7px; padding: 7px 52px; text-align: center; font-size: 18px; letter-spacing: 0.8px; font-weight: bold; border-radius: 8px 8px 0 0; background: #de9114; }
 .coupon .coupon__top .btn-close-ye { position: absolute; top: 2px; right: 10px; }
@@ -477,7 +477,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .coupon .coefs:after { content: " "; display: table; clear: both; }
 .coupon .coef-w { float: right; font-size: 12px; }
 
-.calc { font-weight: bold; }
+.calc { font-weight: bold; background: #7f8285; }
 .calc .calc__but { margin: 0 -2px 2px 0; font-size: 0; }
 .calc .calc__but .btn, .calc .calc__but .t-keybord .t-key, .t-keybord .calc .calc__but .t-key { margin: 0 !important; width: auto; vertical-align: top; display: inline-block !important; }
 .calc .calc__but .btn:first-child, .calc .calc__but .t-keybord .t-key:first-child, .t-keybord .calc .calc__but .t-key:first-child { width: 142px; }
