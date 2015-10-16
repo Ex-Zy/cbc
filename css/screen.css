@@ -266,9 +266,9 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .ground .ground__right .ground__item:nth-child(2) .ground__ind:first-child { width: 39px; color: white; }
 
 .bets { font-weight: bold; }
-.bets.is-futball .score { width: 40px; }
-.bets.is-futball .team { padding-left: 32px; }
-.bets.is-futball .team:first-child { padding: 0 32px 0 0; }
+.bets.is-futball .score { width: 66px; }
+.bets.is-futball .team { padding-left: 44px; }
+.bets.is-futball .team:first-child { padding: 0 44px 0 0; }
 
 .bet { position: relative; margin-top: 4px; padding: 3px 5px 3px 10px; -moz-box-shadow: 2px 2px 5px 1px black; -webkit-box-shadow: 2px 2px 5px 1px black; box-shadow: 2px 2px 5px 1px black; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; background-image: -moz-linear-gradient(#163957, #163957); background-image: -webkit-linear-gradient(#163957, #163957); background-image: linear-gradient(#163957, #163957); }
 .bet:before { position: absolute; content: ""; top: 0; left: 0; bottom: 0; width: 80px; -moz-border-radius: 8px 0 0 8px; -webkit-border-radius: 8px; border-radius: 8px 0 0 8px; background: rgba(0, 0, 0, 0.1); }
