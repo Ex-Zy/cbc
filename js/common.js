@@ -56,7 +56,7 @@ head.ready(function() {
 			colHeight 		= col.outerHeight(),
 			calcHeight 		= col.find('.calc').outerHeight(),
 			couponTop 		= col.find('.coupon__top').outerHeight(),
-			couponHeight 	= colHeight - calcHeight - couponTop -7,
+			couponHeight 	= colHeight - calcHeight - couponTop - 7,
 			coupon 			= col.find('.coupon__in');
 		coupon.height(couponHeight);
 	}
