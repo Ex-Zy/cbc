@@ -815,6 +815,12 @@ button.btn
 	font-size: 0
 	+opacity(.8)
 	+clr
+	&.is-tennis
+		.ground__item
+			&:nth-child(2)
+				padding-left: 0 !important
+				margin-right: 0 !important
+				width: 134px !important
 	.ground__item
 		line-height: 27px
 		font-size: 15px
@@ -2307,6 +2313,9 @@ $spinner-size: 50px !default
 	&.is-red
 		&:before
 			+g(#ee0c07, #f37a7a)
+	&.is-yellow
+		&:before
+			+g(#f66f25, #de8f15)
 	span
 		position: relative
 		z-index: 1
@@ -2720,6 +2729,17 @@ $spinner-size: 50px !default
 
 .h100
 	height: 100%
+
+// mdark
+.mdark
+	&.is-big
+		padding-right: 15px
+		width: 187px !important
+		font-size: 13px !important
+		span
+			line-height: 1.2
+			vertical-align: middle
+			display: inline-block
 
 
 
