@@ -251,7 +251,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .ground.is-tennis .ground__item:nth-child(2) { padding-left: 0 !important; margin-right: 0 !important; width: 134px !important; }
 .ground .ground__item { line-height: 27px; font-size: 15px; letter-spacing: 0.4px; vertical-align: top; display: inline-block; }
 .ground .ground__item:first-child { padding-left: 15px; width: 80px; }
-.ground .ground__item:nth-child(2) { padding-left: 130px; width: 391px; }
+.ground .ground__item:nth-child(2) { padding-left: 130px; width: 380px; }
 .ground .ground__item:nth-child(3), .ground .ground__item:nth-child(5) { margin-right: 2px; width: 136px; }
 .ground .ground__item:nth-child(4) { margin-right: 7px; width: 134px; }
 .ground .ground__item:nth-child(4) .ground__ind:first-child { width: 39px; color: white; }
@@ -294,8 +294,9 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .bet .coef:first-child { margin-left: 0; }
 .bet .btn-stat { margin-left: 4px; }
 .bet .teams { position: relative; font-size: 0; }
-.bet .team { padding-left: 64px; width: 50%; height: 22px; line-height: 22px; font-size: 13px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; vertical-align: top; display: inline-block; }
-.bet .team:first-child { padding: 0 64px 0 0; text-align: right; }
+.bet .team { padding-left: 78px; width: 50%; height: 22px; line-height: 22px; font-size: 13px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; vertical-align: top; display: inline-block; }
+.bet .team:first-child { position: relative; padding: 0 78px 0 0; text-align: right; }
+.bet .team:first-child .card { position: absolute; top: 0; right: 56px; }
 .bet .score { position: absolute; top: 0; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 .bet .time { text-transform: uppercase; }
 
@@ -323,7 +324,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .topic span { margin-right: 2px; text-transform: uppercase; }
 .topic span:first-child { text-transform: initial; }
 
-.keyboard { position: absolute; top: 0; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); width: 630px; padding: 1px; -moz-box-shadow: inset 0 0 0 1px white, 3px 3px 5px rgba(0, 0, 0, 0.3), -3px 0 5px rgba(0, 0, 0, 0.3); -webkit-box-shadow: inset 0 0 0 1px white, 3px 3px 5px rgba(0, 0, 0, 0.3), -3px 0 5px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 0 1px white, 3px 3px 5px rgba(0, 0, 0, 0.3), -3px 0 5px rgba(0, 0, 0, 0.3); border: 1px solid #6a7d8d; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background: #e8eaed; }
+.keyboard { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 630px; padding: 1px; -moz-box-shadow: inset 0 0 0 1px white, 3px 3px 5px rgba(0, 0, 0, 0.3), -3px 0 5px rgba(0, 0, 0, 0.3); -webkit-box-shadow: inset 0 0 0 1px white, 3px 3px 5px rgba(0, 0, 0, 0.3), -3px 0 5px rgba(0, 0, 0, 0.3); box-shadow: inset 0 0 0 1px white, 3px 3px 5px rgba(0, 0, 0, 0.3), -3px 0 5px rgba(0, 0, 0, 0.3); border: 1px solid #6a7d8d; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background: #e8eaed; }
 .keyboard .keyboard__top { position: relative; height: 14px; border-bottom: 1px solid white; background-image: -moz-linear-gradient(#ffffff, #e4e7ea); background-image: -webkit-linear-gradient(#ffffff, #e4e7ea); background-image: linear-gradient(#ffffff, #e4e7ea); }
 .keyboard .keyboard__close { position: absolute; top: 50%; right: 10px; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); background: url('../img/icons-sad8d8a0de1.png') 0 -1135px no-repeat; width: 9px; height: 8px; }
 .keyboard .keyboard__in { padding: 10px 13px 10px 11px; font-size: 0; }
@@ -820,13 +821,13 @@ button.disabled.btn.btn_foot.autowidth.ml, .t-keybord button.disabled.btn_foot.a
 .odds__content { background: #4c5258; width: auto; padding: 1px; height: auto; position: relative; z-index: 2; border-radius: 0 5px 5px 5px; box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.5); }
 .odds__content .center { width: 100%; }
 .odds__content .conteiner { background-color: white; }
-.odds__content .conteiner-row { background-color: #4c5258; font-size: 0; *zoom: 1; }
-.odds__content .conteiner-row:after { content: " "; display: table; clear: both; }
-.odds__content .conteiner-row .col1 { overflow: hidden; height: 50px; padding: 17px; font-size: 13px; font-weight: bold; vertical-align: top; }
-.odds__content .conteiner-row .col2 { display: inline-block !important; width: auto; height: auto; vertical-align: top; margin: 5px; font-size: 13px; }
-.odds__content .conteiner-row.rowgrey { background-color: #7f8285; }
-.odds__content .conteiner-row .origin { float: right; width: 546px; height: auto; }
-.odds__content .conteiner-row .origin .mdark { padding-left: 15px; margin-right: 5px; width: 100px; height: 42px; font-size: 15px; line-height: 43px; font-weight: bold; vertical-align: top; border-radius: 6px; background-image: linear-gradient(#2c5c1b, #3d8325); display: inline-block !important; }
+.odds__content .conteiner-row, .odds__content .type-row { background-color: #4c5258; font-size: 0; *zoom: 1; }
+.odds__content .conteiner-row:after, .odds__content .type-row:after { content: " "; display: table; clear: both; }
+.odds__content .conteiner-row .col1, .odds__content .type-row .col1 { overflow: hidden; height: 50px; padding: 17px; font-size: 13px; font-weight: bold; vertical-align: top; }
+.odds__content .conteiner-row .col2, .odds__content .type-row .col2 { display: inline-block !important; width: auto; height: auto; vertical-align: top; margin: 5px; font-size: 13px; }
+.odds__content .conteiner-row.rowgrey, .odds__content .type-row.rowgrey { background-color: #7f8285; }
+.odds__content .conteiner-row .origin, .odds__content .type-row .origin { float: right; width: 546px; height: auto; }
+.odds__content .conteiner-row .origin .mdark, .odds__content .type-row .origin .mdark { padding-left: 15px; margin-right: 5px; width: 100px; height: 42px; font-size: 15px; line-height: 43px; font-weight: bold; vertical-align: top; border-radius: 6px; background-image: linear-gradient(#2c5c1b, #3d8325); display: inline-block !important; }
 
 .ticker { float: left; max-width: 1300px; border-radius: 0px; width: 80%; }
 
