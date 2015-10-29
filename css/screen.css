@@ -180,6 +180,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 
 .status { padding: 2px; color: white; line-height: 1; font-size: 10px; text-transform: uppercase; font-weight: bold; text-align: center; letter-spacing: 0.9px; background: #4ca542; }
 .status.is-red { background: #f45151; }
+.status.is-yellow { color: black; background: #dad558; }
 
 .events { padding-top: 12px; font-size: 15px; line-height: 1; text-align: center; }
 .events .events__left, .events .events__right { vertical-align: top; display: inline-block; }
