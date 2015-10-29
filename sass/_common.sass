@@ -122,6 +122,16 @@ $color-orange: #de9114
 		+s(ball-tennis)
 	&.ico_datepicker
 		+s(ico-datepicker)
+	&.ico_up
+		+s(ico-up)
+	&.ico_k-left
+		+s(ico-k-left)
+	&.ico_k-right
+		+s(ico-k-right)
+	&.ico_key
+		+s(ico-key)
+	&.ico_delete
+		+s(ico-delete)
 
 *
 	+box
@@ -941,6 +951,9 @@ button.btn
 			padding-top: 4px
 			text-align: center
 			font-size: 12px
+		.pause
+			& + .score-w
+				margin-top: -20px
 	.bet__butt
 		position: relative
 		.time,
@@ -1130,6 +1143,87 @@ button.btn
 		.sel
 			float: right
 			margin-top: 4px
+
+// keyb
+.keyb
+	position: fixed
+	left: 0
+	right: 0
+	bottom: 0
+	padding: 0.85vw 0.85vw 0.85vw 0
+	vertical-align: bottom
+	background: #000
+	+box
+	.calculator
+		margin: 0
+		padding: 0
+	&.is-number
+		top: 50px
+		margin-left: 2px
+		padding: 9px
+		.keyb__butt
+			margin-left: 4%
+			width: 30.5%
+			min-height: 100%
+			height: 63px
+			line-height: 63px
+			font-size: 22px
+			-webkit-font-smoothing: antialiased
+			&:first-child
+				margin-left: 0 !important
+		.keyb__row
+			margin-top: 4%
+			&:last-child
+				.keyb__butt
+					&:last-child
+						width: 65%
+	.keyb__row
+		margin-top: 0.85vw
+		font-size: 0
+		white-space: nowrap
+		&:first-child
+			margin-top: 0
+	.keyb__butt
+		margin-left: 0.84vw
+		width: 7.423vw
+		height: 6.25vw
+		color: #fff
+		font-size: 2.6vw
+		line-height: 6.25vw
+		text-shadow: 1px 1px 1px #000, -1px -1px 1px #000
+		font-family: Tahoma, 'Roboto', sans-serif
+		text-align: center
+		vertical-align: top
+		background: #302f37
+		display: inline-block
+		+transition(all .1s linear)
+		&:hover
+			+opacity(.8)
+		&:first-child
+			margin-left: .3vw
+		&.is-dark
+			font-size: 2vw
+			background: #1e1d22
+		&.is-delete
+			width: 15.6vw
+		&.is-done
+			font-size: 1.5vw
+		&.is-tab
+			font-size: 1.5vw
+		&.is-space
+			width: 57vw
+		.ico
+			vertical-align: middle
+	.keyb__centr
+		margin-top: -7px
+		line-height: 1
+		vertical-align: middle
+		display: inline-block
+	.keyb__leng
+		text-transform: uppercase
+		font-size: 1.2vw
+		display: block
+
 
 // key
 .key
