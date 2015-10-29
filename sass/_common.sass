@@ -920,6 +920,12 @@ button.btn
 		+g(#2b581b, #3e8425)
 	&.is-pause
 		+g(#86772e, #aea369)
+	&.is-load
+		$color: #3e8425
+		$transparent: rgba(0, 0, 0, 0)
+		background: linear-gradient(-45deg, $transparent 47.9%,  $color 49.9%, $color 70%,  $transparent 53% ), linear-gradient(-45deg, $color 24%, $transparent 17% )
+		background-size: 6px 6px
+		background-color: #6f9426
 	.bet__in
 		position: relative
 		z-index: 2
@@ -1721,6 +1727,12 @@ $spinner-size: 50px !default
 		&.is-disabled
 			font-size: 12px
 			background: #494a4c
+		&.is-load
+			$color: #3e8425
+			$transparent: rgba(0, 0, 0, 0)
+			background: linear-gradient(-45deg, $transparent 47.9%,  $color 49.9%, $color 70%,  $transparent 53% ), linear-gradient(-45deg, $color 24%, $transparent 17% )
+			background-size: 6px 6px
+			background-color: #6f9426
 		.btn-close-ye
 			position: absolute
 			top: 5px

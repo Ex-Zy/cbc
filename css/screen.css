@@ -279,6 +279,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .bet:first-child { margin-top: 0; }
 .bet.is-green { background-image: -moz-linear-gradient(#2b581b, #3e8425); background-image: -webkit-linear-gradient(#2b581b, #3e8425); background-image: linear-gradient(#2b581b, #3e8425); }
 .bet.is-pause { background-image: -moz-linear-gradient(#86772e, #aea369); background-image: -webkit-linear-gradient(#86772e, #aea369); background-image: linear-gradient(#86772e, #aea369); }
+.bet.is-load { background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 47.9%, #3e8425 49.9%, #3e8425 70%, rgba(0, 0, 0, 0) 53%), linear-gradient(-45deg, #3e8425 24%, rgba(0, 0, 0, 0) 17%); background-size: 6px 6px; background-color: #6f9426; }
 .bet .bet__in { position: relative; z-index: 2; *zoom: 1; }
 .bet .bet__in:after { content: " "; display: table; clear: both; }
 .bet .bet__left { overflow: hidden; }
@@ -496,6 +497,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .coupon .coupon__row.is-green { background-image: -moz-linear-gradient(#385d2b, #447d31); background-image: -webkit-linear-gradient(#385d2b, #447d31); background-image: linear-gradient(#385d2b, #447d31); }
 .coupon .coupon__row.is-gray { background-image: -moz-linear-gradient(#3b3b3c, #969798); background-image: -webkit-linear-gradient(#3b3b3c, #969798); background-image: linear-gradient(#3b3b3c, #969798); }
 .coupon .coupon__row.is-disabled { font-size: 12px; background: #494a4c; }
+.coupon .coupon__row.is-load { background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 47.9%, #3e8425 49.9%, #3e8425 70%, rgba(0, 0, 0, 0) 53%), linear-gradient(-45deg, #3e8425 24%, rgba(0, 0, 0, 0) 17%); background-size: 6px 6px; background-color: #6f9426; }
 .coupon .coupon__row .btn-close-ye { position: absolute; top: 5px; right: 5px; }
 .coupon .coupon__text { margin-right: -15px; text-align: center; line-height: 35px; }
 .coupon .coupon__field { margin-top: 5px; line-height: 23px; *zoom: 1; }
