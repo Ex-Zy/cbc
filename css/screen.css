@@ -289,7 +289,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .bet .bet__more { margin-left: 7px; font-size: 0; vertical-align: top; display: inline-block; }
 .bet .bet__wr { position: relative; }
 .bet .bet__wr .time { position: absolute; top: 2px; left: 0; }
-.bet .bet__wr .score-w { padding-top: 4px; text-align: center; font-size: 12px; }
+.bet .bet__wr .score-w { padding-top: 4px; text-align: center; font-size: 12px; min-height: 22px; }
 .bet .bet__wr .pause + .score-w { margin-top: -20px; }
 .bet .bet__butt { position: relative; }
 .bet .bet__butt .time, .bet .bet__butt .period { display: inline-block; }
