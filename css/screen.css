@@ -494,7 +494,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .coupon .coupon__top { position: relative; margin: -7px -7px 4px -7px; padding: 7px 52px; text-align: center; font-size: 18px; letter-spacing: 0.8px; font-weight: bold; border-radius: 8px 8px 0 0; background: #de9114; }
 .coupon .coupon__top .btn-close-ye { position: absolute; top: 2px; right: 10px; }
 .coupon .coupon__bonus { padding: 13px 5px; text-align: center; font-weight: bold; background: #cb8e2a; border: 1px solid #a0a1a2; }
-.coupon .coupon__row { position: relative; padding: 9px 62px 4px 4px; font-size: 11px; font-weight: bold; line-height: 1.2; border: 1px solid #a0a1a2; background-image: -moz-linear-gradient(#294761, #2f5374); background-image: -webkit-linear-gradient(#294761, #2f5374); background-image: linear-gradient(#294761, #2f5374); }
+.coupon .coupon__row { position: relative; padding: 9px 62px 4px 4px; min-height: 47px; font-size: 11px; font-weight: bold; line-height: 1.2; border: 1px solid #a0a1a2; background-image: -moz-linear-gradient(#294761, #2f5374); background-image: -webkit-linear-gradient(#294761, #2f5374); background-image: linear-gradient(#294761, #2f5374); }
 .coupon .coupon__row.is-green { background-image: -moz-linear-gradient(#385d2b, #447d31); background-image: -webkit-linear-gradient(#385d2b, #447d31); background-image: linear-gradient(#385d2b, #447d31); }
 .coupon .coupon__row.is-gray { background-image: -moz-linear-gradient(#3b3b3c, #969798); background-image: -webkit-linear-gradient(#3b3b3c, #969798); background-image: linear-gradient(#3b3b3c, #969798); }
 .coupon .coupon__row.is-disabled { font-size: 12px; background: #494a4c; }
