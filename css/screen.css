@@ -509,6 +509,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .coupon .coefs { *zoom: 1; }
 .coupon .coefs:after { content: " "; display: table; clear: both; }
 .coupon .coef-w { float: right; font-size: 12px; }
+.coupon .coef-w.is-yellow { color: #e5e61a; }
 
 .calc { font-weight: bold; background: #7f8285; }
 .calc .calc__but { margin: 0 -2px 2px 0; font-size: 0; }
