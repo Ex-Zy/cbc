@@ -1598,6 +1598,44 @@ $spinner-size: 50px !default
 	100%
 		opacity: 0
 
+
+
+$spin-color: rgba(#fff, .7) !default
+$spin-size: 69px !default
+
+.spin
+	margin: 10px 0
+	font-size: $spin-size
+	position: relative
+	display: inline-block
+	width: 69px
+	height: 69px
+	.spin__blade
+		position: absolute
+		left: .4629em
+		bottom: 0
+		width: 5px
+		height: .2777em
+		background-color: transparent
+		transform-origin: center -.2222em
+		animation: sp-ico-fade 1s infinite linear
+
+		$animation-delay: 0s
+		$blade-rotation: 0deg
+
+		@for $i from 1 through 9
+			&:nth-child(#{$i})
+				animation-delay: $animation-delay
+				transform: rotate($blade-rotation)
+				$blade-rotation: $blade-rotation + 40
+				$animation-delay: $animation-delay + .11s
+
+@keyframes sp-ico-fade
+	0%
+		background-color: $spin-color
+	100%
+		background-color: transparent
+
 .popup
 	position: fixed
 	top: 0
@@ -1624,6 +1662,10 @@ $spinner-size: 50px !default
 	+border-radius(2px)
 	+box-shadow(0 0 4px 1px rgba(#000, .7))
 	background: rgba(#fff, .5)
+	&.is-mod
+		min-width: 400px
+		.preloader__wrap
+			padding: 20px
 	.preloader__wrap
 		padding: 15px 10px 45px
 		text-align: center
@@ -1633,7 +1675,11 @@ $spinner-size: 50px !default
 		text-overflow: ellipsis
 		white-space: nowrap
 		color: #fff
-	.sp-ico
+	.preloader__title
+		margin-bottom: 10px
+		font-size: 16px
+	.sp-ico,
+	.spin
 		margin: 0 auto 14px
 		display: block
 // error-p
