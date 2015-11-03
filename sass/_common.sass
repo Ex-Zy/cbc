@@ -132,6 +132,8 @@ $color-orange: #de9114
 		+s(ico-key)
 	&.ico_delete
 		+s(ico-delete)
+	&.ico_more
+		+s(icon-more)
 
 *
 	+box
@@ -1598,6 +1600,44 @@ $spinner-size: 50px !default
 	100%
 		opacity: 0
 
+
+
+$spin-color: rgba(#fff, .7) !default
+$spin-size: 69px !default
+
+.spin
+	margin: 10px 0
+	font-size: $spin-size
+	position: relative
+	display: inline-block
+	width: 69px
+	height: 69px
+	.spin__blade
+		position: absolute
+		left: .4629em
+		bottom: 0
+		width: 5px
+		height: .2777em
+		background-color: transparent
+		transform-origin: center -.2222em
+		animation: sp-ico-fade 1s infinite linear
+
+		$animation-delay: 0s
+		$blade-rotation: 0deg
+
+		@for $i from 1 through 9
+			&:nth-child(#{$i})
+				animation-delay: $animation-delay
+				transform: rotate($blade-rotation)
+				$blade-rotation: $blade-rotation + 40
+				$animation-delay: $animation-delay + .11s
+
+@keyframes sp-ico-fade
+	0%
+		background-color: $spin-color
+	100%
+		background-color: transparent
+
 .popup
 	position: fixed
 	top: 0
@@ -1624,6 +1664,10 @@ $spinner-size: 50px !default
 	+border-radius(2px)
 	+box-shadow(0 0 4px 1px rgba(#000, .7))
 	background: rgba(#fff, .5)
+	&.is-mod
+		min-width: 400px
+		.preloader__wrap
+			padding: 20px
 	.preloader__wrap
 		padding: 15px 10px 45px
 		text-align: center
@@ -1633,7 +1677,11 @@ $spinner-size: 50px !default
 		text-overflow: ellipsis
 		white-space: nowrap
 		color: #fff
-	.sp-ico
+	.preloader__title
+		margin-bottom: 10px
+		font-size: 16px
+	.sp-ico,
+	.spin
 		margin: 0 auto 14px
 		display: block
 // error-p
@@ -1766,6 +1814,8 @@ $spinner-size: 50px !default
 	.coef-w
 		float: right
 		font-size: 12px
+		&.is-yellow
+			color: #e5e61a
 
 // calc
 .calc
@@ -2425,10 +2475,10 @@ $spinner-size: 50px !default
 		+rotate(5)
 	&.is-red
 		&:before
-			+g(#ee0c07, #f37a7a)
+			background: #ff1414
 	&.is-yellow
 		&:before
-			+g(#f66f25, #de8f15)
+			background: #f1ce00
 	span
 		position: relative
 		z-index: 1
@@ -2720,6 +2770,23 @@ $spinner-size: 50px !default
 .res
 	color: #fff
 	font-weight: bold
+	&.is-mod
+		.res__col
+			min-height: 52px
+			line-height: 52px
+			font-size: 18px
+		a.res__col
+			&:active
+				.res__more
+					opacity: .8
+		.res-all
+			line-height: 1.2
+			vertical-align: middle
+			display: inline-block
+		.teams
+			line-height: 1.2
+			vertical-align: middle
+			display: inline-block
 	.res__in
 	.res__row
 		font-size: 0
@@ -2741,6 +2808,17 @@ $spinner-size: 50px !default
 			width: 61%
 		&:last-child
 			width: 23%
+	.res__more
+		position: absolute
+		top: 3px
+		right: 3px
+		bottom: 3px
+		width: 24px
+		border-radius: 4px
+		background-color: #7f8386
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.75)
+		.ico
+			left: 3px
 	.date,
 	.time,
 	.res__col,
@@ -2761,8 +2839,19 @@ $spinner-size: 50px !default
 // res-all
 .res-all
 	color: #70f077
+	.res-all__bot
+		text-transform: uppercase
 	&.is-yellow
 		color: #fffb07
+
+// res-stat
+.res-stat
+	background-color: #7f8386
+	border: 1px solid rgba(255, 255, 255, 0.5)
+	border-radius: 7px
+	box-shadow: 2.5px 4.3px 35px rgba(0, 0, 0, 0.75)
+	&__top
+	&__in
 
 // invoice
 .invoice
