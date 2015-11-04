@@ -2846,12 +2846,46 @@ $spin-size: 69px !default
 
 // res-stat
 .res-stat
+	min-width: 953px
+	font-size: 18px
 	background-color: #7f8386
 	border: 1px solid rgba(255, 255, 255, 0.5)
 	border-radius: 7px
 	box-shadow: 2.5px 4.3px 35px rgba(0, 0, 0, 0.75)
 	&__top
+		text-align: left
+		border-radius: 7px 7px 0 0
+		background: #43413f
+		td
+			padding: 0 0 0 12px
+			height: 83px
+			line-height: 83px
+			font-size: 18px
+			+box
+			vertical-align: top
 	&__in
+		overflow: hidden
+	.res-all
+		line-height: 1.2
+		vertical-align: middle
+		display: inline-block
+	.teams
+		text-transform: uppercase
+		vertical-align: middle
+		display: inline-block
+	.team
+		vertical-align: top
+		display: inline-block
+		&:first-child
+			margin-right: 3px
+	.ico
+		margin-right: 12px
+		vertical-align: middle
+	.date,
+	.time
+		display: inline-block
+	.time
+		margin-left: 5px
 
 // invoice
 .invoice

@@ -810,7 +810,17 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .res-all .res-all__bot { text-transform: uppercase; }
 .res-all.is-yellow { color: #fffb07; }
 
-.res-stat { background-color: #7f8386; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 7px; box-shadow: 2.5px 4.3px 35px rgba(0, 0, 0, 0.75); }
+.res-stat { min-width: 953px; font-size: 18px; background-color: #7f8386; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 7px; box-shadow: 2.5px 4.3px 35px rgba(0, 0, 0, 0.75); }
+.res-stat__top { text-align: left; border-radius: 7px 7px 0 0; background: #43413f; }
+.res-stat__top td { padding: 0 0 0 12px; height: 83px; line-height: 83px; font-size: 18px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; vertical-align: top; }
+.res-stat__in { overflow: hidden; }
+.res-stat .res-all { line-height: 1.2; vertical-align: middle; display: inline-block; }
+.res-stat .teams { text-transform: uppercase; vertical-align: middle; display: inline-block; }
+.res-stat .team { vertical-align: top; display: inline-block; }
+.res-stat .team:first-child { margin-right: 3px; }
+.res-stat .ico { margin-right: 12px; vertical-align: middle; }
+.res-stat .date, .res-stat .time { display: inline-block; }
+.res-stat .time { margin-left: 5px; }
 
 .invoice { padding: 12px; color: black; font-size: 16px; }
 .invoice .invoice__l { padding: 20px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; background: #c8cac9; }
