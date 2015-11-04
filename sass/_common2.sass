@@ -1,0 +1,149 @@
+//icons
+.ico
+	&_some
+		//+s(ico__some)
+		+png(ico__some)
+
+	&_soc	
+		+s(ico__soc)
+
+
+
+
+//popup_2
+.popup_2
+
+	.res-stat
+		&__close
+			position: relative
+
+		&__top
+			td
+				&:first-child
+					width: 185px
+				&:nth-child(2)
+					width: 508px	
+					padding-left: 0	
+
+		&__in 
+			tr:nth-child(odd)
+				background-color: #7f8285
+				height: 32px	
+			tr:nth-child(even)	
+				background-color: #444341
+				height: 37px
+
+			td
+				&:first-child
+					width: 210px
+
+				&:nth-child(2)
+					width: 252px
+
+				&:nth-child(3)
+					padding-left: 106px	
+
+			span.is-upperc
+				text-transform: uppercase
+
+			.ico
+				margin-right: 0	
+		&__bot
+			font-size: 0
+			height: 85px
+			+vertical
+
+			.btn
+				display: inline-block
+				vertical-align: middle
+
+			.btn_foot
+				&:first-child
+					margin-right: 10px	
+
+			.pages
+				margin: 0 34px
+				display: inline-block
+				vertical-align: middle
+				.btn_foot
+					margin-right: 0
+
+			.pages__text
+				padding: 0 26px				
+		
+		td
+			color: white
+			font-family: Arial
+			font-size: 18px
+			font-weight: 400
+
+
+	.card
+		width: 21px
+		height: 24px
+		line-height: 24px
+		&:before
+			width: 21px
+			height: 24px
+			+rotate(0)
+			+transform(skew(-5deg, 0))
+
+	.card.is-red-yellow
+		&:before
+			background-image: -webkit-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%)
+			background-image: -o-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%)
+			background-image: linear-gradient(to bottom right, #e71b1b 50%, #e7cd1b 50%)
+
+			
+
+	.close
+		width: 111px
+		height: 45px
+		position: absolute
+		z-index: 999	
+		top: 0
+		right: 4px
+		+vertical
+		&:before
+			content: ' '
+			display: inline-block
+			vertical-align: middle
+			width: 0
+			height: 100%
+
+		
+				
+
+		span
+			color: white
+			font-family: Arial
+			font-size: 18px
+			font-weight: 700
+			text-transform: uppercase
+			display: inline-block
+			vertical-align: middle
+			
+
+		&__button
+			display: inline-block
+			vertical-align: middle
+			width: 41px
+			height: 36px
+			background-color: #ea801d
+			background-image: -webkit-linear-gradient(bottom, #f67125 0%, #de8e15 100%)
+			background-image: -o-linear-gradient(bottom, #f67125 0%, #de8e15 100%)
+			background-image: linear-gradient(to top, #f67125 0%, #de8e15 100%)
+			border-radius: 4px
+			box-shadow: 0.5px 0.9px 5px rgba(0, 1, 1, 0.75)	
+			margin-left: 8px
+			color: black
+			font-family: Arial
+			font-size: 18px
+			font-weight: 700
+			text-transform: uppercase
+			cursor: pointer
+			&:active
+				background-image: -webkit-linear-gradient(bottom, #de8e15 100%, #f67125 0% )
+				background-image: -o-linear-gradient(bottom, #de8e15 100%, #f67125 0%)
+				background-image: linear-gradient(to top, #de8e15 100%, #f67125 0%)
+
