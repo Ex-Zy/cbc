@@ -856,6 +856,8 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .ico_soc { background: url('../img/icons-sfe6eda87ff.png') 0 -627px no-repeat; width: 28px; height: 28px; }
 .ico_info { background: url('../img/icons-sfe6eda87ff.png') 0 -489px no-repeat; width: 128px; height: 128px; }
 
+.is-hidden { display: none; }
+
 .popup_2 .res-stat__close { position: relative; }
 .popup_2 .res-stat__top td:first-child { width: 185px; }
 .popup_2 .res-stat__top td:nth-child(2) { width: 508px; padding-left: 0; }
@@ -892,6 +894,9 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .popup_t .alert-p .alert-p__text { position: relative; padding: 10px 10px 10px 60px; min-height: 117px; text-shadow: 1px 1px 4px #000; }
 .popup_t .alert-p .ico { position: absolute; top: -12px; left: -30px; z-index: 1; -ms-transform: scale(0.5); -webkit-transform: scale(0.5); transform: scale(0.5); }
 .popup_t .alert-p .btn, .popup_t .alert-p .t-keybord .t-key, .t-keybord .popup_t .alert-p .t-key { height: 27px; width: 78px; text-transform: uppercase; font-weight: normal; font-size: 12px; }
+
+.popup_t2 .alert-p h1 { font-size: 37px; }
+.popup_t2 .alert-p .btn, .popup_t2 .alert-p .t-keybord .t-key, .t-keybord .popup_t2 .alert-p .t-key { width: 140px; margin: 0 10px; height: 34px; }
 
 .games__flag { position: absolute; bottom: 0px; left: 0px; }
 
