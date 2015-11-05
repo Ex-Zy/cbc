@@ -302,9 +302,9 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .bet .btn-stat { margin-left: 4px; }
 .bet .teams { position: relative; font-size: 0; }
 .bet .team { padding-left: 78px; width: 50%; height: 22px; line-height: 22px; font-size: 13px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; vertical-align: top; display: inline-block; }
-.bet .team__text { display: inline-block; vertical-align: top; width: calc(100% - 85px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bet .team__text { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .bet .team:first-child { position: relative; padding: 0 78px 0 0; text-align: right; }
-.bet .team .card__wrap { display: inline-block; vertical-align: top; width: 80px; }
+.bet .team .card__wrap { display: block; max-width: 84px; float: right; }
 .bet .team .card__wrap .card { position: absolute; top: 0; right: 56px; }
 .bet .team .card__wrap .card.is-mod { position: relative; top: inherit; right: inherit; }
 .bet .team.is-mod { overflow: visible; white-space: normal; text-overflow: inherit; }
@@ -526,6 +526,8 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .coupon .coupon__field { margin-top: 5px; line-height: 23px; *zoom: 1; }
 .coupon .coupon__field:after { content: " "; display: table; clear: both; }
 .coupon .coupon__field .checkbox { float: right; margin-right: -4px; width: 23px; }
+.coupon.is-mod { width: 232px; }
+.coupon.is-mod .coupon__top { overflow: hidden; text-overflow: ellipsis; }
 .coupon .teams { text-transform: uppercase; }
 .coupon .calc { position: absolute; right: 3px; left: 3px; bottom: 2px; }
 .coupon .coefs { *zoom: 1; }
