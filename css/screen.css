@@ -302,8 +302,12 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .bet .btn-stat { margin-left: 4px; }
 .bet .teams { position: relative; font-size: 0; }
 .bet .team { padding-left: 78px; width: 50%; height: 22px; line-height: 22px; font-size: 13px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; vertical-align: top; display: inline-block; }
+.bet .team__text { display: inline-block; vertical-align: top; width: calc(100% - 85px); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .bet .team:first-child { position: relative; padding: 0 78px 0 0; text-align: right; }
-.bet .team:first-child .card { position: absolute; top: 0; right: 56px; }
+.bet .team .card__wrap { display: inline-block; vertical-align: top; width: 80px; }
+.bet .team .card__wrap .card { position: absolute; top: 0; right: 56px; }
+.bet .team .card__wrap .card.is-mod { position: relative; top: inherit; right: inherit; }
+.bet .team.is-mod { overflow: visible; white-space: normal; text-overflow: inherit; }
 .bet .score { position: absolute; top: 0; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 .bet .time { text-transform: uppercase; }
 
