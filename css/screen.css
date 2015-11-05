@@ -856,8 +856,6 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .ico_soc { background: url('../img/icons-sfe6eda87ff.png') 0 -627px no-repeat; width: 28px; height: 28px; }
 .ico_info { background: url('../img/icons-sfe6eda87ff.png') 0 -489px no-repeat; width: 128px; height: 128px; }
 
-.is-hidden { display: none; }
-
 .popup_2 .res-stat__close { position: relative; }
 .popup_2 .res-stat__top td:first-child { width: 185px; }
 .popup_2 .res-stat__top td:nth-child(2) { width: 508px; padding-left: 0; }
@@ -897,6 +895,8 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 
 .popup_t2 .alert-p h1 { font-size: 37px; }
 .popup_t2 .alert-p .btn, .popup_t2 .alert-p .t-keybord .t-key, .t-keybord .popup_t2 .alert-p .t-key { width: 140px; margin: 0 10px; height: 34px; }
+
+.popup.is-hidden { display: none; }
 
 .games__flag { position: absolute; bottom: 0px; left: 0px; }
 
