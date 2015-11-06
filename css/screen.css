@@ -904,6 +904,34 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 
 .popup.is-hidden { display: none; }
 
+.collection { position: relative; height: 100%; text-align: center; font-size: 0; }
+.collection:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.collection__in { width: 340px; display: inline-block; margin: auto; vertical-align: middle; }
+.collection__title { text-align: center; font: 18px/1.2 Arial, sans-serif; margin-bottom: 10px; letter-spacing: 0.001em; }
+.collection__date { text-align: center; font: 14px/1.2 Arial, sans-serif; margin-bottom: 15px; }
+.collection__date span { display: inline-block; vertical-align: top; }
+.collection .collection-t { display: inline-table; width: 160px; height: 330px; font-size: 11px; text-align: left; background-color: #BABABA; }
+.collection .collection-t.is-mod { margin-left: 20px; }
+.collection .collection-t tr.is-mod { background-color: #ccc; }
+.collection .collection-t tr.is-gradient { background: -webkit-linear-gradient(bottom, #B8B8B8 0%, #C9C9C9 80%); background: -o-linear-gradient(bottom, #B8B8B8 0%, #C9C9C9 80%); background: linear-gradient(to top, #b8b8b8 0%, #c9c9c9 80%); }
+.collection .collection-t th { position: relative; color: black; padding-left: 10px; height: 46px; vertical-align: middle; font: 800 12px Arial, sans-serif; }
+.collection .collection-t th:before { content: " "; display: block; height: 80%; left: 0; top: 0px; bottom: 10px; width: 1px; position: absolute; background-color: #B8B8A8; }
+.collection .collection-t th:first-child:before { display: none; }
+.collection .collection-t td { padding: 0 5px; position: relative; height: 36px; vertical-align: middle; font: 400 13px Arial, sans-serif; color: black; }
+.collection .collection-t td:before { content: " "; display: block; height: 80%; left: -1px; top: 3px; bottom: 3px; width: 1px; position: absolute; box-shadow: 1px 0px 1px #EBEBEE; }
+.collection .collection-t td:first-child:before { display: none; }
+.collection .btn, .collection .t-keybord .t-key, .t-keybord .collection .t-key { width: 160px; margin-top: 10px; font-size: 14px; }
+.collection .btn.is-right, .collection .t-keybord .is-right.t-key, .t-keybord .collection .is-right.t-key { float: right; }
+
+.transaction { position: relative; overflow: hidden; height: 100%; text-align: center; font-size: 0; }
+.transaction:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.transaction__in { display: inline-block; margin: auto; vertical-align: middle; width: 386px; }
+.transaction__info { display: block; text-align: center; min-height: 36px; border-radius: 5px; color: #fff; font: 16px Arial, sans-serif; margin: 0 4px 20px; background-color: #292929; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI5MjkyOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2EyYTVhOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #292929), color-stop(100%, #a2a5a8)); background-image: -moz-linear-gradient(#292929, #a2a5a8 100%); background-image: -webkit-linear-gradient(#292929, #a2a5a8 100%); background-image: linear-gradient(#292929, #a2a5a8 100%); }
+.transaction__info span { padding: 9px 0; display: block; }
+.transaction .btn, .transaction .t-keybord .t-key, .t-keybord .transaction .t-key { width: 49%; height: 36px; font: 16px Arial, sans-serif; }
+.transaction .btn.is-left, .transaction .t-keybord .is-left.t-key, .t-keybord .transaction .is-left.t-key { float: left; }
+.transaction .btn.is-right, .transaction .t-keybord .is-right.t-key, .t-keybord .transaction .is-right.t-key { float: right; margin-left: 2%; }
+
 .games__flag { position: absolute; bottom: 0px; left: 0px; }
 
 .button.btn.btn_foot.autowidth, .t-keybord .button.btn_foot.autowidth.t-key { width: auto; min-width: 138px; }

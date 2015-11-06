@@ -217,3 +217,133 @@
 
 .popup.is-hidden
 	display: none
+
+//collection
+.collection
+	position: relative
+	height: 100%
+	+vertical
+	
+	&__in	
+		width: 340px
+		display: inline-block
+		margin: auto
+		vertical-align: middle
+
+	&__title
+		text-align: center
+		font: 18px/1.2 Arial, sans-serif	
+		margin-bottom: 10px
+		letter-spacing: 0.001em
+
+	&__date
+		text-align: center
+		font: 14px/1.2 Arial, sans-serif
+		margin-bottom: 15px	
+		span
+			display: inline-block
+			vertical-align: top
+
+	.collection-t
+		display: inline-table
+		width: 160px
+		height: 330px
+		font-size: 11px
+		text-align: left
+		background-color: #BABABA
+		&.is-mod
+			margin-left: 20px
+		tr.is-mod
+			background-color: #ccc
+		tr.is-gradient
+			background: -webkit-linear-gradient(bottom, #B8B8B8 0%, #C9C9C9 80%)
+			background: -o-linear-gradient(bottom, #B8B8B8 0%, #C9C9C9 80%)
+			background: linear-gradient(to top, #B8B8B8 0%, #C9C9C9 80%)	
+		th	
+			position: relative
+			color: black
+			padding-left: 10px	
+			height: 46px
+			vertical-align: middle
+			font: 800 12px Arial, sans-serif
+			&:before
+				content: ' '
+				display: block
+				height: 80%
+				left: 0
+				top: 0px
+				bottom: 10px
+				width: 1px
+				position: absolute
+				background-color: #B8B8A8
+			&:first-child:before
+				display: none
+		td	
+			padding: 0 5px
+			position: relative
+			height: 36px
+			vertical-align: middle
+			font: 400 13px Arial, sans-serif
+			color: black
+			&:before
+				content: ' '
+				display: block
+				height: 80%
+				left: -1px
+				top: 3px
+				bottom: 3px
+				width: 1px
+				position: absolute
+				box-shadow: 1px 0px 1px #EBEBEE
+			&:first-child:before
+				display: none	
+			// &:empty
+			// 	background-color: #BABABA
+
+	.btn
+		width: 160px
+		margin-top: 10px
+		font-size: 14px
+
+	.btn.is-right
+		float: right		
+
+
+//transaction
+.transaction
+	position: relative
+	overflow: hidden
+	height: 100%
+	+vertical
+
+	&__in
+		display: inline-block
+		margin: auto
+		vertical-align: middle
+		width: 386px
+
+	&__info
+		display: block
+		text-align: center
+		min-height: 36px
+		border-radius: 5px
+		color: #fff
+		font: 16px Arial, sans-serif
+		margin: 0 4px 20px
+		background-color: #292929
+		+g(#292929, #a2a5a8 100%)
+		span 
+			padding: 9px 0
+			display: block
+
+	.btn
+		width: 49%
+		height: 36px
+		font: 16px Arial, sans-serif
+	
+	.btn.is-left
+		float: left
+
+	.btn.is-right
+		float: right
+		margin-left: 2%	
