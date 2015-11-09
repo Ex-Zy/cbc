@@ -1,0 +1,360 @@
+//icons
+.ico
+	&_some
+		+png(ico__some)
+	&_soc	
+		+s(ico__soc)
+	&_info
+		+s(ico__info)	
+
+
+//popup_2
+.popup_2
+
+	.res-stat
+		&__close
+			position: relative
+
+		&__top
+			td
+				&:first-child
+					width: 185px
+				&:nth-child(2)
+					width: 508px	
+					padding-left: 0	
+
+		&__in 
+			tr:nth-child(odd)
+				background-color: #7f8285
+				height: 32px	
+			tr:nth-child(even)	
+				background-color: #444341
+				height: 37px
+
+			td
+				&:first-child
+					width: 210px
+
+				&:nth-child(2)
+					width: 252px
+
+				&:nth-child(3)
+					padding-left: 106px	
+
+			span.is-upperc
+				text-transform: uppercase
+
+			.ico
+				margin-right: 0	
+		&__bot
+			font-size: 0
+			height: 85px
+			+vertical
+
+			.btn
+				display: inline-block
+				vertical-align: middle
+
+			.btn_foot
+				&:first-child
+					margin-right: 10px	
+
+			.pages
+				margin: 0 34px
+				display: inline-block
+				vertical-align: middle
+				.btn_foot
+					margin-right: 0
+
+			.pages__text
+				padding: 0 26px				
+		
+		td
+			color: white
+			font-family: Arial
+			font-size: 18px
+			font-weight: 400
+
+
+	.card
+		width: 21px
+		height: 24px
+		line-height: 24px
+		&:before
+			width: 21px
+			height: 24px
+			+rotate(0)
+			+transform(skew(-5deg, 0))
+
+	.card.is-red-yellow
+		&:before
+			background-image: -webkit-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%)
+			background-image: -o-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%)
+			background-image: linear-gradient(to bottom right, #e71b1b 50%, #e7cd1b 50%)
+
+			
+
+	.close
+		width: 111px
+		height: 45px
+		position: absolute
+		z-index: 999	
+		top: 0
+		right: 4px
+		+vertical
+		&:before
+			content: ' '
+			display: inline-block
+			vertical-align: middle
+			width: 0
+			height: 100%
+
+		span
+			color: white
+			font-family: Arial
+			font-size: 18px
+			font-weight: 700
+			text-transform: uppercase
+			display: inline-block
+			vertical-align: middle
+			
+
+		&__button
+			display: inline-block
+			vertical-align: middle
+			width: 41px
+			height: 36px
+			background-color: #ea801d
+			background-image: -webkit-linear-gradient(bottom, #f67125 0%, #de8e15 100%)
+			background-image: -o-linear-gradient(bottom, #f67125 0%, #de8e15 100%)
+			background-image: linear-gradient(to top, #f67125 0%, #de8e15 100%)
+			border-radius: 4px
+			box-shadow: 0.5px 0.9px 5px rgba(0, 1, 1, 0.75)	
+			margin-left: 8px
+			color: black
+			font-family: Arial
+			font-size: 18px
+			font-weight: 700
+			text-transform: uppercase
+			cursor: pointer
+			&:active
+				background-image: -webkit-linear-gradient(bottom, #de8e15 100%, #f67125 0% )
+				background-image: -o-linear-gradient(bottom, #de8e15 100%, #f67125 0%)
+				background-image: linear-gradient(to top, #de8e15 100%, #f67125 0%)
+
+
+
+
+//popup_t
+.popup_t
+	.popup__in
+		width: 540px
+	.alert-p
+		position: relative
+		padding: 25px 6px 6px
+		font-weight: bold
+		min-width: 520px
+		font-size: 14px
+		+box-shadow(0 0 5px 2px #000)
+		+border-radius(3px)
+		+g(#4f4f4f, #b9b9b9)
+		.alert-p-top
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			padding: 0 6px
+			height: 17px
+			line-height: 17px
+			font-size: 12px
+			text-align: left
+			+box-shadow(inset 0 0 0 1px rgba(#fff, .5))
+			+border-radius(3px)
+			+g(#fff 0%, #df0909 69%)
+		.alert-p__wrap
+			position: relative
+			padding: 18px 0 2px
+			&:before
+				position: absolute
+				content: ''
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				+opacity(.5)
+				background: url(../img/top-bg.png) no-repeat 50% 50%
+				background-size: 100% 100%
+		.alert-p__text
+			position: relative
+			padding: 10px 10px 10px 60px
+			min-height: 117px
+			+text-shadow(1px 1px 4px #000)
+		.ico
+			position: absolute
+			top: -12px
+			left: -30px
+			z-index: 1
+			+scale(0.5)
+		.btn
+			height: 27px
+			width: 78px
+			text-transform: uppercase
+			font-weight: normal
+			font-size: 12px
+
+//popup_t2
+.popup_t2		
+
+	.alert-p
+
+		h1
+			font-size: 37px
+
+		.btn
+			width: 140px
+			margin: 0 10px
+			height: 34px
+
+.popup.is-hidden
+	display: none
+
+//collection
+.collection
+	position: relative
+	
+	&__in	
+		width: 340px
+		display: block
+		margin: auto
+		+clr
+
+	&__title
+		text-align: center
+		font: 18px/1.2 Arial, sans-serif	
+		margin-bottom: 10px
+		letter-spacing: 0.001em
+
+	&__date
+		text-align: center
+		font: 14px/1.2 Arial, sans-serif
+		margin-bottom: 15px	
+		span
+			display: inline-block
+			vertical-align: top
+
+	.collection-t
+		display: inline-table
+		width: 160px
+		height: 330px
+		font-size: 11px
+		text-align: left
+		background-color: #BABABA
+		&.is-mod
+			margin-left: 20px
+		tr.is-mod
+			background-color: #ccc
+		tr.is-gradient
+			background: -webkit-linear-gradient(bottom, #B8B8B8 0%, #C9C9C9 80%)
+			background: -o-linear-gradient(bottom, #B8B8B8 0%, #C9C9C9 80%)
+			background: linear-gradient(to top, #B8B8B8 0%, #C9C9C9 80%)	
+		th	
+			position: relative
+			color: black
+			padding-left: 10px	
+			height: 46px
+			vertical-align: middle
+			font: 800 12px Arial, sans-serif
+			&:before
+				content: ' '
+				display: block
+				height: 80%
+				left: 0
+				top: 0px
+				bottom: 10px
+				width: 1px
+				position: absolute
+				background-color: #B8B8A8
+			&:first-child:before
+				display: none
+		td	
+			padding: 0 5px
+			position: relative
+			height: 36px
+			vertical-align: middle
+			font: 400 13px Arial, sans-serif
+			color: black
+			&:before
+				content: ' '
+				display: block
+				height: 80%
+				left: -1px
+				top: 3px
+				bottom: 3px
+				width: 1px
+				position: absolute
+				box-shadow: 1px 0px 1px #EBEBEE
+			&:first-child:before
+				display: none	
+			// &:empty
+			// 	background-color: #BABABA
+
+	.btn
+		width: 160px
+		margin-top: 10px
+		font-size: 14px
+
+	.btn.is-right
+		float: right		
+
+
+//transaction
+.transaction
+	position: relative
+
+	&__in
+		display: block
+		margin: auto
+		width: 386px
+		+clr
+
+	&__info
+		display: block
+		text-align: center
+		min-height: 36px
+		border-radius: 5px
+		color: #fff
+		font: 16px Arial, sans-serif
+		margin: 0 4px 20px
+		background-color: #292929
+		+g(#292929, #a2a5a8 100%)
+		span 
+			padding: 9px 0
+			display: block
+
+	.btn
+		width: 49%
+		height: 36px
+		font: 16px Arial, sans-serif
+	
+	.btn.is-left
+		float: left
+
+	.btn.is-right
+		float: right
+		margin-left: 2%	
+
+
+//modification
+.l .col-left.is-middle
+	vertical-align: middle
+
+//TV
+//header
+.header-m.is-mod
+	padding-left: 110px
+
+	.inf
+		font-size: 16px
+		padding-top: 11px
+
+

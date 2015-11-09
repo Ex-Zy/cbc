@@ -827,11 +827,18 @@ button.btn
 	+opacity(.8)
 	+clr
 	&.is-tennis
-		.ground__item
+		& > .ground__item
 			&:nth-child(2)
-				padding-left: 0 !important
-				margin-right: 0 !important
-				width: 134px !important
+				width: calc(100% - 460px) !important
+				padding: 0 85px 0 0 !important
+				text-align: center
+				+box
+		.ground__right
+			.ground__item
+				&:nth-child(2)
+					padding-left: 0 !important
+					margin-right: 0 !important
+					width: 134px !important
 	.ground__item
 		line-height: 27px
 		font-size: 15px
@@ -1001,14 +1008,32 @@ button.btn
 		text-overflow: ellipsis
 		vertical-align: top
 		display: inline-block
+		&__text
+			display: block
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: nowrap
 		&:first-child
 			position: relative
 			padding: 0 78px 0 0
 			text-align: right
+		.card__wrap	
+			display: block
+			max-width: 84px
+			float: right
 			.card
 				position: absolute
 				top: 0
 				right: 56px
+				&.is-mod
+					position: relative
+					top: inherit
+					right: inherit
+
+	.team.is-mod
+		overflow: visible
+		white-space: normal
+		text-overflow: inherit			
 
 	.score
 		position: absolute
@@ -1802,6 +1827,11 @@ $spin-size: 69px !default
 			float: right
 			margin-right: -4px
 			width: 23px
+	&.is-mod
+		width: 232px
+		.coupon__top
+			overflow: hidden
+			text-overflow: ellipsis
 	.teams
 		text-transform: uppercase
 	.calc
@@ -2846,12 +2876,46 @@ $spin-size: 69px !default
 
 // res-stat
 .res-stat
+	min-width: 953px
+	font-size: 18px
 	background-color: #7f8386
 	border: 1px solid rgba(255, 255, 255, 0.5)
 	border-radius: 7px
 	box-shadow: 2.5px 4.3px 35px rgba(0, 0, 0, 0.75)
 	&__top
+		text-align: left
+		border-radius: 7px 7px 0 0
+		background: #43413f
+		td
+			padding: 0 0 0 12px
+			height: 83px
+			line-height: 83px
+			font-size: 18px
+			+box
+			vertical-align: top
 	&__in
+		overflow: hidden
+	.res-all
+		line-height: 1.2
+		vertical-align: middle
+		display: inline-block
+	.teams
+		text-transform: uppercase
+		vertical-align: middle
+		display: inline-block
+	.team
+		vertical-align: top
+		display: inline-block
+		&:first-child
+			margin-right: 3px
+	.ico
+		margin-right: 12px
+		vertical-align: middle
+	.date,
+	.time
+		display: inline-block
+	.time
+		margin-left: 5px
 
 // invoice
 .invoice
