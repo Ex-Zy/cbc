@@ -221,14 +221,12 @@
 //collection
 .collection
 	position: relative
-	height: 100%
-	+vertical
 	
 	&__in	
 		width: 340px
-		display: inline-block
+		display: block
 		margin: auto
-		vertical-align: middle
+		+clr
 
 	&__title
 		text-align: center
@@ -312,15 +310,12 @@
 //transaction
 .transaction
 	position: relative
-	overflow: hidden
-	height: 100%
-	+vertical
 
 	&__in
-		display: inline-block
+		display: block
 		margin: auto
-		vertical-align: middle
 		width: 386px
+		+clr
 
 	&__info
 		display: block
@@ -347,3 +342,8 @@
 	.btn.is-right
 		float: right
 		margin-left: 2%	
+
+
+//modification
+.l .col-left.is-middle
+	vertical-align: middle
