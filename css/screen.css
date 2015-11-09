@@ -253,7 +253,8 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 
 .ground { font-size: 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; *zoom: 1; }
 .ground:after { content: " "; display: table; clear: both; }
-.ground.is-tennis .ground__item:nth-child(2) { padding-left: 0 !important; margin-right: 0 !important; width: 134px !important; }
+.ground.is-tennis > .ground__item:nth-child(2) { width: calc(100% - 460px) !important; padding: 0 85px 0 0 !important; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.ground.is-tennis .ground__right .ground__item:nth-child(2) { padding-left: 0 !important; margin-right: 0 !important; width: 134px !important; }
 .ground .ground__item { line-height: 27px; font-size: 15px; letter-spacing: 0.4px; vertical-align: top; display: inline-block; }
 .ground .ground__item:first-child { padding-left: 15px; width: 80px; }
 .ground .ground__item:nth-child(2) { padding-left: 130px; width: 380px; }
@@ -933,6 +934,9 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .transaction .btn.is-right, .transaction .t-keybord .is-right.t-key, .t-keybord .transaction .is-right.t-key { float: right; margin-left: 2%; }
 
 .l .col-left.is-middle { vertical-align: middle; }
+
+.header-m.is-mod { padding-left: 110px; }
+.header-m.is-mod .inf { font-size: 16px; padding-top: 11px; }
 
 .games__flag { position: absolute; bottom: 0px; left: 0px; }
 
