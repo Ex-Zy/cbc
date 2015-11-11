@@ -5,8 +5,17 @@
 	&_soc	
 		+s(ico__soc)
 	&_info
-		+s(ico__info)	
-
+		+s(ico__info)
+	&_tenis
+		+s(images-tennis)
+		display: inline-block
+	&_tenis_small	
+		+scale(.7)	
+	&_lock
+		+s(images-lock1)		
+		display: inline-block
+	&_lock.is-small
+		+scale(0.7)
 //popup_2
 .popup_2
 
@@ -394,6 +403,7 @@
 	width: 100%
 
 	.logo-tenis
+		margin-left: 11px
 		+s(logo-tenis)
 
 	.logo-name
@@ -521,7 +531,6 @@
 			.score + .player
 				text-align: left
 
-
 			.score
 				display: inline-block
 				vertical-align: middle
@@ -533,11 +542,11 @@
 				-webkit-transform: translate(0, 0)
 				transform: translate(0, 0)
 				&.is-mod
-					// position: relative
-					// font-size: 18px
-					// height: 26px
-					// line-height: 26px
-					// width: 116px
+					position: relative
+					font-size: 18px
+					height: 31px
+					line-height: 32px
+					width: 116px
 					// &:before
 					// 	content: ' '
 					// 	display: block
@@ -547,16 +556,16 @@
 					// 	background-color: #7F8285
 					// 	left: -5%
 					// 	position: absolute
-					.ico-tenis
-						display: inline-block
+					.ball
 						position: absolute
-						margin: auto
-						top: 0
-						bottom: 0
+						top: 50%
 						right: 4px
-						+s(images-tennis)
-						&_small	
-							+scale(.7)
+						+translate(0,-50%)
+						line-height: 1
+						font-size: 0
+						&.is-left
+							right: auto
+							left: 4px
 
 				// &.score_m
 				// 	height: 36px
@@ -577,10 +586,6 @@
 				display: block
 				text-align: center
 				font-size: 18px
-
-			.ico-lock
-				+s(images-lock1)		
-				display: inline-block
 
 			.coef-tv
 				font: 20px Arial, sans-serif

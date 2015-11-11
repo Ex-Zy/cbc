@@ -862,6 +862,10 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .ico_some { background: url("../img/ico__some.png") no-repeat 0 0; width: 12px; height: 18px; }
 .ico_soc { background: url('../img/icons-sc6eb0a5838.png') 0 -657px no-repeat; width: 28px; height: 28px; }
 .ico_info { background: url('../img/icons-sc6eb0a5838.png') 0 -519px no-repeat; width: 128px; height: 128px; }
+.ico_tenis { background: url('../img/icons-sc6eb0a5838.png') 0 -1564px no-repeat; width: 22px; height: 22px; display: inline-block; }
+.ico_tenis_small { -ms-transform: scale(0.7); -webkit-transform: scale(0.7); transform: scale(0.7); }
+.ico_lock { background: url('../img/icons-sc6eb0a5838.png') 0 -1303px no-repeat; width: 33px; height: 33px; display: inline-block; }
+.ico_lock.is-small { -ms-transform: scale(0.7); -webkit-transform: scale(0.7); transform: scale(0.7); }
 
 .popup_2 .res-stat__close { position: relative; }
 .popup_2 .res-stat__top td:first-child { width: 185px; }
@@ -950,7 +954,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .header-tv .ticker.is-mod .ticker__text { overflow: hidden; text-overflow: ellipsis; }
 
 .top-t { background-color: #393C3D; width: 100%; }
-.top-t .logo-tenis { background: url('../img/icons-sc6eb0a5838.png') 0 -1648px no-repeat; width: 44px; height: 32px; }
+.top-t .logo-tenis { margin-left: 11px; background: url('../img/icons-sc6eb0a5838.png') 0 -1648px no-repeat; width: 44px; height: 32px; }
 .top-t .logo-name { font: bold 22px Arial, sans-serif; color: #fff; margin-left: 5px; vertical-align: bottom; }
 .top-t td { vertical-align: top; font-size: 0; padding-top: 3px; padding-bottom: 3px; }
 .top-t td > div { display: inline-block; vertical-align: middle; }
@@ -984,10 +988,10 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .bets_tv table td .player { display: inline-block; vertical-align: middle; font: 20px Arial, sans-serif; padding: 0 10px; width: calc(50% - 58px); white-space: nowrap; text-overflow: ellipsis; overflow: hidden; text-align: right; }
 .bets_tv table td .score + .player { text-align: left; }
 .bets_tv table td .score { display: inline-block; vertical-align: middle; position: static; top: inherit; left: inherit; -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -webkit-transform: translate(0, 0); transform: translate(0, 0); }
-.bets_tv table td .score.is-mod .ico-tenis { display: inline-block; position: absolute; margin: auto; top: 0; bottom: 0; right: 4px; background: url('../img/icons-sc6eb0a5838.png') 0 -1564px no-repeat; width: 22px; height: 22px; }
-.bets_tv table td .score.is-mod .ico-tenis_small { -ms-transform: scale(0.7); -webkit-transform: scale(0.7); transform: scale(0.7); }
+.bets_tv table td .score.is-mod { position: relative; font-size: 18px; height: 31px; line-height: 32px; width: 116px; }
+.bets_tv table td .score.is-mod .ball { position: absolute; top: 50%; right: 4px; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); line-height: 1; font-size: 0; }
+.bets_tv table td .score.is-mod .ball.is-left { right: auto; left: 4px; }
 .bets_tv table td .game { display: block; text-align: center; font-size: 18px; }
-.bets_tv table td .ico-lock { background: url('../img/icons-sc6eb0a5838.png') 0 -1303px no-repeat; width: 33px; height: 33px; display: inline-block; }
 .bets_tv table td .coef-tv { font: 20px Arial, sans-serif; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
 .bets_tv table td span { display: inline-block; color: #9AAC64; font-size: 13px; padding: 0 10px; width: 50%; }
 .bets_tv table td span.is-left { float: left; text-align: left; }
