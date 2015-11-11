@@ -7,7 +7,6 @@
 	&_info
 		+s(ico__info)	
 
-
 //popup_2
 .popup_2
 
@@ -349,12 +348,258 @@
 	vertical-align: middle
 
 //TV
+.out.is-mod
+	display: block
+.wrap.is-mod
+	border-radius: 0
+
 //header
-.header-m.is-mod
-	padding-left: 110px
+.header-tv
+	+clr
+	.logo-small.is-mod
+		margin: 8px 0
+	.info
+		font-size: 0
+		text-transform: uppercase
+		text-align: center
+		width: 210px
+		height: 40px
+		line-height: 40px
+		white-space: nowrap
+		font-weight: bold
+		>div
+			display: inline-block
+			vertical-align: top
+			font-size: 15px
+			padding: 0 10px
 
-	.inf
-		font-size: 16px
-		padding-top: 11px
+	.is-left
+		float: left
+	.is-right
+		float: right		
+
+	.ticker.is-mod
+		float: none
+		overflow: hidden
+		margin: 0 210px 0 110px
+		width: auto
+		max-width: none
+		.ticker__text
+			overflow: hidden
+			text-overflow: ellipsis	
+
+//top-t
+.top-t
+	background-color: #393C3D
+	width: 100%
+
+	.logo-tenis
+		+s(logo-tenis)
+
+	.logo-name
+		font: bold 22px Arial, sans-serif
+		color: #fff
+		margin-left: 5px
+		vertical-align: bottom
+	td
+		vertical-align: top
+		font-size: 0
+		padding-top: 3px
+		padding-bottom: 3px
+
+		> div
+			display: inline-block
+			vertical-align: middle
+		
+		&:nth-child(2)
+			width: 140px
+			> div
+				width: 50%
+				vertical-align: middle
+
+		&:nth-child(3)
+			width: 200px
+			div
+				width: 33%
+
+		&:nth-child(4)
+			width: 200px
+			div
+				width: 33%
+
+		&.is-vertical
+			vertical-align: middle			
+	&__title
+		font: 14px Arial, sans-serif !important
+		color: #fff
+		width: 100% !important
+		text-align: center
+
+	&__colname
+		color: #FFDB28	
+		font: 18px Arial, sans-serif
+		text-align: center
+
+	.third_w
+		width: calc(100% / 3) !important
+
+	.half_w
+		width: 50% !important
+
+//bets_tv
+.bets_tv
+	.bet
+		padding: 0
+		border-radius: 0
+		&:before
+			width: 100px
+		&:after
+			position: absolute
+			content: ''
+			top: 0
+			right: 0
+			bottom: 0
+			width: 205px
+			+border-radius(0)
+			background: rgba(#000, .1)
+	table
+		text-align: center
+		color: #fff
+		font-family: Arial, sans-serif
+		height: 79px
+		tr 
+			&:nth-child(2)
+				td:nth-child(2)
+					padding: 0		
+		td
+			vertical-align: middle
+			font-size: 0
+
+			&:first-child
+				width: 100px
+				font-size: 18px
+
+			&:nth-child(2)
+				padding: 5px 0 3px
+
+			&:nth-child(3)
+				width: 140px
+				font-size: 0
+				background-color: rgba(0,0,0,.1)
+				> div
+					width: 50%
+					font: 20px Arial, sans-serif
+					vertical-align: middle
+
+			&:nth-child(4)
+				width: 200px
+				font-size: 0
+				.coef-tv
+					width: 33%
+
+			&:nth-child(5)
+				width: 200px
+				font-size: 0
+				.coef-tv
+					width: 33%
+
+			> div 
+				display: inline-block
+				vertical-align: top	
+
+			.player
+				display: inline-block
+				vertical-align: middle
+				font: 20px Arial, sans-serif
+				padding: 0 10px
+				width: calc(50% - 58px)
+				white-space: nowrap
+				text-overflow: ellipsis
+				overflow: hidden
+				text-align: right
+
+			.score + .player
+				text-align: left
 
 
+			.score
+				display: inline-block
+				vertical-align: middle
+				position: static
+				top: inherit
+				left: inherit
+				-moz-transform: translate(0, 0)
+				-ms-transform: translate(0, 0)
+				-webkit-transform: translate(0, 0)
+				transform: translate(0, 0)
+				&.is-mod
+					// position: relative
+					// font-size: 18px
+					// height: 26px
+					// line-height: 26px
+					// width: 116px
+					// &:before
+					// 	content: ' '
+					// 	display: block
+					// 	width: 110%
+					// 	height: 1px
+					// 	top: -4px
+					// 	background-color: #7F8285
+					// 	left: -5%
+					// 	position: absolute
+					.ico-tenis
+						display: inline-block
+						position: absolute
+						margin: auto
+						top: 0
+						bottom: 0
+						right: 4px
+						+s(images-tennis)
+						&_small	
+							+scale(.7)
+
+				// &.score_m
+				// 	height: 36px
+				// 	line-height: 36px
+				// 	border-top-left-radius: 0		
+				// 	border-top-right-radius: 0	
+				// 	font-size: 25px	
+				// 	color: #EFC127
+				// 	font-weight: 300
+				// 	&:before
+				// 		display: none
+				// &.is-green
+				// 	background-color: #377C1F
+				// &.is-blue
+				// 	background-color: #20527E		
+
+			.game
+				display: block
+				text-align: center
+				font-size: 18px
+
+			.ico-lock
+				+s(images-lock1)		
+				display: inline-block
+
+			.coef-tv
+				font: 20px Arial, sans-serif
+				text-overflow: ellipsis
+				overflow: hidden
+				white-space: nowrap
+
+			span
+				display: inline-block
+				color: #9AAC64
+				font-size: 13px
+				padding: 0 10px
+				width: 50%
+				&.is-left
+					float: left
+					text-align: left	
+				&.is-right
+					float: right
+					text-align: right	
+
+		// td.is-mod
+		// 	padding-top: 8px										
