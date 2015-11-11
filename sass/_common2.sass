@@ -379,8 +379,8 @@
 		>div
 			display: inline-block
 			vertical-align: top
-			font-size: 15px
-			padding: 0 10px
+			font-size: 17px
+			padding: 0 8px
 
 	.is-left
 		float: left
@@ -462,17 +462,20 @@
 		padding: 0
 		border-radius: 0
 		&:before
-			width: 100px
+			width: 110px
+			display: none
 			+border-radius(0)
-		&:after
-			position: absolute
-			content: ''
-			top: 0
-			right: 0
-			bottom: 0
-			width: 205px
-			+border-radius(0)
-			background: rgba(#000, .1)
+
+		// &:after
+		// 	position: absolute
+		// 	content: ''
+		// 	top: 0
+		// 	right: 0
+		// 	bottom: 0
+		// 	width: 210px
+		// 	+border-radius(0)
+		// 	background: rgba(#000, .1)
+
 	table
 		text-align: center
 		color: #fff
@@ -488,9 +491,10 @@
 			font-weight: 400
 
 			&:first-child
-				width: 100px
+				width: 110px
 				font-size: 18px
 				font-weight: 400
+				background-color: rgba(0,0,0,.1)
 
 			&:nth-child(2)
 				padding: 5px 0 3px
@@ -511,8 +515,9 @@
 					width: 33%
 
 			&:nth-child(5)
-				width: 200px
+				width: 210px
 				font-size: 0
+				background-color: rgba(0,0,0,.1)
 				.coef-tv
 					width: 33%
 
@@ -604,12 +609,18 @@
 				font-size: 17px
 				padding: 0 10px
 				width: 50%
+				white-space: nowrap
+				overflow: hidden
+				text-overflow: ellipsis
 				&.is-left
 					float: left
-					text-align: left	
+					text-align: right	
 				&.is-right
 					float: right
-					text-align: right	
-
+					text-align: right
+				&.w70
+					width: 70%		
+				&.w30
+					width: 30%
 		// td.is-mod
 		// 	padding-top: 8px										
