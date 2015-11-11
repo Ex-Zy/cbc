@@ -404,7 +404,7 @@
 
 	.logo-tenis
 		margin-left: 11px
-		+s(logo-tenis)
+		+s(tennis)
 
 	.logo-name
 		font: bold 22px Arial, sans-serif
@@ -489,6 +489,7 @@
 			&:first-child
 				width: 100px
 				font-size: 18px
+				font-weight: 400
 
 			&:nth-child(2)
 				padding: 5px 0 3px
@@ -523,7 +524,8 @@
 				vertical-align: middle
 				font: 20px Arial, sans-serif
 				padding: 0 10px
-				width: calc(50% - 58px)
+				width: calc(50% - 65px)
+
 				white-space: nowrap
 				text-overflow: ellipsis
 				overflow: hidden
@@ -544,10 +546,10 @@
 				transform: translate(0, 0)
 				&.is-mod
 					position: relative
-					font-size: 18px
-					height: 31px
-					line-height: 32px
-					width: 116px
+					font-size: 20px
+					height: 36px
+					line-height: 38px
+					width: 130px
 					// &:before
 					// 	content: ' '
 					// 	display: block
@@ -560,7 +562,7 @@
 					.ball
 						position: absolute
 						top: 50%
-						right: 4px
+						right: 3px
 						+translate(0,-50%)
 						line-height: 1
 						font-size: 0
@@ -596,8 +598,9 @@
 
 			span
 				display: inline-block
-				color: #9AAC64
-				font-size: 13px
+				color: #fff
+				font-weight: 400
+				font-size: 17px
 				padding: 0 10px
 				width: 50%
 				&.is-left
