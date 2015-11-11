@@ -971,7 +971,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .top-t .half_w { width: 50% !important; }
 
 .bets_tv .bet { padding: 0; border-radius: 0; }
-.bets_tv .bet:before { width: 100px; }
+.bets_tv .bet:before { width: 100px; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
 .bets_tv .bet:after { position: absolute; content: ""; top: 0; right: 0; bottom: 0; width: 205px; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; background: rgba(0, 0, 0, 0.1); }
 .bets_tv table { text-align: center; color: #fff; font-family: Arial, sans-serif; height: 79px; }
 .bets_tv table tr:nth-child(2) td:nth-child(2) { padding: 0; }
