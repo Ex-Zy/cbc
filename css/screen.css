@@ -965,7 +965,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .top-t td:nth-child(4) { width: 200px; }
 .top-t td:nth-child(4) div { width: 33%; }
 .top-t td.is-vertical { vertical-align: middle; }
-.top-t__title { font: 14px Arial, sans-serif !important; color: #fff; width: 100% !important; text-align: center; }
+.top-t__title { font: 16px Arial, sans-serif !important; color: #fff; width: 100% !important; text-align: center; }
 .top-t__colname { color: #FFDB28; font: 18px Arial, sans-serif; text-align: center; }
 .top-t .third_w { width: calc(100% / 3) !important; }
 .top-t .half_w { width: 50% !important; }
@@ -975,7 +975,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .bets_tv .bet:after { position: absolute; content: ""; top: 0; right: 0; bottom: 0; width: 205px; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; background: rgba(0, 0, 0, 0.1); }
 .bets_tv table { text-align: center; color: #fff; font-family: Arial, sans-serif; height: 79px; }
 .bets_tv table tr:nth-child(2) td:nth-child(2) { padding: 0; }
-.bets_tv table td { vertical-align: middle; font-size: 0; }
+.bets_tv table td { vertical-align: middle; font-size: 0; font-weight: 400; }
 .bets_tv table td:first-child { width: 100px; font-size: 18px; font-weight: 400; }
 .bets_tv table td:nth-child(2) { padding: 5px 0 3px; }
 .bets_tv table td:nth-child(3) { width: 140px; font-size: 0; background-color: rgba(0, 0, 0, 0.1); }
