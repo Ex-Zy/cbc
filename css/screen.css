@@ -962,7 +962,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .top-t td:nth-child(2) > div { width: 50%; vertical-align: middle; }
 .top-t td:nth-child(3) { width: 200px; }
 .top-t td:nth-child(3) div { width: 33%; }
-.top-t td:nth-child(4) { width: 200px; }
+.top-t td:nth-child(4) { width: 210px; }
 .top-t td:nth-child(4) div { width: 33%; }
 .top-t td.is-vertical { vertical-align: middle; }
 .top-t__title { font: 16px Arial, sans-serif !important; color: #fff; width: 100% !important; text-align: center; }
