@@ -415,6 +415,9 @@
 		color: #fff
 		margin-left: 10px
 		vertical-align: bottom
+		&.is-mod	
+			margin-left: 0
+
 	td
 		vertical-align: top
 		font-size: 0
@@ -424,7 +427,7 @@
 		> div
 			display: inline-block
 			vertical-align: middle
-		
+
 		&:nth-child(2)
 			width: 140px
 			> div
@@ -442,7 +445,8 @@
 				width: 33%
 
 		&.is-vertical
-			vertical-align: middle			
+			vertical-align: middle	
+					
 	&__title
 		font: 16px Arial, sans-serif !important
 		color: #fff
@@ -471,41 +475,29 @@
 			+border-radius(0)
 		&.is-yellow
 			+g(#87782f, #a2955a)	
-		&__tname
-			display: inline-block
-			vertical-align: top
-			font: 20px Arial, sans-serif
-			padding: 0 10px 0 75px
-			white-space: nowrap
-			text-overflow: ellipsis
-			overflow: hidden
-			width: 50%
-			text-align: left
-			&:first-child
-				padding-right: 75px
-				padding-left: 10px
-				text-align: right
 		.fb-team
 			display: inline-block
 			width: calc(50% - 65px)	
 			text-align: left
+			line-height: 1
 			&:first-child
 				text-align: right
 			&__card-wrap
 				display: block
 				max-width: 84px	
+				min-width: 23px
 				float: right
-				margin: 0 10px
+				margin: 0 10px 0 0
 				padding: 7px 0
 				line-height: 1
 			&__name
 				display: block
 				font: 20px Arial, sans-serif	
 				overflow: hidden
-				padding: 7px 10px
+				line-height: 36px
+				height: 36px
 				width: auto
 				
-
 	table
 		text-align: center
 		color: #fff
