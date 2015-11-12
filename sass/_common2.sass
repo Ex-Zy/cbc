@@ -359,6 +359,9 @@
 //TV
 .out.is-mod
 	display: block
+	min-height: 100%
+	height: auto
+
 .wrap.is-mod
 	border-radius: 0
 
@@ -402,14 +405,15 @@
 	background-color: #393C3D
 	width: 100%
 
-	.logo-tenis
+	.logo-game
 		margin-left: 11px
-		+s(tennis)
+		> img
+			display: block
 
 	.logo-name
 		font: bold 22px Arial, sans-serif
 		color: #fff
-		margin-left: 5px
+		margin-left: 10px
 		vertical-align: bottom
 	td
 		vertical-align: top
@@ -465,22 +469,47 @@
 			width: 110px
 			display: none
 			+border-radius(0)
-
-		// &:after
-		// 	position: absolute
-		// 	content: ''
-		// 	top: 0
-		// 	right: 0
-		// 	bottom: 0
-		// 	width: 210px
-		// 	+border-radius(0)
-		// 	background: rgba(#000, .1)
+		&.is-yellow
+			+g(#87782f, #a2955a)	
+		&__tname
+			display: inline-block
+			vertical-align: top
+			font: 20px Arial, sans-serif
+			padding: 0 10px 0 75px
+			white-space: nowrap
+			text-overflow: ellipsis
+			overflow: hidden
+			width: 50%
+			text-align: left
+			&:first-child
+				padding-right: 75px
+				padding-left: 10px
+				text-align: right
+		.fb-team
+			display: inline-block
+			width: calc(50% - 65px)	
+			text-align: left
+			&:first-child
+				text-align: right
+			&__card-wrap
+				display: block
+				max-width: 84px	
+				float: right
+				margin: 0 10px
+				padding: 7px 0
+				line-height: 1
+			&__name
+				display: block
+				font: 20px Arial, sans-serif	
+				overflow: hidden
+				padding: 7px 10px
+				width: auto
+				
 
 	table
 		text-align: center
 		color: #fff
 		font-family: Arial, sans-serif
-		height: 79px
 		tr 
 			&:nth-child(2)
 				td:nth-child(2)
@@ -535,10 +564,9 @@
 				white-space: nowrap
 				text-overflow: ellipsis
 				overflow: hidden
-				text-align: right
-
-			.score + .player
 				text-align: left
+				&:first-child
+					text-align: right
 
 			.score
 				display: inline-block
@@ -556,15 +584,6 @@
 					height: 36px
 					line-height: 38px
 					width: 130px
-					// &:before
-					// 	content: ' '
-					// 	display: block
-					// 	width: 110%
-					// 	height: 1px
-					// 	top: -4px
-					// 	background-color: #7F8285
-					// 	left: -5%
-					// 	position: absolute
 					.ball
 						position: absolute
 						top: 50%
@@ -575,6 +594,8 @@
 						&.is-left
 							right: auto
 							left: 4px
+				&.is-hidden
+					visibility: hidden			
 
 				// &.score_m
 				// 	height: 36px
@@ -601,6 +622,7 @@
 				text-overflow: ellipsis
 				overflow: hidden
 				white-space: nowrap
+				vertical-align: middle
 
 			span
 				display: inline-block
