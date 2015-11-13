@@ -415,8 +415,6 @@
 		color: #fff
 		margin-left: 10px
 		vertical-align: bottom
-		&.is-mod	
-			margin-left: 0
 
 	td
 		vertical-align: top
@@ -477,6 +475,7 @@
 			+g(#87782f, #a2955a)	
 		.fb-team
 			display: inline-block
+			vertical-align: top
 			width: calc(50% - 65px)	
 			text-align: left
 			line-height: 1
@@ -490,6 +489,13 @@
 				margin: 0 10px 0 0
 				padding: 7px 0
 				line-height: 1
+				span
+					font-size: 17px
+					line-height: 23px
+					text-align: center
+					color: #fff
+					width: auto
+					padding: 0
 			&__name
 				display: block
 				font: 20px Arial, sans-serif	
@@ -497,54 +503,18 @@
 				line-height: 36px
 				height: 36px
 				width: auto
-				
 	table
 		text-align: center
 		color: #fff
 		font-family: Arial, sans-serif
-		tr 
-			&:nth-child(2)
-				td:nth-child(2)
-					padding: 0		
 		td
 			vertical-align: middle
-			font-size: 0
+			font-size: 0	
 			font-weight: 400
-
-			&:first-child
-				width: 110px
-				font-size: 18px
-				font-weight: 400
-				background-color: rgba(0,0,0,.1)
-
-			&:nth-child(2)
-				padding: 5px 0 3px
-
-			&:nth-child(3)
-				width: 140px
-				font-size: 0
-				background-color: rgba(0,0,0,.1)
-				> div
-					width: 50%
-					font: 20px Arial, sans-serif
-					vertical-align: middle
-
-			&:nth-child(4)
-				width: 200px
-				font-size: 0
-				.coef-tv
-					width: 33%
-
-			&:nth-child(5)
-				width: 210px
-				font-size: 0
-				background-color: rgba(0,0,0,.1)
-				.coef-tv
-					width: 33%
 
 			> div 
 				display: inline-block
-				vertical-align: top	
+				font: 20px Arial, sans-serif
 
 			.player
 				display: inline-block
@@ -552,7 +522,6 @@
 				font: 20px Arial, sans-serif
 				padding: 0 10px
 				width: calc(50% - 65px)
-
 				white-space: nowrap
 				text-overflow: ellipsis
 				overflow: hidden
@@ -589,21 +558,6 @@
 				&.is-hidden
 					visibility: hidden			
 
-				// &.score_m
-				// 	height: 36px
-				// 	line-height: 36px
-				// 	border-top-left-radius: 0		
-				// 	border-top-right-radius: 0	
-				// 	font-size: 25px	
-				// 	color: #EFC127
-				// 	font-weight: 300
-				// 	&:before
-				// 		display: none
-				// &.is-green
-				// 	background-color: #377C1F
-				// &.is-blue
-				// 	background-color: #20527E		
-
 			.game
 				display: block
 				text-align: center
@@ -635,6 +589,239 @@
 				&.w70
 					width: 70%		
 				&.w30
-					width: 30%
-		// td.is-mod
-		// 	padding-top: 8px										
+					width: 30%	
+			
+	.tannis, .football
+		tr 
+			&:nth-child(2)
+				td:nth-child(2)
+					padding: 0	
+
+		td
+
+			&:first-child
+				width: 110px
+				font-size: 18px
+				font-weight: 400
+				background-color: rgba(0,0,0,.1)
+
+			&:nth-child(2)
+				padding: 5px 0 3px
+
+			&:nth-child(3)
+				width: 140px
+				font-size: 0
+				background-color: rgba(0,0,0,.1)
+				> div
+					width: 50%
+					font: 20px Arial, sans-serif
+					vertical-align: middle
+
+			&:nth-child(4)
+				width: 200px
+				font-size: 0
+				.coef-tv
+					width: 33%
+
+			&:nth-child(5)
+				width: 210px
+				font-size: 0
+				background-color: rgba(0,0,0,.1)
+				.coef-tv
+					width: 33%
+	
+	.basketball
+		tr 
+			&:nth-child(2)
+				td:nth-child(2)
+					padding: 0	
+
+		td
+
+			&:first-child
+				width: 110px
+				font-size: 18px
+				font-weight: 400
+				background-color: rgba(0,0,0,.1)
+
+			&:nth-child(2)
+				padding: 5px 0 3px
+
+			&:nth-child(3)
+				width: 140px
+				font-size: 0
+				background-color: rgba(0,0,0,.1)
+				> div
+					width: 50%
+					font: 20px Arial, sans-serif
+					vertical-align: middle
+
+			&:nth-child(4)
+				width: 200px
+				font-size: 0
+				.coef-tv
+					width: 33%
+
+	.hockey
+		tr 
+			&:nth-child(2)
+				td:nth-child(2)
+					padding: 0	
+
+		td
+
+			&:first-child
+				width: 110px
+				font-size: 18px
+				font-weight: 400
+				background-color: rgba(0,0,0,.1)
+
+			&:nth-child(2)
+				padding: 5px 0 3px
+
+			&:nth-child(3)
+				width: 200px
+				font-size: 0
+				background-color: rgba(0,0,0,.1)
+				.coef-tv
+					width: 33%	
+	
+
+			&:nth-child(4)
+				width: 200px
+				font-size: 0
+				.coef-tv
+					width: 33%	
+
+			
+			&:nth-child(5)
+				width: 200px
+				font-size: 0
+				.coef-tv
+					width: 33%				
+
+	// table
+	// 	text-align: center
+	// 	color: #fff
+	// 	font-family: Arial, sans-serif
+
+	// 	tr 
+	// 		&:nth-child(2)
+	// 			td:nth-child(2)
+	// 				padding: 0		
+	// 	td
+	// 		vertical-align: middle
+	// 		font-size: 0
+	// 		font-weight: 400
+
+	// 		&:first-child
+	// 			width: 110px
+	// 			font-size: 18px
+	// 			font-weight: 400
+	// 			background-color: rgba(0,0,0,.1)
+
+	// 		&:nth-child(2)
+	// 			padding: 5px 0 3px
+
+	// 		&:nth-child(3)
+	// 			width: 140px
+	// 			font-size: 0
+	// 			background-color: rgba(0,0,0,.1)
+	// 			> div
+	// 				width: 50%
+	// 				font: 20px Arial, sans-serif
+	// 				vertical-align: middle
+
+	// 		&:nth-child(4)
+	// 			width: 200px
+	// 			font-size: 0
+	// 			.coef-tv
+	// 				width: 33%
+
+	// 		&:nth-child(5)
+	// 			width: 210px
+	// 			font-size: 0
+	// 			background-color: rgba(0,0,0,.1)
+	// 			.coef-tv
+	// 				width: 33%
+
+	// 		> div 
+	// 			display: inline-block
+	// 			vertical-align: top	
+
+			// .player
+			// 	display: inline-block
+			// 	vertical-align: middle
+			// 	font: 20px Arial, sans-serif
+			// 	padding: 0 10px
+			// 	width: calc(50% - 65px)
+
+			// 	white-space: nowrap
+			// 	text-overflow: ellipsis
+			// 	overflow: hidden
+			// 	text-align: left
+			// 	&:first-child
+			// 		text-align: right
+
+			// .score
+			// 	display: inline-block
+			// 	vertical-align: middle
+			// 	position: static
+			// 	top: inherit
+			// 	left: inherit
+			// 	-moz-transform: translate(0, 0)
+			// 	-ms-transform: translate(0, 0)
+			// 	-webkit-transform: translate(0, 0)
+			// 	transform: translate(0, 0)
+			// 	&.is-mod
+			// 		position: relative
+			// 		font-size: 20px
+			// 		height: 36px
+			// 		line-height: 38px
+			// 		width: 130px
+			// 		.ball
+			// 			position: absolute
+			// 			top: 50%
+			// 			right: 3px
+			// 			+translate(0,-50%)
+			// 			line-height: 1
+			// 			font-size: 0
+			// 			&.is-left
+			// 				right: auto
+			// 				left: 4px
+			// 	&.is-hidden
+			// 		visibility: hidden			
+
+			// .game
+			// 	display: block
+			// 	text-align: center
+			// 	font-size: 18px
+
+			// .coef-tv
+			// 	font: 20px Arial, sans-serif
+			// 	text-overflow: ellipsis
+			// 	overflow: hidden
+			// 	white-space: nowrap
+			// 	vertical-align: middle
+
+			// span
+			// 	display: inline-block
+			// 	color: #fff
+			// 	font-weight: 400
+			// 	font-size: 17px
+			// 	padding: 0 10px
+			// 	width: 50%
+			// 	white-space: nowrap
+			// 	overflow: hidden
+			// 	text-overflow: ellipsis
+			// 	&.is-left
+			// 		float: left	
+			// 		text-align: left
+			// 	&.is-right
+			// 		float: right
+			// 		text-align: right
+			// 	&.w70
+			// 		width: 70%		
+			// 	&.w30
+			// 		width: 30%
+									
