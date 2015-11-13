@@ -5,12 +5,52 @@
 	&_soc	
 		+s(ico__soc)
 	&_info
-		+s(ico__info)	
+		+s(ico__info)
+	&_tenis
+		+s(images-tennis)
+		display: inline-block
+	&_tenis_small	
+		+scale(.7)	
+	&_lock
+		+s(images-lock1)		
+		display: inline-block
+	&_lock.is-small
+		+scale(0.7)
 
+//menu-wrap
+.menu-wrap
+	.btn.is-mod
+		height: 46px
+		line-height: 46px
+//menu-container
+.menu-container
+	border-radius: 8px
+	background-color: #7f8285
+	position: relative
+	overflow: hidden
+	+clr
+	.menu
+		display: inline-block
+		vertical-align: top
+		border-radius: inherit
+		background-color: inherit
+		float: left
+	.form
+		display: inline-block
+		float: right
+		padding: 10px 20px
+		display: none
+	.form.active
+		display: block	
+
+	.form__field, .form__label
+		vertical-align: middle
+
+	.form__field
+		width: 120px	
 
 //popup_2
 .popup_2
-
 	.res-stat
 		&__close
 			position: relative
@@ -349,12 +389,471 @@
 	vertical-align: middle
 
 //TV
+.out.is-mod
+	display: block
+	min-height: 100%
+	height: auto
+
+.wrap.is-mod
+	border-radius: 0
+
 //header
-.header-m.is-mod
-	padding-left: 110px
+.header-tv
+	+clr
+	.logo-small.is-mod
+		margin: 8px 0
+	.info
+		font-size: 0
+		text-transform: uppercase
+		text-align: center
+		width: 210px
+		height: 40px
+		line-height: 40px
+		white-space: nowrap
+		font-weight: bold
+		>div
+			display: inline-block
+			vertical-align: top
+			font-size: 17px
+			padding: 0 8px
 
-	.inf
-		font-size: 16px
-		padding-top: 11px
+	.is-left
+		float: left
+	.is-right
+		float: right		
 
+	.ticker.is-mod
+		float: none
+		overflow: hidden
+		margin: 0 210px 0 110px
+		width: auto
+		max-width: none
+		.ticker__text
+			overflow: hidden
+			text-overflow: ellipsis	
 
+//top-t
+.top-t
+	background-color: #393C3D
+	width: 100%
+
+	.logo-game
+		margin-left: 11px
+		> img
+			display: block
+
+	.logo-name
+		font: bold 22px Arial, sans-serif
+		color: #fff
+		margin-left: 10px
+		vertical-align: bottom
+
+	td
+		vertical-align: top
+		font-size: 0
+		padding-top: 3px
+		padding-bottom: 3px
+
+		> div
+			display: inline-block
+			vertical-align: middle
+
+		&:nth-child(2)
+			width: 140px
+			> div
+				width: 50%
+				vertical-align: middle
+
+		&:nth-child(3)
+			width: 200px
+			div
+				width: 33%
+
+		&:nth-child(4)
+			width: 210px
+			div
+				width: 33%
+
+		&.is-vertical
+			vertical-align: middle	
+					
+	&__title
+		font: 16px Arial, sans-serif !important
+		color: #fff
+		width: 100% !important
+		text-align: center
+
+	&__colname
+		color: #FFDB28	
+		font: 18px Arial, sans-serif
+		text-align: center
+
+	.third_w
+		width: calc(100% / 3) !important
+
+	.half_w
+		width: 50% !important
+
+//bets_tv
+.bets_tv
+	.bet
+		padding: 0
+		border-radius: 0
+		&:before
+			width: 110px
+			display: none
+			+border-radius(0)
+		&.is-yellow
+			+g(#87782f, #a2955a)	
+		.fb-team
+			display: inline-block
+			vertical-align: top
+			width: calc(50% - 65px)	
+			text-align: left
+			line-height: 1
+			&:first-child
+				text-align: right
+			&__card-wrap
+				display: block
+				max-width: 84px	
+				min-width: 23px
+				float: right
+				margin: 0 10px 0 0
+				padding: 7px 0
+				line-height: 1
+				span
+					font-size: 17px
+					line-height: 23px
+					text-align: center
+					color: #fff
+					width: auto
+					padding: 0
+			&__name
+				display: block
+				font: 20px Arial, sans-serif	
+				overflow: hidden
+				line-height: 36px
+				height: 36px
+				width: auto
+	table
+		text-align: center
+		color: #fff
+		font-family: Arial, sans-serif
+		td
+			vertical-align: middle
+			font-size: 0	
+			font-weight: 400
+
+			> div 
+				display: inline-block
+				font: 20px Arial, sans-serif
+
+			.player
+				display: inline-block
+				vertical-align: middle
+				font: 20px Arial, sans-serif
+				padding: 0 10px
+				width: calc(50% - 65px)
+				white-space: nowrap
+				text-overflow: ellipsis
+				overflow: hidden
+				text-align: left
+				&:first-child
+					text-align: right
+
+			.score
+				display: inline-block
+				vertical-align: middle
+				position: static
+				top: inherit
+				left: inherit
+				-moz-transform: translate(0, 0)
+				-ms-transform: translate(0, 0)
+				-webkit-transform: translate(0, 0)
+				transform: translate(0, 0)
+				&.is-mod
+					position: relative
+					font-size: 20px
+					height: 36px
+					line-height: 38px
+					width: 130px
+					.ball
+						position: absolute
+						top: 50%
+						right: 3px
+						+translate(0,-50%)
+						line-height: 1
+						font-size: 0
+						&.is-left
+							right: auto
+							left: 4px
+				&.is-hidden
+					visibility: hidden			
+
+			.game
+				display: block
+				text-align: center
+				font-size: 18px
+
+			.coef-tv
+				font: 20px Arial, sans-serif
+				text-overflow: ellipsis
+				overflow: hidden
+				white-space: nowrap
+				vertical-align: middle
+
+			span
+				display: inline-block
+				color: #fff
+				font-weight: 400
+				font-size: 17px
+				padding: 0 10px
+				width: 50%
+				white-space: nowrap
+				overflow: hidden
+				text-overflow: ellipsis
+				&.is-left
+					float: left	
+					text-align: left
+				&.is-right
+					float: right
+					text-align: right
+				&.w70
+					width: 70%		
+				&.w30
+					width: 30%	
+			
+	.tannis, .football
+		tr 
+			&:nth-child(2)
+				td:nth-child(2)
+					padding: 0	
+
+		td
+
+			&:first-child
+				width: 110px
+				font-size: 18px
+				font-weight: 400
+				background-color: rgba(0,0,0,.1)
+
+			&:nth-child(2)
+				padding: 5px 0 3px
+
+			&:nth-child(3)
+				width: 140px
+				font-size: 0
+				background-color: rgba(0,0,0,.1)
+				> div
+					width: 50%
+					font: 20px Arial, sans-serif
+					vertical-align: middle
+
+			&:nth-child(4)
+				width: 200px
+				font-size: 0
+				.coef-tv
+					width: 33%
+
+			&:nth-child(5)
+				width: 210px
+				font-size: 0
+				background-color: rgba(0,0,0,.1)
+				.coef-tv
+					width: 33%
+	
+	.basketball
+		tr 
+			&:nth-child(2)
+				td:nth-child(2)
+					padding: 0	
+
+		td
+
+			&:first-child
+				width: 110px
+				font-size: 18px
+				font-weight: 400
+				background-color: rgba(0,0,0,.1)
+
+			&:nth-child(2)
+				padding: 5px 0 3px
+
+			&:nth-child(3)
+				width: 140px
+				font-size: 0
+				background-color: rgba(0,0,0,.1)
+				> div
+					width: 50%
+					font: 20px Arial, sans-serif
+					vertical-align: middle
+
+			&:nth-child(4)
+				width: 200px
+				font-size: 0
+				.coef-tv
+					width: 33%
+
+	.hockey
+		tr 
+			&:nth-child(2)
+				td:nth-child(2)
+					padding: 0	
+
+		td
+
+			&:first-child
+				width: 110px
+				font-size: 18px
+				font-weight: 400
+				background-color: rgba(0,0,0,.1)
+
+			&:nth-child(2)
+				padding: 5px 0 3px
+
+			&:nth-child(3)
+				width: 200px
+				font-size: 0
+				background-color: rgba(0,0,0,.1)
+				.coef-tv
+					width: 33%	
+	
+
+			&:nth-child(4)
+				width: 200px
+				font-size: 0
+				.coef-tv
+					width: 33%	
+
+			
+			&:nth-child(5)
+				width: 200px
+				font-size: 0
+				.coef-tv
+					width: 33%				
+
+	// table
+	// 	text-align: center
+	// 	color: #fff
+	// 	font-family: Arial, sans-serif
+
+	// 	tr 
+	// 		&:nth-child(2)
+	// 			td:nth-child(2)
+	// 				padding: 0		
+	// 	td
+	// 		vertical-align: middle
+	// 		font-size: 0
+	// 		font-weight: 400
+
+	// 		&:first-child
+	// 			width: 110px
+	// 			font-size: 18px
+	// 			font-weight: 400
+	// 			background-color: rgba(0,0,0,.1)
+
+	// 		&:nth-child(2)
+	// 			padding: 5px 0 3px
+
+	// 		&:nth-child(3)
+	// 			width: 140px
+	// 			font-size: 0
+	// 			background-color: rgba(0,0,0,.1)
+	// 			> div
+	// 				width: 50%
+	// 				font: 20px Arial, sans-serif
+	// 				vertical-align: middle
+
+	// 		&:nth-child(4)
+	// 			width: 200px
+	// 			font-size: 0
+	// 			.coef-tv
+	// 				width: 33%
+
+	// 		&:nth-child(5)
+	// 			width: 210px
+	// 			font-size: 0
+	// 			background-color: rgba(0,0,0,.1)
+	// 			.coef-tv
+	// 				width: 33%
+
+	// 		> div 
+	// 			display: inline-block
+	// 			vertical-align: top	
+
+			// .player
+			// 	display: inline-block
+			// 	vertical-align: middle
+			// 	font: 20px Arial, sans-serif
+			// 	padding: 0 10px
+			// 	width: calc(50% - 65px)
+
+			// 	white-space: nowrap
+			// 	text-overflow: ellipsis
+			// 	overflow: hidden
+			// 	text-align: left
+			// 	&:first-child
+			// 		text-align: right
+
+			// .score
+			// 	display: inline-block
+			// 	vertical-align: middle
+			// 	position: static
+			// 	top: inherit
+			// 	left: inherit
+			// 	-moz-transform: translate(0, 0)
+			// 	-ms-transform: translate(0, 0)
+			// 	-webkit-transform: translate(0, 0)
+			// 	transform: translate(0, 0)
+			// 	&.is-mod
+			// 		position: relative
+			// 		font-size: 20px
+			// 		height: 36px
+			// 		line-height: 38px
+			// 		width: 130px
+			// 		.ball
+			// 			position: absolute
+			// 			top: 50%
+			// 			right: 3px
+			// 			+translate(0,-50%)
+			// 			line-height: 1
+			// 			font-size: 0
+			// 			&.is-left
+			// 				right: auto
+			// 				left: 4px
+			// 	&.is-hidden
+			// 		visibility: hidden			
+
+			// .game
+			// 	display: block
+			// 	text-align: center
+			// 	font-size: 18px
+
+			// .coef-tv
+			// 	font: 20px Arial, sans-serif
+			// 	text-overflow: ellipsis
+			// 	overflow: hidden
+			// 	white-space: nowrap
+			// 	vertical-align: middle
+
+			// span
+			// 	display: inline-block
+			// 	color: #fff
+			// 	font-weight: 400
+			// 	font-size: 17px
+			// 	padding: 0 10px
+			// 	width: 50%
+			// 	white-space: nowrap
+			// 	overflow: hidden
+			// 	text-overflow: ellipsis
+			// 	&.is-left
+			// 		float: left	
+			// 		text-align: left
+			// 	&.is-right
+			// 		float: right
+			// 		text-align: right
+			// 	&.w70
+			// 		width: 70%		
+			// 	&.w30
+			// 		width: 30%
+									
