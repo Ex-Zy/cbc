@@ -61,4 +61,10 @@ head.ready(function() {
 		coupon.height(couponHeight);
 	}
 
+	$(function(){
+		$('.js-login').click(function(event){
+			$('.js-form').toggleClass('active');
+		})
+	});
+
 });

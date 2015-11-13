@@ -16,9 +16,41 @@
 		display: inline-block
 	&_lock.is-small
 		+scale(0.7)
+
+//menu-wrap
+.menu-wrap
+	.btn.is-mod
+		height: 46px
+		line-height: 46px
+//menu-container
+.menu-container
+	border-radius: 8px
+	background-color: #7f8285
+	position: relative
+	overflow: hidden
+	+clr
+	.menu
+		display: inline-block
+		vertical-align: top
+		border-radius: inherit
+		background-color: inherit
+		float: left
+	.form
+		display: inline-block
+		float: right
+		padding: 10px 20px
+		display: none
+	.form.active
+		display: block	
+
+	.form__field, .form__label
+		vertical-align: middle
+
+	.form__field
+		width: 120px	
+
 //popup_2
 .popup_2
-
 	.res-stat
 		&__close
 			position: relative

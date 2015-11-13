@@ -868,6 +868,16 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .ico_lock { background: url('../img/icons-sa17682e24a.png') 0 -1273px no-repeat; width: 33px; height: 33px; display: inline-block; }
 .ico_lock.is-small { -ms-transform: scale(0.7); -webkit-transform: scale(0.7); transform: scale(0.7); }
 
+.menu-wrap .btn.is-mod, .menu-wrap .t-keybord .is-mod.t-key, .t-keybord .menu-wrap .is-mod.t-key { height: 46px; line-height: 46px; }
+
+.menu-container { border-radius: 8px; background-color: #7f8285; position: relative; overflow: hidden; *zoom: 1; }
+.menu-container:after { content: " "; display: table; clear: both; }
+.menu-container .menu { display: inline-block; vertical-align: top; border-radius: inherit; background-color: inherit; float: left; }
+.menu-container .form { display: inline-block; float: right; padding: 10px 20px; display: none; }
+.menu-container .form.active { display: block; }
+.menu-container .form__field, .menu-container .form__label { vertical-align: middle; }
+.menu-container .form__field { width: 120px; }
+
 .popup_2 .res-stat__close { position: relative; }
 .popup_2 .res-stat__top td:first-child { width: 185px; }
 .popup_2 .res-stat__top td:nth-child(2) { width: 508px; padding-left: 0; }
