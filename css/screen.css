@@ -255,6 +255,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .ground:after { content: " "; display: table; clear: both; }
 .ground.is-tennis > .ground__item:nth-child(2) { width: calc(100% - 460px) !important; padding: 0 85px 0 0 !important; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .ground.is-tennis .ground__right .ground__item:nth-child(2) { padding-left: 0 !important; margin-right: 0 !important; width: 134px !important; }
+.ground.is-football > .ground__item:nth-child(2) { width: calc(100% - 610px) !important; padding: 0 70px 0 0 !important; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .ground .ground__item { line-height: 27px; font-size: 15px; letter-spacing: 0.4px; vertical-align: top; display: inline-block; }
 .ground .ground__item:first-child { padding-left: 15px; width: 80px; }
 .ground .ground__item:nth-child(2) { padding-left: 130px; width: 380px; }
