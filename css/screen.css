@@ -255,6 +255,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .ground:after { content: " "; display: table; clear: both; }
 .ground.is-tennis > .ground__item:nth-child(2) { width: calc(100% - 460px) !important; padding: 0 85px 0 0 !important; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .ground.is-tennis .ground__right .ground__item:nth-child(2) { padding-left: 0 !important; margin-right: 0 !important; width: 134px !important; }
+.ground.is-football > .ground__item:nth-child(2) { width: calc(100% - 610px) !important; padding: 0 70px 0 0 !important; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .ground .ground__item { line-height: 27px; font-size: 15px; letter-spacing: 0.4px; vertical-align: top; display: inline-block; }
 .ground .ground__item:first-child { padding-left: 15px; width: 80px; }
 .ground .ground__item:nth-child(2) { padding-left: 130px; width: 380px; }
@@ -868,6 +869,8 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .ico_lock { background: url('../img/icons-sa17682e24a.png') 0 -1273px no-repeat; width: 33px; height: 33px; display: inline-block; }
 .ico_lock.is-small { -ms-transform: scale(0.7); -webkit-transform: scale(0.7); transform: scale(0.7); }
 
+.card.is-red-yellow:before { background-image: -webkit-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%); background-image: -o-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%); background-image: linear-gradient(to bottom right, #e71b1b 50%, #e7cd1b 50%); }
+
 .menu-wrap .btn.is-mod, .menu-wrap .t-keybord .is-mod.t-key, .t-keybord .menu-wrap .is-mod.t-key { height: 46px; line-height: 46px; }
 
 .menu-container { border-radius: 8px; background-color: #7f8285; position: relative; overflow: hidden; *zoom: 1; }
@@ -898,7 +901,6 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .popup_2 .res-stat td { color: white; font-family: Arial; font-size: 18px; font-weight: 400; }
 .popup_2 .card { width: 21px; height: 24px; line-height: 24px; }
 .popup_2 .card:before { width: 21px; height: 24px; -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); -moz-transform: skew(-5deg, 0); -ms-transform: skew(-5deg, 0); -webkit-transform: skew(-5deg, 0); transform: skew(-5deg, 0); }
-.popup_2 .card.is-red-yellow:before { background-image: -webkit-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%); background-image: -o-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%); background-image: linear-gradient(to bottom right, #e71b1b 50%, #e7cd1b 50%); }
 .popup_2 .close { width: 111px; height: 45px; position: absolute; z-index: 999; top: 0; right: 4px; text-align: center; font-size: 0; }
 .popup_2 .close:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .popup_2 .close:before { content: " "; display: inline-block; vertical-align: middle; width: 0; height: 100%; }

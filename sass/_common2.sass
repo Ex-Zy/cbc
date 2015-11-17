@@ -17,6 +17,14 @@
 	&_lock.is-small
 		+scale(0.7)
 
+//card
+.card.is-red-yellow
+	&:before
+		background-image: -webkit-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%)
+		background-image: -o-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%)
+		background-image: linear-gradient(to bottom right, #e71b1b 50%, #e7cd1b 50%)
+
+
 //menu-wrap
 .menu-wrap
 	.btn.is-mod
@@ -125,14 +133,6 @@
 			height: 24px
 			+rotate(0)
 			+transform(skew(-5deg, 0))
-
-	.card.is-red-yellow
-		&:before
-			background-image: -webkit-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%)
-			background-image: -o-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%)
-			background-image: linear-gradient(to bottom right, #e71b1b 50%, #e7cd1b 50%)
-
-			
 
 	.close
 		width: 111px
