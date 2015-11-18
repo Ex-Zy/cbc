@@ -1576,7 +1576,9 @@ $sp-ico-size: 69px !default
 		height: .2777em
 		border-radius: .5em
 		background-color: transparent
+		-webkit-transform-origin: center -.2222em
 		transform-origin: center -.2222em
+		-webkit-animation: sp-ico-fade 1s infinite linear
 		animation: sp-ico-fade 1s infinite linear
 
 		$animation-delay: 0s
@@ -1584,16 +1586,24 @@ $sp-ico-size: 69px !default
 
 		@for $i from 1 through 9
 			&:nth-child(#{$i})
+				-webkit-animation-delay: $animation-delay
 				animation-delay: $animation-delay
+				-webkit-transform: rotate($blade-rotation)
 				transform: rotate($blade-rotation)
 				$blade-rotation: $blade-rotation + 40
 				$animation-delay: $animation-delay + .11s
+
+@-webkit-keyframes sp-ico-fade
+	0%
+		background-color: $sp-ico-color
+	100%
+		background-color: transparent
 
 @keyframes sp-ico-fade
 	0%
 		background-color: $sp-ico-color
 	100%
-		background-color: transparent
+		background-color: transparent		
 
 $spinner-size: 50px !default
 
@@ -1612,7 +1622,9 @@ $spinner-size: 50px !default
 		height: .2777em
 		border-radius: 2.5px/7px
 		background-color: transparent
+		-webkit-transform-origin: center -.4222em
 		transform-origin: center -.4222em
+		-webkit-animation: spinner-fade 1s infinite linear
 		animation: spinner-fade 1s infinite linear
 		+g(#d9d41e, #de9129)
 
@@ -1621,10 +1633,18 @@ $spinner-size: 50px !default
 
 		@for $i from 1 through 12
 			&:nth-child(#{$i})
+				-webkit-animation-delay: $animation-delay
 				animation-delay: $animation-delay
+				-webkit-transform: rotate($blade-rotation)
 				transform: rotate($blade-rotation)
 				$blade-rotation: $blade-rotation + 30
 				$animation-delay: $animation-delay + .083
+
+@-webkit-keyframes spinner-fade
+	0%
+		opacity: 1
+	100%
+		opacity: 0
 
 @keyframes spinner-fade
 	0%
@@ -1651,7 +1671,9 @@ $spin-size: 69px !default
 		width: 5px
 		height: .2777em
 		background-color: transparent
+		-webkit-transform-origin: center -.2222em
 		transform-origin: center -.2222em
+		-webkit-animation: sp-ico-fade 1s infinite linear
 		animation: sp-ico-fade 1s infinite linear
 
 		$animation-delay: 0s
@@ -1659,11 +1681,18 @@ $spin-size: 69px !default
 
 		@for $i from 1 through 9
 			&:nth-child(#{$i})
+				-webkit-animation-delay: $animation-delay
 				animation-delay: $animation-delay
+				-webkit-transform: rotate($blade-rotation)
 				transform: rotate($blade-rotation)
 				$blade-rotation: $blade-rotation + 40
 				$animation-delay: $animation-delay + .11s
 
+@-webkit-keyframes sp-ico-fade
+	0%
+		background-color: $spin-color
+	100%
+		background-color: transparent
 @keyframes sp-ico-fade
 	0%
 		background-color: $spin-color
