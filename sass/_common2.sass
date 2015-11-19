@@ -24,6 +24,10 @@
 		background-image: -o-linear-gradient(top left, #e71b1b 50%, #e7cd1b 50%)
 		background-image: linear-gradient(to bottom right, #e71b1b 50%, #e7cd1b 50%)
 
+//td
+td
+	&.is-visible
+		display: table-cell	!important
 
 //menu-wrap
 .menu-wrap
@@ -394,8 +398,13 @@
 	min-height: 100%
 	height: auto
 
-.wrap.is-mod
-	border-radius: 0
+.wrap
+	&.is-mod
+		border-radius: 0
+		max-width: none
+		min-width: 940px
+	&.is-hidden
+		display: none
 
 //header
 .header-tv
@@ -411,6 +420,9 @@
 		line-height: 40px
 		white-space: nowrap
 		font-weight: bold
+		+r(1040)
+			.time
+				display: none
 		>div
 			display: inline-block
 			vertical-align: top
@@ -428,14 +440,46 @@
 		margin: 0 210px 0 110px
 		width: auto
 		max-width: none
+		+r(1040)
+			background-color: #454343
 		.ticker__text
 			overflow: hidden
 			text-overflow: ellipsis	
+			+r(1040)
+				display: none
+		.time
+			display: none
+			+r(1040)
+				display: block
+				font-size: 25px	
 
 //top-t
 .top-t
 	background-color: #393C3D
 	width: 100%
+
+	&.tennis 
+		td 
+			&:nth-last-child(2)
+				width: 210px
+
+	&.football	
+		td 
+			&:nth-last-child(3)
+				width: 210px	
+			&:nth-last-child(2)
+				width: 210px
+	&.basketball
+		td
+			&:last-child
+				width: 210px
+
+	&.hockey	
+		td 
+			&:nth-last-child(3)
+				width: 210px	
+			&:nth-last-child(2)
+				width: 210px								
 
 	.logo-game
 		margin-left: 11px
@@ -453,6 +497,12 @@
 		font-size: 0
 		padding-top: 3px
 		padding-bottom: 3px
+		+r(1260)
+			&:nth-last-child(1)
+				display: none	
+		+r(1040)
+			&:nth-last-child(2)
+				display: none
 
 		> div
 			display: inline-block
@@ -504,7 +554,7 @@
 			display: none
 			+border-radius(0)
 		&.is-yellow
-			+g(#87782f, #a2955a)	
+			+g(#A7943A, #C7B24D)	
 		.fb-team
 			display: inline-block
 			vertical-align: top
@@ -543,6 +593,14 @@
 			vertical-align: middle
 			font-size: 0	
 			font-weight: 400
+
+			+r(1260)
+				&:nth-last-child(1)
+					display: none
+
+			+r(1040)
+				&:nth-last-child(2)
+					display: none		
 
 			> div 
 				display: inline-block
@@ -623,7 +681,7 @@
 				&.w30
 					width: 30%	
 			
-	.tannis, .football
+	.tannis
 		tr 
 			&:nth-child(2)
 				td:nth-child(2)
@@ -650,7 +708,7 @@
 					vertical-align: middle
 
 			&:nth-child(4)
-				width: 200px
+				width: 210px
 				font-size: 0
 				.coef-tv
 					width: 33%
@@ -683,18 +741,22 @@
 				width: 140px
 				font-size: 0
 				background-color: rgba(0,0,0,.1)
+				display: table-cell !important
 				> div
 					width: 50%
 					font: 20px Arial, sans-serif
 					vertical-align: middle
 
 			&:nth-child(4)
-				width: 200px
+				width: 210px
 				font-size: 0
 				.coef-tv
 					width: 33%
 
-	.hockey
+			&:last-child
+				width: 210px		
+
+	.hockey, .football
 		tr 
 			&:nth-child(2)
 				td:nth-child(2)
@@ -712,7 +774,7 @@
 				padding: 5px 0 3px
 
 			&:nth-child(3)
-				width: 200px
+				width: 210px
 				font-size: 0
 				background-color: rgba(0,0,0,.1)
 				.coef-tv
@@ -720,15 +782,16 @@
 	
 
 			&:nth-child(4)
-				width: 200px
+				width: 210px
 				font-size: 0
 				.coef-tv
 					width: 33%	
 
 			
-			&:nth-child(5)
-				width: 200px
+			&:last-child
+				width: 210px
 				font-size: 0
+				background-color: rgba(0,0,0,.1)
 				.coef-tv
 					width: 33%				
 
