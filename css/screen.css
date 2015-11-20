@@ -331,8 +331,8 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .score.is-boll .ico { position: absolute; left: 4px; top: 50%; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
 
 .liga { margin-top: 20px; font-size: 0; }
-.liga .liga__col { text-align: right; font-size: 15px; width: 50%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; vertical-align: top; display: inline-block; }
-.liga .liga__col:first-child { text-align: left; }
+.liga .liga__col { text-align: right; font-weight: normal; font-size: 15px; width: 40%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; vertical-align: top; display: inline-block; }
+.liga .liga__col:first-child { text-align: left; width: 60%; }
 
 .topic { padding: 5px 20px 9px 75px; font-weight: bold; font-size: 14px; background: #4c5258; }
 .topic span { margin-right: 2px; text-transform: uppercase; }
