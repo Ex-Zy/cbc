@@ -103,6 +103,7 @@ body.is-hidden { overflow: hidden; }
 .live-block .live-block__but:after { content: " "; display: table; clear: both; }
 .live-block .live-block__but .btn, .live-block .live-block__but .t-keybord .t-key, .t-keybord .live-block .live-block__but .t-key { float: right; height: 36px; line-height: 36px; }
 .live-block .live-block__but .btn:first-child, .live-block .live-block__but .t-keybord .t-key:first-child, .t-keybord .live-block .live-block__but .t-key:first-child { float: left; }
+.live-block .live-block__but .btn.btn_tabellen, .live-block .live-block__but .t-keybord .btn_tabellen.t-key, .t-keybord .live-block .live-block__but .btn_tabellen.t-key { margin-right: 10px; }
 
 .balance { padding: 5px; background: #7f8285; font-weight: bold; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; *zoom: 1; }
 .balance:after { content: " "; display: table; clear: both; }
