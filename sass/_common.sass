@@ -290,6 +290,8 @@ body
 			line-height: 36px
 			&:first-child
 				float: left
+			&.btn_tabellen
+				margin-right: 10px		
 
 // balance
 .balance
@@ -923,7 +925,8 @@ button.btn
 	padding: 3px 5px 3px 10px
 	+box-shadow(2px 2px 5px 1px #000)
 	+border-radius(8px)
-	+g(#163957, #163957)
+	+g(#163957, #295A84)
+	
 	&:before
 		position: absolute
 		content: ''
@@ -1120,8 +1123,9 @@ button.btn
 	font-size: 0
 	.liga__col
 		text-align: right
+		font-weight: normal
 		font-size: 15px
-		width: 50%
+		width: 40%
 		white-space: nowrap
 		text-overflow: ellipsis
 		overflow: hidden
@@ -1129,6 +1133,7 @@ button.btn
 		display: inline-block
 		&:first-child
 			text-align: left
+			width: 60%
 
 // topic
 .topic
