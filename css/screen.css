@@ -200,7 +200,7 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .banner { overflow: hidden; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .banner img { width: 100%; display: block; }
 
-.games { padding: 4px; font-size: 0; overflow: hidden; }
+.games { padding: 0px 4px; font-size: 0; overflow: hidden; }
 .games.is-pad { padding: 10%; }
 .games.is-pad .games__item { margin: 0 0 0 5%; padding: 0; width: 30%; }
 .games.is-pad .games__row { margin-bottom: 5%; }
