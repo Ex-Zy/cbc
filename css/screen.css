@@ -157,6 +157,7 @@ body.is-hidden { overflow: hidden; }
 .btn.btn_arr-t:before, .t-keybord .btn_arr-t.t-key:before { left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 0px; height: 0px; border-style: solid; border-width: 0 8.5px 10px 8.5px; border-color: transparent transparent white transparent; }
 .btn.btn_arr-b:before, .t-keybord .btn_arr-b.t-key:before { left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 0px; height: 0px; border-style: solid; border-width: 10px 8.5px 0 8.5px; border-color: white transparent transparent transparent; }
 .btn:disabled, .t-keybord .t-key:disabled, .btn.is-disabled, .t-keybord .is-disabled.t-key { cursor: default; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; }
+.btn.btn_tabellen, .t-keybord .btn_tabellen.t-key { background-image: -moz-linear-gradient(#de8e15, #f77026); background-image: -webkit-linear-gradient(#de8e15, #f77026); background-image: linear-gradient(#de8e15, #f77026); }
 
 button.btn, .t-keybord button.t-key { line-height: 1; }
 
@@ -868,6 +869,11 @@ button.btn, .t-keybord button.t-key { line-height: 1; }
 .mdark.is-big { padding-right: 15px; width: 187px !important; font-size: 13px !important; }
 .mdark.is-big span { line-height: 1.2; vertical-align: middle; display: inline-block; }
 
+.white { background: white; }
+
+table.normaltable { padding: 10px; color: black; }
+table.normaltable img { margin-right: 10px; vertical-align: middle; }
+
 .ico_some { background: url("../img/ico__some.png") no-repeat 0 0; width: 12px; height: 18px; }
 .ico_soc { background: url('../img/icons-s834d2c7da4.png') 0 -627px no-repeat; width: 28px; height: 28px; }
 .ico_info { background: url('../img/icons-s834d2c7da4.png') 0 -489px no-repeat; width: 128px; height: 128px; }
@@ -1147,6 +1153,7 @@ header { height: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-b
 .l .col-left.is-live { background: #bfc1c2; text-align: center; font-size: 0; }
 .l .col-left.is-live:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .l .col-left.is-live .info-text { font-size: 20px; color: #595b5c; vertical-align: middle; display: inline-block; }
+.l .col-left.is-padd { padding: 10px; }
 .l .col-right { position: relative; padding: 7px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .l .col-right .btn, .l .col-right .t-keybord .t-key, .t-keybord .l .col-right .t-key { margin: 10px 0; display: block; }
 .l .col-right .btn:first-child, .l .col-right .t-keybord .t-key:first-child, .t-keybord .l .col-right .t-key:first-child { margin-top: 0; }
