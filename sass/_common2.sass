@@ -560,7 +560,6 @@ td
 				min-width: 23px
 				float: right
 				margin: 0 10px 0 0
-				padding: 5px 0
 				line-height: 1
 				span
 					font-size: 17px
@@ -573,15 +572,15 @@ td
 				display: block
 				font: 20px Arial, sans-serif	
 				overflow: hidden
-				line-height: 36px
-				height: 36px
+				line-height: 26px
+				height: 26px
 				width: auto
 	table
 		text-align: center
 		color: #fff
 		font-family: Arial, sans-serif
 		td
-			padding: 5px 5px 0
+			padding: 3px 3px 0
 			height: 32px
 			vertical-align: top
 			font-size: 0
@@ -597,7 +596,8 @@ td
 
 			+r(1040)
 				&:nth-last-child(2)
-					display: none		
+					display: none	
+					+clr	
 
 			> div 
 				display: inline-block
@@ -629,8 +629,8 @@ td
 				&.is-mod
 					position: relative
 					font-size: 20px
-					height: 36px
-					line-height: 38px
+					height: 26px
+					line-height: 26px
 					width: 130px
 					.ball
 						position: absolute
@@ -646,9 +646,12 @@ td
 					visibility: hidden			
 
 			.game
-				display: block
+				margin: 0 auto
+				width: 50%
 				text-align: center
 				font-size: 18px
+				line-height: 32px
+				display: block
 
 			.coef-tv
 				font: 20px Arial, sans-serif
@@ -695,7 +698,7 @@ td
 				background-color: rgba(0,0,0,.1)
 
 			&:nth-child(2)
-				padding: 5px 0 3px
+				padding: 3px 0
 
 			&:nth-child(3)
 				width: 140px
@@ -729,12 +732,12 @@ td
 
 			&:first-child
 				width: 110px
-				font-size: 18px
+				font-size: 15px
 				font-weight: 400
 				background-color: rgba(0,0,0,.1)
 
 			&:nth-child(2)
-				padding: 5px 0 3px
+				padding: 3px 0
 
 			&:nth-child(3)
 				width: 140px
@@ -770,7 +773,7 @@ td
 				background-color: rgba(0,0,0,.1)
 
 			&:nth-child(2)
-				padding: 5px 0 3px
+				padding: 3px 0
 
 			&:nth-child(3)
 				width: 210px
@@ -793,6 +796,16 @@ td
 				background-color: rgba(0,0,0,.1)
 				.coef-tv
 					width: 33%				
+
+.card-wrap
+	float: left
+	text-align: center
+	&.is-right
+		margin-right: 10px
+		float: right
+	span
+		padding: 0 !important
+		text-align: center
 
 //reg
 .reg 

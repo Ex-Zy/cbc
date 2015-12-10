@@ -1014,23 +1014,24 @@ td.is-visible { display: table-cell !important; }
 .bets_tv .bet.is-yellow { background-image: -moz-linear-gradient(#a7943a, #c7b24d); background-image: -webkit-linear-gradient(#a7943a, #c7b24d); background-image: linear-gradient(#a7943a, #c7b24d); }
 .bets_tv .bet .fb-team { display: inline-block; vertical-align: top; width: calc(50% - 65px); text-align: left; line-height: 1; }
 .bets_tv .bet .fb-team:first-child { text-align: right; }
-.bets_tv .bet .fb-team__card-wrap { display: block; max-width: 84px; min-width: 23px; float: right; margin: 0 10px 0 0; padding: 5px 0; line-height: 1; }
+.bets_tv .bet .fb-team__card-wrap { display: block; max-width: 84px; min-width: 23px; float: right; margin: 0 10px 0 0; line-height: 1; }
 .bets_tv .bet .fb-team__card-wrap span { font-size: 17px; line-height: 23px; text-align: center; color: white; width: auto; padding: 0; }
-.bets_tv .bet .fb-team__name { display: block; font: 20px Arial, sans-serif; overflow: hidden; line-height: 36px; height: 36px; width: auto; }
+.bets_tv .bet .fb-team__name { display: block; font: 20px Arial, sans-serif; overflow: hidden; line-height: 26px; height: 26px; width: auto; }
 .bets_tv table { text-align: center; color: white; font-family: Arial, sans-serif; }
-.bets_tv table td { padding: 5px 5px 0; height: 32px; vertical-align: top; font-size: 0; line-height: 1.4; font-weight: 400; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.bets_tv table td { padding: 3px 3px 0; height: 32px; vertical-align: top; font-size: 0; line-height: 1.4; font-weight: 400; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .bets_tv table td:first-child { padding: 5px 0 0; line-height: 1; }
 @media only screen and (max-width: 1260px) { .bets_tv table td:nth-last-child(1) { display: none; } }
-@media only screen and (max-width: 1040px) { .bets_tv table td:nth-last-child(2) { display: none; } }
+@media only screen and (max-width: 1040px) { .bets_tv table td:nth-last-child(2) { display: none; *zoom: 1; }
+  .bets_tv table td:nth-last-child(2):after { content: " "; display: table; clear: both; } }
 .bets_tv table td > div { display: inline-block; font: 20px Arial, sans-serif; }
 .bets_tv table td .player { display: inline-block; vertical-align: middle; font: 20px Arial, sans-serif; padding: 0 10px; width: calc(50% - 65px); white-space: nowrap; text-overflow: ellipsis; overflow: hidden; text-align: left; }
 .bets_tv table td .player:first-child { text-align: right; }
 .bets_tv table td .score { display: inline-block; vertical-align: middle; position: static; top: inherit; left: inherit; -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -webkit-transform: translate(0, 0); transform: translate(0, 0); }
-.bets_tv table td .score.is-mod { position: relative; font-size: 20px; height: 36px; line-height: 38px; width: 130px; }
+.bets_tv table td .score.is-mod { position: relative; font-size: 20px; height: 26px; line-height: 26px; width: 130px; }
 .bets_tv table td .score.is-mod .ball { position: absolute; top: 50%; right: 3px; -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); -webkit-transform: translate(0, -50%); transform: translate(0, -50%); line-height: 1; font-size: 0; }
 .bets_tv table td .score.is-mod .ball.is-left { right: auto; left: 4px; }
 .bets_tv table td .score.is-hidden { visibility: hidden; }
-.bets_tv table td .game { display: block; text-align: center; font-size: 18px; }
+.bets_tv table td .game { margin: 0 auto; width: 50%; text-align: center; font-size: 18px; line-height: 32px; display: block; }
 .bets_tv table td .coef-tv { font: 20px Arial, sans-serif; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; vertical-align: middle; }
 .bets_tv table td .coef-tv [class*="ico_"] { vertical-align: top; }
 .bets_tv table td span { display: inline-block; color: white; font-weight: 400; font-size: 17px; padding: 0 10px; width: 50%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -1040,7 +1041,7 @@ td.is-visible { display: table-cell !important; }
 .bets_tv table td span.w30 { width: 30%; }
 .bets_tv .tannis tr:nth-child(2) td:nth-child(2) { padding: 0; }
 .bets_tv .tannis td:first-child { width: 110px; font-size: 18px; font-weight: 400; background-color: rgba(0, 0, 0, 0.1); }
-.bets_tv .tannis td:nth-child(2) { padding: 5px 0 3px; }
+.bets_tv .tannis td:nth-child(2) { padding: 3px 0; }
 .bets_tv .tannis td:nth-child(3) { width: 140px; font-size: 0; background-color: rgba(0, 0, 0, 0.1); }
 .bets_tv .tannis td:nth-child(3) > div { width: 50%; font: 20px Arial, sans-serif; vertical-align: middle; }
 .bets_tv .tannis td:nth-child(4) { width: 210px; font-size: 0; }
@@ -1048,8 +1049,8 @@ td.is-visible { display: table-cell !important; }
 .bets_tv .tannis td:nth-child(5) { width: 210px; font-size: 0; background-color: rgba(0, 0, 0, 0.1); }
 .bets_tv .tannis td:nth-child(5) .coef-tv { width: 33%; }
 .bets_tv .basketball tr:nth-child(2) td:nth-child(2) { padding: 0; }
-.bets_tv .basketball td:first-child { width: 110px; font-size: 18px; font-weight: 400; background-color: rgba(0, 0, 0, 0.1); }
-.bets_tv .basketball td:nth-child(2) { padding: 5px 0 3px; }
+.bets_tv .basketball td:first-child { width: 110px; font-size: 15px; font-weight: 400; background-color: rgba(0, 0, 0, 0.1); }
+.bets_tv .basketball td:nth-child(2) { padding: 3px 0; }
 .bets_tv .basketball td:nth-child(3) { width: 140px; font-size: 0; background-color: rgba(0, 0, 0, 0.1); display: table-cell !important; }
 .bets_tv .basketball td:nth-child(3) > div { width: 50%; font: 20px Arial, sans-serif; vertical-align: middle; }
 .bets_tv .basketball td:nth-child(4) { width: 210px; font-size: 0; }
@@ -1057,13 +1058,17 @@ td.is-visible { display: table-cell !important; }
 .bets_tv .basketball td:last-child { width: 210px; }
 .bets_tv .hockey tr:nth-child(2) td:nth-child(2), .bets_tv .football tr:nth-child(2) td:nth-child(2) { padding: 0; }
 .bets_tv .hockey td:first-child, .bets_tv .football td:first-child { width: 110px; font-size: 18px; font-weight: 400; background-color: rgba(0, 0, 0, 0.1); }
-.bets_tv .hockey td:nth-child(2), .bets_tv .football td:nth-child(2) { padding: 5px 0 3px; }
+.bets_tv .hockey td:nth-child(2), .bets_tv .football td:nth-child(2) { padding: 3px 0; }
 .bets_tv .hockey td:nth-child(3), .bets_tv .football td:nth-child(3) { width: 210px; font-size: 0; background-color: rgba(0, 0, 0, 0.1); }
 .bets_tv .hockey td:nth-child(3) .coef-tv, .bets_tv .football td:nth-child(3) .coef-tv { width: 33%; }
 .bets_tv .hockey td:nth-child(4), .bets_tv .football td:nth-child(4) { width: 210px; font-size: 0; }
 .bets_tv .hockey td:nth-child(4) .coef-tv, .bets_tv .football td:nth-child(4) .coef-tv { width: 33%; }
 .bets_tv .hockey td:last-child, .bets_tv .football td:last-child { width: 210px; font-size: 0; background-color: rgba(0, 0, 0, 0.1); }
 .bets_tv .hockey td:last-child .coef-tv, .bets_tv .football td:last-child .coef-tv { width: 33%; }
+
+.card-wrap { float: left; text-align: center; }
+.card-wrap.is-right { margin-right: 10px; float: right; }
+.card-wrap span { padding: 0 !important; text-align: center; }
 
 .reg { font-size: 0; text-align: center; }
 .reg__form { font: 14px Arial, sans-serif; color: white; display: inline-block; vertical-align: middle; width: 350px; }
