@@ -1066,7 +1066,7 @@ td.is-visible { display: table-cell !important; }
 .bets_tv .hockey td:last-child, .bets_tv .football td:last-child { width: 210px; font-size: 0; background-color: rgba(0, 0, 0, 0.1); }
 .bets_tv .hockey td:last-child .coef-tv, .bets_tv .football td:last-child .coef-tv { width: 33%; }
 
-.card-wrap { float: left; text-align: center; }
+.card-wrap { margin-top: 5px; float: left; text-align: center; }
 .card-wrap.is-right { margin-right: 10px; float: right; }
 .card-wrap span { padding: 0 !important; text-align: center; }
 
